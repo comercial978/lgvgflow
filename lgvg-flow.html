@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria LGVG Flow - Opere com Estrutura Profissional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 40px auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin: 30px 0 15px 0;
+        }
+
+        .price-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .price-box .price {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price-box .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .benefits-list li {
+            padding: 15px 20px;
+            margin: 10px 0;
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefits-list li:hover {
+            transform: translateX(10px);
+            background: #e8ecff;
+        }
+
+        .benefits-list li::before {
+            content: "✓";
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-right: 15px;
+        }
+
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box strong {
+            color: #856404;
+            font-size: 1.1em;
+        }
+
+        .mindset-quote {
+            background: #764ba2;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.3em;
+            font-style: italic;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(118, 75, 162, 0.3);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .comparison-card {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .comparison-card h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .warning-box {
+            background: #fff3f3;
+            border-left: 5px solid #dc3545;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: #721c24;
+            font-size: 1.1em;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            margin: 50px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 20px 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .summary-item {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e8ecff;
+        }
+
+        .summary-item .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .summary-item strong {
+            display: block;
+            color: #667eea;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .main-content {
+                padding: 30px 20px;
+            }
+
+            .price-box .price {
+                font-size: 2.5em;
+            }
+
+            .comparison-grid,
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animação suave ao carregar */
+        .main-content {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📊 Mentoria LGVG Flow</h1>
+            <p>Pare de operar no "achismo" e comece a operar com estrutura profissional</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            
+            <section class="section">
+                <h2>💰 Como Funciona</h2>
+                <div class="price-box">
+                    <div class="subtitle">Investimento Único</div>
+                    <div class="price">R$ 1.000</div>
+                    <p style="font-size: 1.2em; margin-top: 20px;">
+                        <strong>Indicador LGVG Flow INCLUSO por 12 meses!</strong><br>
+                        Você não paga nada pelo indicador durante 1 ano inteiro.
+                    </p>
+                    <p style="margin-top: 20px; opacity: 0.9;">
+                        Após 12 meses: apenas R$ 100/mês se quiser continuar usando o indicador
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>✅ Qual é a Grande Vantagem da Mentoria?</h2>
+                <div class="highlight-box">
+                    <strong>Aqui está o diferencial estratégico:</strong>
+                    <p style="margin-top: 15px; font-size: 1.1em;">
+                        👉 O aluno não recebe apenas um indicador.<br>
+                        Ele recebe a base completa para operar corretamente com fluxo de ordens.
+                    </p>
+                </div>
+
+                <h3>O que você aprende na mentoria:</h3>
+                <ul class="benefits-list">
+                    <li>Como abrir conta na corretora</li>
+                    <li>Quanto de capital é recomendado ter para operar sem alavancagem excessiva</li>
+                    <li>Gestão básica de risco</li>
+                    <li>Leitura de fluxo de ordens (oferta, demanda, agressão e absorção)</li>
+                    <li>Como usar o indicador LGVG Flow de forma prática e organizada</li>
+                    <li>Onde entrar comprado ou vendido com mais critério</li>
+                    <li>Como evitar operações emocionais e aleatórias</li>
+                </ul>
+
+                <p style="margin-top: 30px; font-size: 1.1em; line-height: 1.8;">
+                    <strong>Ou seja:</strong> primeiro vem o método, depois vem a ferramenta.<br>
+                    O indicador só faz sentido porque o aluno já entende o que está acontecendo no mercado.
+                </p>
+            </section>
+
+            <section class="section">
+                <div class="mindset-quote">
+                    🧠 A mentoria entrega o mapa.<br>
+                    O indicador entrega a bússola.<br><br>
+                    <strong>Sem mapa, a bússola não adianta.</strong>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>📌 Resumo do Investimento</h2>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <div class="icon">💎</div>
+                        <strong>Mentoria</strong>
+                        <p>R$ 1.000<br>(pagamento único)</p>
+                    </div>
+                    <div class="summary-item">
+                        <div class="icon">📈</div>
+                        <strong>Indicador LGVG Flow</strong>
+                        <p>Incluso por<br>12 meses</p>
+                    </div>
+                    <div class="summary-item">
+                        <div class="icon">🔄</div>
+                        <strong>Após 1 ano</strong>
+                        <p>Apenas R$ 100/mês<br>(opcional)</p>
+                    </div>
+                    <div class="summary-item">
+                        <div class="icon">🎓</div>
+                        <strong>Aprendizado</strong>
+                        <p>Do zero até<br>execução profissional</p>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; font-size: 1.2em; margin-top: 30px; line-height: 1.8;">
+                    É um pacote pensado para quem quer parar de operar no "achismo" e começar a operar com <strong>estrutura, leitura institucional e processo profissional</strong>.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>🔎 Opção de Teste do Indicador</h2>
+                <p style="font-size: 1.1em; margin-bottom: 20px;">
+                    Se você preferir, também é possível <strong>testar apenas o indicador LGVG Flow por 60 dias</strong>, sem compromisso.
+                </p>
+                <p style="font-size: 1.1em; margin-bottom: 30px;">
+                    Nesse caso, o indicador é enviado por e-mail e você pode utilizar normalmente durante o período de teste.
+                </p>
+
+                <div class="warning-box">
+                    <strong>⚠️ Ponto-chave (pensamento de segunda ordem):</strong>
+                    <p style="margin-top: 15px; line-height: 1.8;">
+                        O indicador funciona melhor para quem já tem conhecimento mínimo de mercado — porque ele trabalha com fluxo de ordens, leitura de agressão, oferta e demanda.
+                    </p>
+                </div>
+
+                <h3>Por isso:</h3>
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <h3>👨‍💼 Já tem base?</h3>
+                        <p style="line-height: 1.8;">
+                            Pode testar só o indicador sem problema. Você já sabe interpretar os sinais e aplicar a leitura de fluxo.
+                        </p>
+                    </div>
+                    <div class="comparison-card">
+                        <h3>🎯 Ainda não tem base?</h3>
+                        <p style="line-height: 1.8;">
+                            O mais indicado é entrar direto na mentoria — porque ali você aprende desde o zero até a execução correta, evitando uso "cego" da ferramenta.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🎯 Em Resumo</h2>
+                <div style="background: #f8f9ff; padding: 30px; border-radius: 15px; border: 2px solid #e8ecff;">
+                    <ul style="list-style: none; font-size: 1.1em; line-height: 2.2;">
+                        <li><strong>Quer só testar o indicador?</strong><br>
+                        Sem problema — enviamos por e-mail e liberamos por 60 dias.</li>
+                        <li style="margin-top: 20px;"><strong>Quer aprender de verdade e operar com estrutura?</strong><br>
+                        A mentoria entrega o método + o indicador já incluso por 1 ano.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="cta-section">
+                <h2 style="font-size: 2.5em; margin-bottom: 20px;">Pronto para transformar suas operações?</h2>
+                <p style="font-size: 1.3em; margin-bottom: 10px;">
+                    Pare de operar no achismo e comece a operar com método profissional
+                </p>
+                <a href="#contato" class="cta-button">Quero Começar Agora</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LGVG Flow - Todos os direitos reservados</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Opere com estrutura. Opere com profissionalismo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
