@@ -1,289 +1,892 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentoria LGVG Flow - Opere com Estrutura Profissional</title>
+
+    <!-- SEO -->
+    <title>LGVG Flow — Indicador Profissional de Fluxo de Ordens para Mini Índice B3</title>
+    <meta name="description" content="LGVG Flow é o indicador proprietário de fluxo de ordens para mini índice B3 (WIN). Leitura de agressão, absorção e pressão institucional no Profit Pro e Profit Ultra.">
+    <meta name="keywords" content="mini índice, fluxo de ordens, trading, B3, Profit Pro, indicador de fluxo, WIN, day trade, scalping, fluxo institucional">
+    <meta name="author" content="Gustavo Guimarães">
+    <meta property="og:title" content="LGVG Flow — Indicador de Fluxo para Mini Índice B3">
+    <meta property="og:description" content="Leitura avançada do fluxo institucional para traders que operam WIN na B3.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        * {
+        /* =========================================================
+           RESET & BASE
+        ========================================================= */
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        :root {
+            --gold:    #F5C842;
+            --gold-dim: #C8A020;
+            --bg:      #090B10;
+            --bg-2:    #0E1118;
+            --bg-3:    #13171F;
+            --border:  rgba(245, 200, 66, 0.15);
+            --text:    #E8EAF0;
+            --muted:   #7A8099;
+            --font-display: 'Syne', sans-serif;
+            --font-body:    'DM Sans', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
         }
 
+        ::selection { background: var(--gold); color: #000; }
+
+        /* =========================================================
+           TYPOGRAPHY
+        ========================================================= */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            line-height: 1.15;
+        }
+
+        .label {
+            display: inline-block;
+            font-family: var(--font-display);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid var(--border);
+            padding: 5px 14px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* =========================================================
+           LAYOUT
+        ========================================================= */
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 24px;
         }
 
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            color: white;
+        section {
+            padding: 100px 0;
         }
 
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        /* =========================================================
+           NAV
+        ========================================================= */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(9, 11, 16, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            padding: 18px 24px;
         }
 
-        header p {
-            font-size: 1.3em;
-            opacity: 0.95;
+        nav .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .main-content {
-            background: white;
-            border-radius: 20px;
-            padding: 50px;
-            margin: 40px auto;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        .nav-logo {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 0.04em;
         }
 
-        .section {
-            margin-bottom: 50px;
+        .nav-logo span { color: var(--text); }
+
+        .nav-cta {
+            background: var(--gold);
+            color: #000;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
         }
 
-        .section h2 {
-            color: #667eea;
-            font-size: 2em;
-            margin-bottom: 20px;
+        .nav-cta:hover { background: #ffd84d; transform: translateY(-1px); }
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+        #hero {
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            gap: 10px;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .section h3 {
-            color: #764ba2;
-            font-size: 1.5em;
-            margin: 30px 0 15px 0;
+        /* Subtle grid background */
+        #hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(245,200,66,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(245,200,66,0.04) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
         }
 
-        .price-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
+        /* Glow orb */
+        #hero::after {
+            content: '';
+            position: absolute;
+            top: -200px; left: 50%;
+            transform: translateX(-50%);
+            width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(245,200,66,0.07) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
             text-align: center;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            max-width: 820px;
+            margin: 0 auto;
         }
 
-        .price-box .price {
-            font-size: 3.5em;
-            font-weight: bold;
-            margin: 20px 0;
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--muted);
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.03);
+            padding: 7px 18px;
+            border-radius: 30px;
+            margin-bottom: 28px;
         }
 
-        .price-box .subtitle {
-            font-size: 1.2em;
-            opacity: 0.9;
+        .hero-eyebrow .dot {
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: var(--gold);
+            animation: pulse 2s ease-in-out infinite;
         }
 
-        .benefits-list {
-            list-style: none;
-            margin: 20px 0;
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.7); }
         }
 
-        .benefits-list li {
-            padding: 15px 20px;
-            margin: 10px 0;
-            background: #f8f9ff;
-            border-left: 4px solid #667eea;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
+        #hero h1 {
+            font-size: clamp(2.4rem, 6vw, 4.2rem);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 24px;
         }
 
-        .benefits-list li:hover {
-            transform: translateX(10px);
-            background: #e8ecff;
+        #hero h1 em {
+            font-style: normal;
+            color: var(--gold);
         }
 
-        .benefits-list li::before {
-            content: "✓";
-            color: #667eea;
-            font-weight: bold;
-            font-size: 1.3em;
-            margin-right: 15px;
+        #hero .hero-sub {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: var(--muted);
+            max-width: 560px;
+            margin: 0 auto 44px;
+            font-weight: 300;
         }
 
-        .highlight-box {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 25px;
-            margin: 30px 0;
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: #000;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 16px 38px;
             border-radius: 8px;
-        }
-
-        .highlight-box strong {
-            color: #856404;
-            font-size: 1.1em;
-        }
-
-        .mindset-quote {
-            background: #764ba2;
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            font-size: 1.3em;
-            font-style: italic;
-            margin: 40px 0;
-            box-shadow: 0 10px 30px rgba(118, 75, 162, 0.3);
-        }
-
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 30px 0;
-        }
-
-        .comparison-card {
-            background: white;
-            border: 2px solid #667eea;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .comparison-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
-        }
-
-        .comparison-card h3 {
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-
-        .warning-box {
-            background: #fff3f3;
-            border-left: 5px solid #dc3545;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-
-        .warning-box strong {
-            color: #721c24;
-            font-size: 1.1em;
-        }
-
-        .cta-section {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 20px;
-            margin: 50px 0;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 20px 50px;
-            font-size: 1.3em;
-            font-weight: bold;
             text-decoration: none;
-            border-radius: 50px;
-            margin-top: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 30px rgba(245,200,66,0.25);
         }
 
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        .btn-primary:hover {
+            background: #ffd84d;
+            transform: translateY(-2px);
+            box-shadow: 0 0 45px rgba(245,200,66,0.4);
         }
 
-        .summary-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+        .btn-secondary {
+            background: transparent;
+            color: var(--text);
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 15px 38px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: border-color 0.2s, transform 0.2s;
         }
 
-        .summary-item {
-            background: #f8f9ff;
-            padding: 25px;
-            border-radius: 10px;
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        /* Stats strip */
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 72px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+
+        .hero-stat-item {
             text-align: center;
-            border: 2px solid #e8ecff;
         }
 
-        .summary-item .icon {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-
-        .summary-item strong {
+        .hero-stat-item strong {
             display: block;
-            color: #667eea;
-            font-size: 1.1em;
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--gold);
+        }
+
+        .hero-stat-item span {
+            font-size: 0.8rem;
+            color: var(--muted);
+            letter-spacing: 0.05em;
+        }
+
+        /* =========================================================
+           SECTION HEADERS
+        ========================================================= */
+        .section-header {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 64px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 em {
+            font-style: normal;
+            color: var(--gold);
+        }
+
+        .section-header p {
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        /* =========================================================
+           PROBLEMA
+        ========================================================= */
+        #problema {
+            background: var(--bg-2);
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .pain-card {
+            background: var(--bg-3);
+            border: 1px solid rgba(220, 53, 69, 0.2);
+            border-radius: 12px;
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .pain-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(220,53,69,0.6), transparent);
+        }
+
+        .pain-card:hover {
+            border-color: rgba(220,53,69,0.5);
+            transform: translateY(-4px);
+        }
+
+        .pain-card .icon {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+        }
+
+        .pain-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .pain-card p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* =========================================================
+           SOLUÇÃO
+        ========================================================= */
+        #solucao {
+            background: var(--bg);
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .solution-card {
+            background: var(--bg-3);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px 28px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .solution-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .solution-card:hover {
+            border-color: rgba(245,200,66,0.4);
+            transform: translateY(-4px);
+        }
+
+        .solution-card:hover::before { opacity: 1; }
+
+        .solution-card .num {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: rgba(245,200,66,0.12);
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .solution-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--gold);
             margin-bottom: 10px;
         }
 
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: white;
-            opacity: 0.9;
+        .solution-card p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        /* =========================================================
+           TÉCNICO
+        ========================================================= */
+        #tecnico {
+            background: var(--bg-2);
+        }
+
+        .tech-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px;
+            align-items: center;
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
+            .tech-layout { grid-template-columns: 1fr; gap: 32px; }
+        }
 
-            .main-content {
-                padding: 30px 20px;
-            }
+        .tech-text h2 {
+            font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 20px;
+        }
 
-            .price-box .price {
-                font-size: 2.5em;
-            }
+        .tech-text h2 em {
+            font-style: normal;
+            color: var(--gold);
+        }
 
-            .comparison-grid,
-            .summary-grid {
+        .tech-text p {
+            color: var(--muted);
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+
+        .tech-list {
+            list-style: none;
+            margin-top: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .tech-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-size: 0.92rem;
+            color: var(--text);
+        }
+
+        .tech-list li::before {
+            content: '▸';
+            color: var(--gold);
+            font-size: 1rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* Code-style card */
+        .tech-card {
+            background: #0A0D14;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .tech-card-header {
+            background: rgba(245,200,66,0.06);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tech-card-header span {
+            font-family: var(--font-display);
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .tech-card-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--gold);
+        }
+
+        .tech-card-body {
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .tech-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .tech-metric:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .tech-metric-label {
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .tech-metric-value {
+            font-family: var(--font-display);
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        /* =========================================================
+           COMPATIBILIDADE
+        ========================================================= */
+        #compatibilidade {
+            background: var(--bg);
+        }
+
+        .compat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .compat-card {
+            background: var(--bg-3);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 36px 32px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .compat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(245,200,66,0.1);
+        }
+
+        .compat-badge {
+            display: inline-block;
+            background: rgba(245,200,66,0.1);
+            border: 1px solid rgba(245,200,66,0.3);
+            color: var(--gold);
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.5rem;
+            padding: 14px 28px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .compat-card h3 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .compat-card p {
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+
+        .compat-notice {
+            background: rgba(220,53,69,0.08);
+            border: 1px solid rgba(220,53,69,0.2);
+            border-radius: 10px;
+            padding: 20px 28px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .compat-notice .notice-icon {
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .compat-notice p {
+            font-size: 0.88rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* =========================================================
+           PARA QUEM
+        ========================================================= */
+        #para-quem {
+            background: var(--bg-2);
+        }
+
+        .audience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .audience-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--bg-3);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 24px;
+            transition: border-color 0.3s;
+        }
+
+        .audience-item:hover {
+            border-color: rgba(245,200,66,0.4);
+        }
+
+        .audience-item .check {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            background: rgba(245,200,66,0.1);
+            border: 1px solid rgba(245,200,66,0.3);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.75rem;
+            color: var(--gold);
+            flex-shrink: 0;
+            font-weight: 700;
+        }
+
+        .audience-item span {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        /* =========================================================
+           SOBRE O DESENVOLVEDOR
+        ========================================================= */
+        #desenvolvedor {
+            background: var(--bg);
+        }
+
+        .dev-layout {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 48px;
+            align-items: center;
+            max-width: 780px;
+            margin: 0 auto;
+            background: var(--bg-3);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 44px 48px;
+        }
+
+        @media (max-width: 600px) {
+            .dev-layout {
                 grid-template-columns: 1fr;
+                text-align: center;
+                padding: 32px 24px;
+                gap: 24px;
             }
+
+            .dev-avatar-wrap { margin: 0 auto; }
         }
 
-        /* Animação suave ao carregar */
-        .main-content {
-            animation: fadeIn 0.8s ease-in;
+        .dev-avatar-wrap {
+            width: 110px; height: 110px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            overflow: hidden;
+            flex-shrink: 0;
+            background: rgba(245,200,66,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.8rem;
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .dev-info h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 6px;
         }
 
-        /* ===== BOTÕES WHATSAPP E COMPRA ===== */
+        .dev-info .dev-role {
+            font-size: 0.85rem;
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .dev-info p {
+            font-size: 0.92rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        /* =========================================================
+           COMO FUNCIONA / PREÇO
+        ========================================================= */
+        #como-funciona {
+            background: var(--bg-2);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .pricing-card {
+            background: var(--bg-3);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 36px 32px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--gold);
+            position: relative;
+        }
+
+        .pricing-card.featured::before {
+            content: 'RECOMENDADO';
+            position: absolute;
+            top: -14px; left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: #000;
+            font-family: var(--font-display);
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            padding: 4px 14px;
+            border-radius: 20px;
+        }
+
+        .pricing-card:hover { transform: translateY(-6px); }
+
+        .pricing-card h3 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .pricing-card .price-amount {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--gold);
+            line-height: 1.1;
+            margin: 18px 0 8px;
+        }
+
+        .pricing-card .price-note {
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-bottom: 24px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.88rem;
+            color: var(--muted);
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--gold);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* =========================================================
+           CTA FINAL
+        ========================================================= */
+        #cta-final {
+            background: var(--bg);
+            padding: 120px 0;
+        }
+
+        .cta-box {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-box h2 {
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .cta-box h2 em {
+            font-style: normal;
+            color: var(--gold);
+        }
+
+        .cta-box p {
+            font-size: 1.05rem;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        /* ===== BOTÕES WHATSAPP E COMPRA (preservados do original) ===== */
         .dual-buttons {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 16px;
             justify-content: center;
-            margin-top: 25px;
         }
 
         .btn-whatsapp {
@@ -292,50 +895,47 @@
             gap: 10px;
             background: #25D366;
             color: white;
-            padding: 18px 40px;
-            font-size: 1.15em;
-            font-weight: bold;
+            padding: 16px 36px;
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 700;
             text-decoration: none;
-            border-radius: 50px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
         }
 
         .btn-whatsapp:hover {
             background: #1ebe5d;
-            transform: translateY(-4px);
-            box-shadow: 0 14px 35px rgba(37, 211, 102, 0.55);
+            transform: translateY(-3px);
+            box-shadow: 0 14px 35px rgba(37, 211, 102, 0.5);
         }
 
-        .btn-whatsapp svg {
-            width: 22px;
-            height: 22px;
-            flex-shrink: 0;
-        }
+        .btn-whatsapp svg { width: 20px; height: 20px; flex-shrink: 0; }
 
         .btn-comprar {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: white;
-            color: #667eea;
-            padding: 18px 40px;
-            font-size: 1.15em;
-            font-weight: bold;
+            background: var(--gold);
+            color: #000;
+            padding: 16px 36px;
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 700;
             text-decoration: none;
-            border-radius: 50px;
-            border: 3px solid white;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 8px 25px rgba(245, 200, 66, 0.3);
         }
 
         .btn-comprar:hover {
-            background: #f0f0ff;
-            transform: translateY(-4px);
-            box-shadow: 0 14px 35px rgba(0,0,0,0.3);
+            background: #ffd84d;
+            transform: translateY(-3px);
+            box-shadow: 0 14px 35px rgba(245,200,66,0.45);
         }
 
-        /* Botão flutuante WhatsApp */
+        /* ===== BOTÃO FLUTUANTE WHATSAPP (preservado do original) ===== */
         .whatsapp-float {
             position: fixed;
             bottom: 28px;
@@ -349,8 +949,9 @@
             text-decoration: none;
             padding: 13px 22px;
             border-radius: 50px;
-            font-weight: bold;
-            font-size: 0.95em;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.88rem;
             box-shadow: 0 6px 25px rgba(37, 211, 102, 0.55);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -361,13 +962,104 @@
             box-shadow: 0 10px 35px rgba(37, 211, 102, 0.65);
         }
 
-        .whatsapp-float svg {
-            width: 22px;
-            height: 22px;
-            flex-shrink: 0;
+        .whatsapp-float svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+        footer {
+            background: var(--bg-2);
+            border-top: 1px solid var(--border);
+            padding: 40px 24px;
+            text-align: center;
         }
 
+        footer p {
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+
+        footer .footer-brand {
+            font-family: var(--font-display);
+            font-weight: 800;
+            color: var(--gold);
+            font-size: 1rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* =========================================================
+           DIVIDER
+        ========================================================= */
+        .divider {
+            width: 48px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+            margin: 0 auto 32px;
+        }
+
+        /* =========================================================
+           QUOTE CALLOUT
+        ========================================================= */
+        .callout-quote {
+            background: rgba(245,200,66,0.05);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--gold);
+            border-radius: 0 12px 12px 0;
+            padding: 28px 32px;
+            max-width: 680px;
+            margin: 56px auto 0;
+            text-align: left;
+        }
+
+        .callout-quote p {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            color: #fff;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .callout-quote cite {
+            display: block;
+            margin-top: 14px;
+            font-size: 0.82rem;
+            color: var(--gold);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+        }
+
+        /* =========================================================
+           ANIMATIONS
+        ========================================================= */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
         @media (max-width: 768px) {
+            section { padding: 72px 0; }
+
+            .hero-stats { gap: 28px; }
+
+            .whatsapp-float {
+                bottom: 18px;
+                right: 18px;
+                padding: 11px 16px;
+                font-size: 0.82rem;
+            }
+
             .dual-buttons {
                 flex-direction: column;
                 align-items: center;
@@ -377,164 +1069,412 @@
             .btn-comprar {
                 width: 100%;
                 justify-content: center;
-                font-size: 1em;
-                padding: 16px 28px;
             }
 
-            .whatsapp-float {
-                bottom: 18px;
-                right: 18px;
-                padding: 11px 16px;
-                font-size: 0.88em;
-            }
+            .dev-layout { gap: 24px; }
+
+            nav .nav-inner { gap: 12px; }
         }
-        /* ===== FIM BOTÕES WHATSAPP E COMPRA ===== */
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>📊 Mentoria LGVG Flow</h1>
-            <p>Pare de operar no "achismo" e comece a operar com estrutura profissional</p>
+
+    <!-- ===================================================
+         NAV
+    =================================================== -->
+    <nav>
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">LGVG <span>Flow</span></a>
+            <a href="#cta-final" class="nav-cta">Solicitar Acesso</a>
         </div>
-    </header>
+    </nav>
 
-    <div class="container">
-        <div class="main-content">
-            
-            <section class="section">
-                <h2>💰 Como Funciona</h2>
-                <div class="price-box">
-                    <div class="subtitle">Investimento Único</div>
-                    <div class="price">R$ 1.000</div>
-                    <p style="font-size: 1.2em; margin-top: 20px;">
-                        <strong>Indicador LGVG Flow INCLUSO por 12 meses!</strong><br>
-                        Você não paga nada pelo indicador durante 1 ano inteiro.
-                    </p>
-                    <p style="margin-top: 20px; opacity: 0.9;">
-                        Após 12 meses: apenas R$ 100/mês se quiser continuar usando o indicador
-                    </p>
-                </div>
-            </section>
 
-            <section class="section">
-                <h2>✅ Qual é a Grande Vantagem da Mentoria?</h2>
-                <div class="highlight-box">
-                    <strong>Aqui está o diferencial estratégico:</strong>
-                    <p style="margin-top: 15px; font-size: 1.1em;">
-                        👉 O aluno não recebe apenas um indicador.<br>
-                        Ele recebe a base completa para operar corretamente com fluxo de ordens.
-                    </p>
+    <!-- ===================================================
+         HERO
+    =================================================== -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-eyebrow">
+                    <span class="dot"></span>
+                    Indicador Proprietário para Mini Índice B3
                 </div>
 
-                <h3>O que você aprende na mentoria:</h3>
-                <ul class="benefits-list">
-                    <li>Como abrir conta na corretora</li>
-                    <li>Quanto de capital é recomendado ter para operar sem alavancagem excessiva</li>
-                    <li>Gestão básica de risco</li>
-                    <li>Leitura de fluxo de ordens (oferta, demanda, agressão e absorção)</li>
-                    <li>Como usar o indicador LGVG Flow de forma prática e organizada</li>
-                    <li>Onde entrar comprado ou vendido com mais critério</li>
-                    <li>Como evitar operações emocionais e aleatórias</li>
-                </ul>
+                <h1>
+                    Enxergue o mercado como<br>
+                    <em>os institucionais enxergam</em>
+                </h1>
 
-                <p style="margin-top: 30px; font-size: 1.1em; line-height: 1.8;">
-                    <strong>Ou seja:</strong> primeiro vem o método, depois vem a ferramenta.<br>
-                    O indicador só faz sentido porque o aluno já entende o que está acontecendo no mercado.
-                </p>
-            </section>
-
-            <section class="section">
-                <div class="mindset-quote">
-                    🧠 A mentoria entrega o mapa.<br>
-                    O indicador entrega a bússola.<br><br>
-                    <strong>Sem mapa, a bússola não adianta.</strong>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>📌 Resumo do Investimento</h2>
-                <div class="summary-grid">
-                    <div class="summary-item">
-                        <div class="icon">💎</div>
-                        <strong>Mentoria</strong>
-                        <p>R$ 1.000<br>(pagamento único)</p>
-                    </div>
-                    <div class="summary-item">
-                        <div class="icon">📈</div>
-                        <strong>Indicador LGVG Flow</strong>
-                        <p>Incluso por<br>12 meses</p>
-                    </div>
-                    <div class="summary-item">
-                        <div class="icon">🔄</div>
-                        <strong>Após 1 ano</strong>
-                        <p>Apenas R$ 100/mês<br>(opcional)</p>
-                    </div>
-                    <div class="summary-item">
-                        <div class="icon">🎓</div>
-                        <strong>Aprendizado</strong>
-                        <p>Do zero até<br>execução profissional</p>
-                    </div>
-                </div>
-                
-                <p style="text-align: center; font-size: 1.2em; margin-top: 30px; line-height: 1.8;">
-                    É um pacote pensado para quem quer parar de operar no "achismo" e começar a operar com <strong>estrutura, leitura institucional e processo profissional</strong>.
-                </p>
-            </section>
-
-            <section class="section">
-                <h2>🔎 Opção de Teste do Indicador</h2>
-                <p style="font-size: 1.1em; margin-bottom: 20px;">
-                    Se você preferir, também é possível <strong>testar apenas o indicador LGVG Flow por 60 dias</strong>, sem compromisso.
-                </p>
-                <p style="font-size: 1.1em; margin-bottom: 30px;">
-                    Nesse caso, o indicador é enviado por e-mail e você pode utilizar normalmente durante o período de teste.
+                <p class="hero-sub">
+                    LGVG Flow — leitura avançada de fluxo de ordens para traders que operam WIN na B3 com Profit Pro ou Profit Ultra.
                 </p>
 
-                <div class="warning-box">
-                    <strong>⚠️ Ponto-chave (pensamento de segunda ordem):</strong>
-                    <p style="margin-top: 15px; line-height: 1.8;">
-                        O indicador funciona melhor para quem já tem conhecimento mínimo de mercado — porque ele trabalha com fluxo de ordens, leitura de agressão, oferta e demanda.
+                <div class="hero-buttons">
+                    <a href="#solucao" class="btn-primary">Conhecer o Indicador</a>
+                    <a href="#cta-final" class="btn-secondary">Solicitar Acesso</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <strong>100%</strong>
+                        <span>MINI ÍNDICE (WIN)</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <strong>Profit Pro</strong>
+                        <span>PLATAFORMA EXIGIDA</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <strong>Fluxo Real</strong>
+                        <span>DADOS DE AGRESSÃO</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <strong>Day Trade</strong>
+                        <span>SCALPING E SWING</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         PROBLEMA
+    =================================================== -->
+    <section id="problema">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="label">O Problema</div>
+                <h2>Por que a maioria dos traders <em>perde dinheiro</em> no WIN?</h2>
+                <p>Entrar atrasado, stopar sem motivo, depender de indicadores que já mostram o passado. Esse ciclo tem uma causa raiz.</p>
+            </div>
+
+            <div class="pain-grid">
+                <div class="pain-card fade-up">
+                    <div class="icon">⏱</div>
+                    <h3>Entradas atrasadas</h3>
+                    <p>O gráfico mostra o movimento depois que ele já aconteceu. Você entra quando os institucionais já saíram.</p>
+                </div>
+                <div class="pain-card fade-up">
+                    <div class="icon">🚫</div>
+                    <h3>Stops frequentes</h3>
+                    <p>Sem leitura do fluxo real, você não sabe distinguir ruído de movimento institucional. O stop vira rotina.</p>
+                </div>
+                <div class="pain-card fade-up">
+                    <div class="icon">📉</div>
+                    <h3>Indicadores atrasados</h3>
+                    <p>Médias móveis, RSI, MACD — todos baseados em preço. Nenhum mostra quem está executando ordens grandes agora.</p>
+                </div>
+                <div class="pain-card fade-up">
+                    <div class="icon">🔍</div>
+                    <h3>Absorção invisível</h3>
+                    <p>Grandes players absorvem agressões antes de mover o preço. Sem a leitura certa, você opera exatamente contra eles.</p>
+                </div>
+            </div>
+
+            <div class="callout-quote fade-up">
+                <p>"O preço se move porque alguém está executando ordens grandes. Quem aprende a ler o fluxo consegue enxergar o movimento antes da maioria."</p>
+                <cite>— Gustavo Guimarães, desenvolvedor do LGVG Flow</cite>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         SOLUÇÃO
+    =================================================== -->
+    <section id="solucao">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="label">A Solução</div>
+                <h2>O que o <em>LGVG Flow</em> entrega</h2>
+                <p>Desenvolvido exclusivamente para o mini índice B3, após extensos testes e validações operacionais reais.</p>
+            </div>
+
+            <div class="solution-grid">
+                <div class="solution-card fade-up">
+                    <div class="num">01</div>
+                    <h3>Leitura da Agressão</h3>
+                    <p>Analisa a pressão de compra e venda executada no mercado em tempo real — identifica quem está dominando o fluxo no momento da operação.</p>
+                </div>
+                <div class="solution-card fade-up">
+                    <div class="num">02</div>
+                    <h3>Identificação de Absorção</h3>
+                    <p>Detecta quando grandes players absorvem agressões para construir posição — os eventos que geralmente antecedem os movimentos mais fortes.</p>
+                </div>
+                <div class="solution-card fade-up">
+                    <div class="num">03</div>
+                    <h3>Visão do Fluxo Institucional</h3>
+                    <p>Enxergue o comportamento por trás do preço antes que ele fique óbvio no gráfico. Opere na mesma direção dos players que movem o mercado.</p>
+                </div>
+                <div class="solution-card fade-up">
+                    <div class="num">04</div>
+                    <h3>Timing Preciso</h3>
+                    <p>Melhore sua leitura de entrada e saída identificando início de movimentos, continuação de tendência com força real e exaustão de movimentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         TÉCNICO
+    =================================================== -->
+    <section id="tecnico">
+        <div class="container">
+            <div class="tech-layout">
+                <div class="tech-text fade-up">
+                    <div class="label">Desenvolvimento Técnico</div>
+                    <h2>Construído por quem <em>opera o mercado</em> todo dia</h2>
+                    <p>
+                        O LGVG Flow foi desenvolvido através de programação aplicada ao ambiente Profit, utilizando dados de fluxo disponíveis na plataforma — com foco exclusivo no comportamento do mini índice B3.
                     </p>
-                </div>
-
-                <h3>Por isso:</h3>
-                <div class="comparison-grid">
-                    <div class="comparison-card">
-                        <h3>👨‍💼 Já tem base?</h3>
-                        <p style="line-height: 1.8;">
-                            Pode testar só o indicador sem problema. Você já sabe interpretar os sinais e aplicar a leitura de fluxo.
-                        </p>
-                    </div>
-                    <div class="comparison-card">
-                        <h3>🎯 Ainda não tem base?</h3>
-                        <p style="line-height: 1.8;">
-                            O mais indicado é entrar direto na mentoria — porque ali você aprende desde o zero até a execução correta, evitando uso "cego" da ferramenta.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>🎯 Em Resumo</h2>
-                <div style="background: #f8f9ff; padding: 30px; border-radius: 15px; border: 2px solid #e8ecff;">
-                    <ul style="list-style: none; font-size: 1.1em; line-height: 2.2;">
-                        <li><strong>Quer só testar o indicador?</strong><br>
-                        Sem problema — enviamos por e-mail e liberamos por 60 dias.</li>
-                        <li style="margin-top: 20px;"><strong>Quer aprender de verdade e operar com estrutura?</strong><br>
-                        A mentoria entrega o método + o indicador já incluso por 1 ano.</li>
+                    <p>
+                        Não é um indicador genérico adaptado. É uma ferramenta construída do zero para as especificidades do WIN: alta frequência de negociações, presença de HFT e liquidez concentrada em níveis específicos.
+                    </p>
+                    <ul class="tech-list">
+                        <li>Dados de agressão de ordens em tempo real</li>
+                        <li>Análise de volume executado por lado</li>
+                        <li>Algoritmos próprios de filtragem de ruído</li>
+                        <li>Estrutura de leitura do fluxo otimizada para o WIN</li>
+                        <li>Calibrado para dinâmica de abertura e volatilidade do B3</li>
                     </ul>
                 </div>
-            </section>
 
-            <div class="cta-section">
-                <h2 style="font-size: 2.5em; margin-bottom: 20px;">Pronto para transformar suas operações?</h2>
-                <p style="font-size: 1.3em; margin-bottom: 10px;">
-                    Pare de operar no achismo e comece a operar com método profissional
+                <div class="tech-card fade-up">
+                    <div class="tech-card-header">
+                        <div class="tech-card-dot"></div>
+                        <span>LGVG Flow — Especificações</span>
+                    </div>
+                    <div class="tech-card-body">
+                        <div class="tech-metric">
+                            <span class="tech-metric-label">Ativo</span>
+                            <span class="tech-metric-value">Mini Índice WIN</span>
+                        </div>
+                        <div class="tech-metric">
+                            <span class="tech-metric-label">Plataforma</span>
+                            <span class="tech-metric-value">Profit Pro / Ultra</span>
+                        </div>
+                        <div class="tech-metric">
+                            <span class="tech-metric-label">Modalidade</span>
+                            <span class="tech-metric-value">Day Trade / Scalping</span>
+                        </div>
+                        <div class="tech-metric">
+                            <span class="tech-metric-label">Dados utilizados</span>
+                            <span class="tech-metric-value">Fluxo de ordens real</span>
+                        </div>
+                        <div class="tech-metric">
+                            <span class="tech-metric-label">Tipo de sinal</span>
+                            <span class="tech-metric-value">Agressão + Absorção</span>
+                        </div>
+                        <div class="tech-metric">
+                            <span class="tech-metric-label">Foco</span>
+                            <span class="tech-metric-value">Comportamento institucional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         COMPATIBILIDADE
+    =================================================== -->
+    <section id="compatibilidade">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="label">Compatibilidade</div>
+                <h2>Disponível apenas para <em>Profit Pro e Profit Ultra</em></h2>
+                <p>Algumas funcionalidades essenciais de captura de fluxo não estão disponíveis em versões inferiores da plataforma.</p>
+            </div>
+
+            <div class="compat-grid">
+                <div class="compat-card fade-up">
+                    <div class="compat-badge">Profit Pro</div>
+                    <h3>Versão compatível</h3>
+                    <p>Acesso completo a todos os dados de fluxo necessários para o funcionamento correto do indicador.</p>
+                </div>
+                <div class="compat-card fade-up">
+                    <div class="compat-badge">Profit Ultra</div>
+                    <h3>Versão compatível</h3>
+                    <p>Compatibilidade total. Para quem precisa do máximo de performance e ferramentas avançadas na plataforma.</p>
+                </div>
+            </div>
+
+            <div class="compat-notice fade-up">
+                <span class="notice-icon">⚠️</span>
+                <p>
+                    <strong style="color: var(--text);">Versões inferiores ao Profit Pro não são compatíveis.</strong><br>
+                    O indicador utiliza dados de agressão e fluxo que só estão acessíveis a partir do Profit Pro. Sem esses dados, o indicador não consegue operar corretamente.
                 </p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdH3nec0sdMpS15OdDpwI27jw399riITLsoplia8DA0DghBg/viewform" class="cta-button">Quero Começar Agora</a>
+            </div>
+        </div>
+    </section>
 
-                <!-- ===== BOTÕES WHATSAPP E COMPRA ===== -->
+
+    <!-- ===================================================
+         PARA QUEM
+    =================================================== -->
+    <section id="para-quem">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="label">Perfil Ideal</div>
+                <h2>O LGVG Flow foi criado <em>para você?</em></h2>
+                <p>O indicador é ideal para quem já tem ou está desenvolvendo base em mercado financeiro e opera o mini índice.</p>
+            </div>
+
+            <div class="audience-list">
+                <div class="audience-item fade-up">
+                    <div class="check">✓</div>
+                    <span>Traders de mini índice (WIN) na B3</span>
+                </div>
+                <div class="audience-item fade-up">
+                    <div class="check">✓</div>
+                    <span>Day traders e scalpers que buscam precisão de entrada</span>
+                </div>
+                <div class="audience-item fade-up">
+                    <div class="check">✓</div>
+                    <span>Traders que utilizam price action e fluxo de ordens</span>
+                </div>
+                <div class="audience-item fade-up">
+                    <div class="check">✓</div>
+                    <span>Usuários de Profit Pro ou Profit Ultra</span>
+                </div>
+                <div class="audience-item fade-up">
+                    <div class="check">✓</div>
+                    <span>Quem quer entender o comportamento dos players institucionais</span>
+                </div>
+                <div class="audience-item fade-up">
+                    <div class="check">✓</div>
+                    <span>Traders que desejam melhorar o timing de entrada e saída</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         COMO FUNCIONA / PREÇO
+    =================================================== -->
+    <section id="como-funciona">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="label">Investimento</div>
+                <h2>Escolha como você quer <em>começar</em></h2>
+                <p>Teste o indicador ou entre direto na mentoria completa com o LGVG Flow incluso.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Apenas indicador -->
+                <div class="pricing-card fade-up">
+                    <h3>Apenas o Indicador</h3>
+                    <p style="font-size: 0.85rem; color: var(--muted);">Teste por 60 dias</p>
+                    <div class="price-amount" style="font-size: 2rem;">Consulte</div>
+                    <div class="price-note">Enviado por e-mail após contato</div>
+                    <ul class="pricing-features">
+                        <li>Indicador LGVG Flow por 60 dias</li>
+                        <li>Acesso imediato por e-mail</li>
+                        <li>Ideal para quem já tem base em fluxo</li>
+                        <li>Sem compromisso com a mentoria</li>
+                    </ul>
+                    <a
+                        href="https://wa.me/5534988977879?text=Mentoria%20e%20indicador%20LGVG%20Flow"
+                        class="btn-secondary"
+                        style="display:block; text-align:center;"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Solicitar via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mentoria + indicador -->
+                <div class="pricing-card featured fade-up">
+                    <h3>Mentoria + Indicador</h3>
+                    <p style="font-size: 0.85rem; color: var(--muted);">Pacote completo</p>
+                    <div class="price-amount">R$ 1.000</div>
+                    <div class="price-note">Pagamento único · Indicador incluso por 12 meses</div>
+                    <ul class="pricing-features">
+                        <li>Indicador LGVG Flow por 12 meses</li>
+                        <li>Como abrir conta na corretora</li>
+                        <li>Gestão básica de risco</li>
+                        <li>Leitura de fluxo de ordens completa</li>
+                        <li>Agressão, absorção, oferta e demanda</li>
+                        <li>Uso prático do LGVG Flow</li>
+                        <li>Após 1 ano: apenas R$ 100/mês (opcional)</li>
+                    </ul>
+                    <a
+                        href="https://chk.eduzz.com/D0RAN6E29Y"
+                        class="btn-primary"
+                        style="display:block; text-align:center;"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Comprar Agora
+                    </a>
+                </div>
+            </div>
+
+            <div class="callout-quote fade-up" style="margin-top: 0;">
+                <p>🧠 A mentoria entrega o mapa. O indicador entrega a bússola.<br>
+                <strong style="color: var(--gold);">Sem mapa, a bússola não adianta.</strong></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         DESENVOLVEDOR
+    =================================================== -->
+    <section id="desenvolvedor">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="label">Quem Desenvolveu</div>
+                <h2>Feito por quem <em>opera todo dia</em></h2>
+            </div>
+
+            <div class="dev-layout fade-up">
+                <div class="dev-avatar-wrap">📊</div>
+                <div class="dev-info">
+                    <h3>Gustavo Guimarães</h3>
+                    <span class="dev-role">Trader · Especialista em Fluxo de Ordens · Mentor</span>
+                    <p>
+                        Após anos estudando o comportamento do mercado e operando mini dólar e mini índice na B3, Gustavo desenvolveu o LGVG Flow para resolver um problema real que ele mesmo enfrentava: a ausência de uma ferramenta especializada em fluxo de ordens para o WIN.
+                    </p>
+                    <p style="margin-top: 12px;">
+                        O resultado é um indicador criado por quem opera o mercado no dia a dia — não por quem apenas estudou os dados de fora.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         CTA FINAL
+    =================================================== -->
+    <section id="cta-final">
+        <div class="container">
+            <div class="cta-box fade-up">
+                <div class="label">Próximo Passo</div>
+                <h2>Pronto para <em>enxergar o fluxo</em>?</h2>
+                <p>
+                    Pare de operar no achismo e comece a ler o mercado da forma como os players institucionais realmente movimentam o preço.
+                </p>
+
+                <!-- ===== BOTÃO LEGADO: Google Forms ===== -->
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfdH3nec0sdMpS15OdDpwI27jw399riITLsoplia8DA0DghBg/viewform"
+                    class="btn-primary"
+                    style="display:inline-block; margin-bottom: 28px; font-size: 1.05rem; padding: 18px 48px;"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Solicitar informações sobre o LGVG Flow
+                </a>
+
+                <!-- ===== BOTÕES WHATSAPP E COMPRA (preservados do original) ===== -->
                 <div class="dual-buttons">
                     <a
                         href="https://wa.me/5534988977879?text=Mentoria%20e%20indicador%20LGVG%20Flow"
@@ -558,20 +1498,24 @@
                         🛒 Comprar Agora — R$ 1.000
                     </a>
                 </div>
-                <!-- ===== FIM BOTÕES WHATSAPP E COMPRA ===== -->
             </div>
-
         </div>
-    </div>
+    </section>
 
+
+    <!-- ===================================================
+         FOOTER
+    =================================================== -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 LGVG Flow - Todos os direitos reservados</p>
-            <p style="margin-top: 10px; opacity: 0.8;">Opere com estrutura. Opere com profissionalismo.</p>
+            <span class="footer-brand">LGVG Flow</span>
+            <p>&copy; 2025 LGVG Flow · Todos os direitos reservados</p>
+            <p style="margin-top: 6px;">Opere com estrutura. Opere com profissionalismo.</p>
         </div>
     </footer>
 
-    <!-- ===== BOTÃO FLUTUANTE WHATSAPP ===== -->
+
+    <!-- ===== BOTÃO FLUTUANTE WHATSAPP (preservado do original) ===== -->
     <a
         href="https://wa.me/5534988977879?text=Mentoria%20e%20indicador%20LGVG%20Flow"
         class="whatsapp-float"
@@ -585,6 +1529,33 @@
         Falar no WhatsApp
     </a>
     <!-- ===== FIM BOTÃO FLUTUANTE WHATSAPP ===== -->
+
+
+    <!-- ===================================================
+         JS — Scroll animations
+    =================================================== -->
+    <script>
+        // Fade-up on scroll (IntersectionObserver)
+        const fadeEls = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    // stagger siblings in same parent
+                    const siblings = entry.target.parentElement.querySelectorAll('.fade-up');
+                    let delay = 0;
+                    siblings.forEach((el, idx) => {
+                        if (el === entry.target) delay = idx * 80;
+                    });
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, delay);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        fadeEls.forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
