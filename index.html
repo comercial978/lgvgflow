@@ -1046,6 +1046,73 @@
         }
 
         /* =========================================================
+           DEMO VIDEO
+        ========================================================= */
+        #demo-video {
+            background: var(--bg-2);
+            padding: 100px 0;
+        }
+
+        .video-wrapper {
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .video-glow {
+            position: absolute;
+            inset: -30px;
+            background: radial-gradient(ellipse at center, rgba(245,200,66,0.12) 0%, transparent 65%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .video-frame {
+            position: relative;
+            z-index: 1;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 24px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(245,200,66,0.1);
+            /* 9:16 aspect ratio for Shorts */
+            aspect-ratio: 9 / 16;
+        }
+
+        .video-frame iframe {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: none;
+        }
+
+        .video-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245,200,66,0.08);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 6px 16px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 0.06em;
+            margin-bottom: 12px;
+        }
+
+        .video-badge::before {
+            content: '';
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: var(--gold);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @media (max-width: 480px) {
+            .video-wrapper { max-width: 100%; }
+        }
+
+        /* =========================================================
            RESPONSIVE
         ========================================================= */
         @media (max-width: 768px) {
@@ -1132,6 +1199,33 @@
                         <strong>Day Trade</strong>
                         <span>SCALPING E SWING</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
+         DEMO VIDEO — LGVG Flow em ação
+    =================================================== -->
+    <section id="demo-video">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="label">Demonstração</div>
+                <h2>Veja o <em>LGVG Flow</em> em ação</h2>
+                <p>Assista como o indicador lê o fluxo institucional em tempo real e entrega informação antes que o preço se mova.</p>
+            </div>
+
+            <div class="video-wrapper fade-up">
+                <div class="video-glow"></div>
+                <div class="video-badge">▶ Demonstração real do indicador</div>
+                <div class="video-frame">
+                    <iframe
+                        src="https://www.youtube.com/embed/BKrsKYGemhg?rel=0&modestbranding=1&playsinline=1"
+                        title="LGVG Flow — Demonstração do Indicador"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
                 </div>
             </div>
         </div>
