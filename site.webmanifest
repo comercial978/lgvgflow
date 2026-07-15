@@ -1,0 +1,9 @@
+{
+  "name": "LGVG Flow",
+  "short_name": "LGVG Flow",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#090B10",
+  "theme_color": "#090B10",
+  "lang": "pt-BR"
+}
