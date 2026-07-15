@@ -16,7 +16,7 @@ const feeds = [
     },
     {
         category: 'Expectativas de mercado',
-        source: 'Relatorio Focus - Banco Central do Brasil',
+        source: 'Relatório Focus - Banco Central do Brasil',
         url: 'https://www.bcb.gov.br/api/feed/sitebcb/sitefeeds/focus',
         limit: 4
     }
@@ -115,7 +115,7 @@ const renderNewsCards = (items) => items.map((item) => `
                     <h2>${htmlEscape(item.title)}</h2>
                     <p class="news-summary">${htmlEscape(item.summary)}</p>
                     <p class="news-source">Fonte: ${htmlEscape(item.source)}</p>
-                    <a href="${htmlEscape(item.url)}" target="_blank" rel="noopener noreferrer">Ler publicacao original</a>
+                    <a href="${htmlEscape(item.url)}" target="_blank" rel="noopener noreferrer">Ler publicação original</a>
                 </article>`).join('');
 
 const renderNewsPage = (items, updatedAt) => `<!DOCTYPE html>
@@ -123,13 +123,13 @@ const renderNewsPage = (items, updatedAt) => `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias do Mercado Financeiro | LGVG Flow</title>
-    <meta name="description" content="Radar de mercado do LGVG Flow com comunicados do Banco Central do Brasil e Relatorio Focus atualizados automaticamente.">
+    <title>Notícias do Mercado Financeiro | LGVG Flow</title>
+    <meta name="description" content="Radar de mercado do LGVG Flow com comunicados do Banco Central do Brasil e Relatório Focus atualizados automaticamente.">
     <meta name="robots" content="index, follow, max-snippet:-1">
     <link rel="canonical" href="${siteUrl}/noticias/">
     <link rel="alternate" hreflang="pt-BR" href="${siteUrl}/noticias/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Noticias do Mercado Financeiro | LGVG Flow">
+    <meta property="og:title" content="Notícias do Mercado Financeiro | LGVG Flow">
     <meta property="og:description" content="Comunicados e expectativas de mercado atualizados diretamente pela fonte oficial.">
     <meta property="og:url" content="${siteUrl}/noticias/">
     <meta property="og:site_name" content="LGVG Flow">
@@ -138,7 +138,7 @@ const renderNewsPage = (items, updatedAt) => `<!DOCTYPE html>
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "Noticias do Mercado Financeiro",
+      "name": "Notícias do Mercado Financeiro",
       "url": "${siteUrl}/noticias/",
       "description": "Radar de mercado com comunicados e expectativas publicados pelo Banco Central do Brasil.",
       "inLanguage": "pt-BR",
@@ -180,15 +180,15 @@ const renderNewsPage = (items, updatedAt) => `<!DOCTYPE html>
     </header>
     <main class="container">
         <p class="eyebrow">Radar de Mercado</p>
-        <h1>Noticias do mercado financeiro</h1>
-        <p class="intro">Comunicados e expectativas que ajudam a acompanhar o contexto do mercado. Os links levam sempre a publicacao original.</p>
+        <h1>Notícias do Mercado Financeiro</h1>
+        <p class="intro">Comunicados e expectativas que ajudam a acompanhar o contexto do mercado. Os links levam sempre à publicação original.</p>
         <p class="updated">Atualizado em ${htmlEscape(formatDate(updatedAt))}.</p>
-        <section class="news-grid" aria-label="Noticias mais recentes">
+        <section class="news-grid" aria-label="Notícias mais recentes">
 ${renderNewsCards(items)}
         </section>
-        <p class="notice">Este radar e informativo e nao constitui recomendacao de investimento. Operacoes no mercado financeiro envolvem riscos.</p>
+        <p class="notice">Este radar é informativo e não constitui recomendação de investimento. Operações no mercado financeiro envolvem riscos.</p>
     </main>
-    <footer><div class="container">LGVG Flow | Dados e publicacoes atribuidos ao Banco Central do Brasil.</div></footer>
+    <footer><div class="container">LGVG Flow | Dados e publicações atribuídos ao Banco Central do Brasil.</div></footer>
 </body>
 </html>
 `;
@@ -216,7 +216,7 @@ const uniqueItems = [...new Map(results.flat()
     .map((item) => [item.url, item])).values()];
 
 if (!uniqueItems.length) {
-    throw new Error('Nenhuma noticia foi encontrada nos feeds oficiais.');
+    throw new Error('Nenhuma notícia foi encontrada nos feeds oficiais.');
 }
 
 const updatedAt = new Date().toISOString();
@@ -237,4 +237,4 @@ await Promise.all([
     writeFile(path.join(rootDir, 'sitemap.xml'), renderSitemap(updatedAt))
 ]);
 
-console.log(`Atualizadas ${uniqueItems.length} noticias em ${updatedAt}.`);
+console.log(`Atualizadas ${uniqueItems.length} notícias em ${updatedAt}.`);
