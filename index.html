@@ -204,6 +204,8 @@
 
         .nav-link:hover { color: var(--gold); }
 
+        .nav-test-short { display: none; }
+
         .nav-cta {
             background: var(--gold);
             color: #000;
@@ -983,6 +985,8 @@
             margin-bottom: 22px;
         }
 
+        .download-card p strong { color: var(--text); }
+
         .download-button {
             display: inline-flex;
             align-items: center;
@@ -1441,6 +1445,10 @@
 
             .nav-news { display: none; }
 
+            .nav-test-long { display: none; }
+
+            .nav-test-short { display: inline; }
+
             .nav-cta {
                 font-size: 0.78rem;
                 padding: 9px 12px;
@@ -1568,7 +1576,10 @@
             <a href="#hero" class="nav-logo">LGVG <span>Flow</span></a>
             <div class="nav-actions">
                 <a href="/noticias/" class="nav-link nav-news">Notícias</a>
-                <a href="#downloads" class="nav-link">Downloads</a>
+                <a href="#downloads" class="nav-link" aria-label="Teste o Indicador">
+                    <span class="nav-test-long">Teste o Indicador</span>
+                    <span class="nav-test-short">Teste</span>
+                </a>
                 <a href="#cta-final" class="nav-cta"><span class="nav-cta-long">Solicitar </span>Acesso</a>
             </div>
         </div>
@@ -1992,41 +2003,41 @@
     <section id="downloads">
         <div class="container">
             <div class="section-header fade-up">
-                <div class="label">Arquivos oficiais</div>
-                <h2>Downloads do <em>LGVG Flow</em></h2>
-                <p>Baixe o indicador atual e consulte o manual antes de realizar a importação na plataforma.</p>
+                <div class="label">Experimente na prática</div>
+                <h2>Teste o LGVG Flow por <em>60 dias</em></h2>
+                <p>Baixe o indicador oficial, instale no Profit Pro ou Profit Ultra e experimente uma leitura de fluxo mais clara para operar o mini índice.</p>
             </div>
 
             <div class="download-grid">
                 <article class="download-card fade-up">
                     <div class="download-file-type" aria-hidden="true">PSF</div>
-                    <h3>LGVGFLOWATUAL.psf</h3>
-                    <p>Arquivo do indicador que deve ser importado no Profit Pro ou Profit Ultra.</p>
+                    <h3>Comece seu teste agora</h3>
+                    <p>Baixe <strong>LGVGFLOWATUAL.psf</strong> e leve a leitura de agressão, absorção e regiões de liquidez para o seu gráfico.</p>
                     <a
                         href="/download/LGVGFLOWATUAL.psf"
                         class="download-button"
                         download="LGVGFLOWATUAL.psf"
                     >
-                        Baixar indicador
+                        Baixar para testar
                     </a>
                 </article>
 
                 <article class="download-card fade-up">
                     <div class="download-file-type" aria-hidden="true">PDF</div>
-                    <h3>Manual do Usuário LGVG Flow</h3>
-                    <p>Guia didático de instalação, configuração, leitura dos sinais e gestão operacional.</p>
+                    <h3>Instalação simples e guiada</h3>
+                    <p>Siga o manual profissional para importar, configurar e começar a interpretar os sinais com segurança.</p>
                     <a
                         href="/manual/Manual_do_Usuario_LGVG_Flow.pdf"
                         class="download-button secondary"
                         download="Manual_do_Usuario_LGVG_Flow.pdf"
                     >
-                        Baixar manual em PDF
+                        Baixar guia de instalação
                     </a>
                 </article>
             </div>
 
             <p class="download-note fade-up">
-                Compatibilidade: Profit Pro ou Profit Ultra. O indicador não envia ordens automaticamente.
+                Teste por 60 dias. Arquivo oficial para Profit Pro ou Profit Ultra. Você continua no controle: o indicador não envia ordens automaticamente.
             </p>
         </div>
     </section>
