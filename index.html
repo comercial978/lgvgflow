@@ -1181,6 +1181,37 @@
             display: block;
         }
 
+        .footer-social {
+            max-width: 340px;
+            margin: 22px auto 0;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-social-title {
+            margin-bottom: 6px;
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
+        .footer-instagram {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            color: var(--gold);
+            font-size: 0.82rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-instagram:hover { color: #fff; }
+
+        .footer-instagram svg {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+        }
+
         /* =========================================================
            DIVIDER
         ========================================================= */
@@ -2130,6 +2161,23 @@
             <span class="footer-brand">LGVG Flow</span>
             <p>&copy; 2025 LGVG Flow · Todos os direitos reservados</p>
             <p style="margin-top: 6px;">Opere com estrutura. Opere com profissionalismo.</p>
+            <div class="footer-social">
+                <p class="footer-social-title">Acompanhe conteúdos e novidades</p>
+                <a
+                    class="footer-instagram"
+                    href="https://www.instagram.com/lgustavovguimaraes/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram de Gustavo Guimarães: @lgustavovguimaraes (abre em nova aba)"
+                >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
+                    <span>Instagram: <strong>@lgustavovguimaraes</strong></span>
+                </a>
+            </div>
         </div>
     </footer>
 
