@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-07-17T20:42:23.179Z",
+  "updatedAt": "2026-07-20T13:00:08.965Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 17/07/2026",
+      "publishedAt": "2026-07-17T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/17072026"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -65,14 +73,6 @@
       "publishedAt": "2026-06-19T16:01:50-03:00",
       "summary": "​O Banco Central (BC) alterou as regras do Pix por aproximação e retirou o teto fixo de R$500 que vigorava para esse tipo de pagamento. Pela Instrução Normativa BCB 746, publicada em 17 de junho, as transações por...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21169/noticia"
-    },
-    {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 19/06/2026",
-      "publishedAt": "2026-06-19T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/19062026"
     },
     {
       "category": "Banco Central",
