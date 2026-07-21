@@ -1122,6 +1122,162 @@
             box-shadow: 0 14px 35px rgba(245,200,66,0.45);
         }
 
+        /* =========================================================
+           ECOSSISTEMA
+        ========================================================= */
+        #ecosystem {
+            background: var(--bg-2);
+            border-top: 1px solid var(--border);
+            padding: 88px 0 72px;
+        }
+
+        .ecosystem-header {
+            max-width: 780px;
+            margin: 0 auto 36px;
+            text-align: center;
+        }
+
+        .ecosystem-header h2 {
+            margin-bottom: 18px;
+            color: #fff;
+            font-size: 2.7rem;
+            font-weight: 800;
+        }
+
+        .ecosystem-header h2 em {
+            color: var(--gold);
+            font-style: normal;
+        }
+
+        .ecosystem-lead {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 1.08rem;
+            line-height: 1.6;
+        }
+
+        .ecosystem-copy {
+            color: var(--muted);
+            font-size: 0.96rem;
+            line-height: 1.65;
+        }
+
+        .ecosystem-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        .ecosystem-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 0;
+            height: 120px;
+            min-height: 120px;
+            padding: 24px 18px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+        }
+
+        .ecosystem-card:hover {
+            background: rgba(255, 255, 255, 0.055);
+            border-color: rgba(245, 200, 66, 0.32);
+            transform: translateY(-2px);
+        }
+
+        .ecosystem-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            min-width: 0;
+            filter: grayscale(1);
+            opacity: 0.58;
+            transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .ecosystem-card:hover .ecosystem-brand {
+            filter: grayscale(0);
+            opacity: 1;
+            transform: scale(1.025);
+        }
+
+        .ecosystem-brand--image img {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            max-height: 50px;
+            object-fit: contain;
+        }
+
+        .ecosystem-brand--b3 img { max-height: 60px; }
+
+        .ecosystem-card .ecosystem-brand--b3 {
+            filter: grayscale(1) brightness(1.65);
+            opacity: 0.72;
+        }
+
+        .ecosystem-card:hover .ecosystem-brand--b3 {
+            filter: grayscale(0) brightness(1.35);
+            opacity: 1;
+        }
+
+        .ecosystem-brand--profit img {
+            width: 100%;
+            max-width: 164px;
+            max-height: 54px;
+        }
+
+        .ecosystem-brand--profit { width: 100%; }
+
+        .ecosystem-wordmark {
+            gap: 10px;
+            color: #fff;
+            text-align: left;
+        }
+
+        .ecosystem-wordmark img {
+            width: 42px;
+            height: 42px;
+            flex: 0 0 42px;
+            object-fit: contain;
+        }
+
+        .ecosystem-brand--genial img { border-radius: 4px; }
+
+        .ecosystem-wordmark strong {
+            display: block;
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            line-height: 1.05;
+        }
+
+        .ecosystem-wordmark small {
+            display: block;
+            margin-top: 3px;
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.68rem;
+            line-height: 1;
+        }
+
+        .ecosystem-disclaimer {
+            max-width: 940px;
+            margin: 26px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: #6f737b;
+            font-size: 0.72rem;
+            font-style: italic;
+            line-height: 1.65;
+            text-align: center;
+        }
+
         /* ===== BOTÃO FLUTUANTE WHATSAPP (preservado do original) ===== */
         .whatsapp-float {
             position: fixed;
@@ -1144,7 +1300,8 @@
         }
 
         .whatsapp-float.news-active,
-        .whatsapp-float.downloads-active {
+        .whatsapp-float.downloads-active,
+        .whatsapp-float.ecosystem-active {
             opacity: 0;
             pointer-events: none;
         }
@@ -1581,6 +1738,12 @@
                 align-items: flex-start;
                 flex-direction: column;
             }
+
+            .ecosystem-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .ecosystem-header h2 { font-size: 2.15rem; }
         }
 
         @media (max-width: 480px) {
@@ -1594,6 +1757,50 @@
             }
 
             .whatsapp-float .whatsapp-label { display: none; }
+
+            #ecosystem { padding-bottom: 60px; }
+
+            .ecosystem-header { margin-bottom: 28px; }
+
+            .ecosystem-header h2 { font-size: 1.85rem; }
+
+            .ecosystem-lead { font-size: 1rem; }
+
+            .ecosystem-grid { gap: 10px; }
+
+            .ecosystem-card {
+                height: 107px;
+                min-height: 107px;
+                padding: 18px 12px;
+            }
+
+            .ecosystem-brand--profit img { max-width: 130px; }
+
+            .ecosystem-wordmark {
+                flex-direction: column;
+                gap: 7px;
+                text-align: center;
+            }
+
+            .ecosystem-wordmark img {
+                width: 34px;
+                height: 34px;
+                flex-basis: 34px;
+            }
+
+            .ecosystem-wordmark strong { font-size: 0.9rem; }
+
+            .ecosystem-wordmark small { font-size: 0.61rem; }
+
+            .ecosystem-disclaimer {
+                margin-top: 22px;
+                font-size: 0.68rem;
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .ecosystem-header h2 { font-size: 1.55rem; }
         }
 </style>
 </head>
@@ -2154,6 +2361,60 @@
 
 
     <!-- ===================================================
+         ECOSSISTEMA DO LGVG FLOW
+    =================================================== -->
+    <section id="ecosystem" aria-labelledby="ecosystem-title">
+        <div class="container">
+            <div class="ecosystem-header fade-up">
+                <div class="label">Ambiente profissional</div>
+                <h2 id="ecosystem-title">Ecossistema do <em>LGVG Flow</em></h2>
+                <p class="ecosystem-lead">
+                    <strong>O LGVG Flow faz parte do ecossistema utilizado diariamente por traders profissionais.</strong>
+                </p>
+                <p class="ecosystem-copy">
+                    Desenvolvido para operar de forma integrada às principais tecnologias do mercado financeiro brasileiro.
+                </p>
+            </div>
+
+            <div class="ecosystem-grid fade-up" aria-label="Tecnologias e marcas do ecossistema de mercado">
+                <div class="ecosystem-card">
+                    <div class="ecosystem-brand ecosystem-brand--image ecosystem-brand--b3">
+                        <img src="assets/ecosystem/b3.png" alt="B3 - Brasil, Bolsa, Balcão" width="101" height="74" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-brand ecosystem-wordmark ecosystem-brand--nelogica" role="img" aria-label="Nelogica">
+                        <img src="assets/ecosystem/nelogica-symbol.webp" alt="" width="551" height="551" loading="lazy">
+                        <strong>Nelogica</strong>
+                    </div>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-brand ecosystem-brand--image ecosystem-brand--profit">
+                        <img src="assets/ecosystem/profit.webp" alt="Profit, da Nelogica" width="811" height="288" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-brand ecosystem-wordmark ecosystem-brand--genial" role="img" aria-label="Genial Investimentos">
+                        <img src="assets/ecosystem/genial.webp" alt="" width="256" height="256" loading="lazy">
+                        <span>
+                            <strong>Genial</strong>
+                            <small>Investimentos</small>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="ecosystem-disclaimer fade-up">
+                O LGVG Flow é um indicador independente e compatível com a plataforma Profit. As marcas B3, Nelogica, Profit e Genial pertencem aos seus respectivos proprietários e são mencionadas exclusivamente para indicar compatibilidade e integração ao ecossistema do mercado financeiro, não caracterizando parceria comercial, endosso ou afiliação oficial.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ===================================================
          FOOTER
     =================================================== -->
     <footer>
@@ -2242,6 +2503,7 @@
 
         const newsSection = document.getElementById('noticias');
         const downloadsSection = document.getElementById('downloads');
+        const ecosystemSection = document.getElementById('ecosystem');
         const whatsappFloat = document.querySelector('.whatsapp-float');
 
         if (newsSection && whatsappFloat) {
@@ -2258,6 +2520,14 @@
             }, { threshold: 0.05 });
 
             downloadsVisibility.observe(downloadsSection);
+        }
+
+        if (ecosystemSection && whatsappFloat) {
+            const ecosystemVisibility = new IntersectionObserver(([entry]) => {
+                whatsappFloat.classList.toggle('ecosystem-active', entry.isIntersecting);
+            }, { threshold: 0.05 });
+
+            ecosystemVisibility.observe(ecosystemSection);
         }
 
         // Fade-up on scroll (IntersectionObserver)
