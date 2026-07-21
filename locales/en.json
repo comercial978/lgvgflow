@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "LGVG Flow | Order Flow Indicator for B3 Mini Index",
+    "description": "Order flow indicator for WIN mini index traders. Read aggression, absorption and institutional pressure on Profit Pro and Profit Ultra.",
+    "keywords": ["mini index", "order flow", "WIN indicator", "B3", "Profit Pro", "day trading"],
+    "ogTitle": "LGVG Flow | Read order flow with greater clarity",
+    "ogDescription": "Advanced institutional order flow reading for mini index traders."
+  },
+  "language": {
+    "selector": "Select language",
+    "current": "Current language",
+    "names": { "pt": "Português (Brasil)", "en": "English", "es": "Español" },
+    "detected": "We detected that your language is {language}.",
+    "question": "Would you like to use this version?",
+    "yes": "Yes, change language",
+    "continue": "Continue in Portuguese",
+    "never": "Never ask again"
+  },
+  "nav": { "news": "Market News", "test": "Test the Indicator", "access": "Request Access", "menu": "Main navigation" },
+  "hero": {
+    "eyebrow": "Proprietary indicator for the B3 mini index",
+    "title": "LGVG Flow",
+    "headline": { "prefix": "See the market through the eyes of ", "highlight": "institutional players", "suffix": "." },
+    "description": "An order flow indicator designed to reveal institutional activity before it becomes clear in price action.",
+    "primary": "Explore the Indicator",
+    "secondary": "Request Access",
+    "stats": [{ "value": "WIN", "label": "B3 mini index" }, { "value": "Flow", "label": "Real-time reading" }, { "value": "Profit", "label": "Pro and Ultra" }]
+  },
+  "video": {
+    "label": "Demonstration",
+    "title": { "prefix": "See ", "highlight": "LGVG Flow", "suffix": " in action" },
+    "description": "See how the indicator organizes aggression, absorption and liquidity regions directly on the chart.",
+    "badge": "Real indicator demonstration",
+    "play": "Watch demonstration",
+    "aria": "Play the LGVG Flow indicator demonstration",
+    "imageAlt": "LGVG Flow applied to a mini index chart in Profit",
+    "iframeTitle": "LGVG Flow — Indicator Demonstration"
+  },
+  "news": {
+    "label": "Market Radar",
+    "title": { "prefix": "News that helps you ", "highlight": "read the context", "suffix": "" },
+    "description": "Announcements and market expectations published directly by the Central Bank of Brazil.",
+    "updated": "Automatically updated on business days.",
+    "all": "View all market news",
+    "read": "Read at source",
+    "source": "Source",
+    "sourceLanguage": "The official publications from this source are available in Portuguese.",
+    "empty": "The news feed is being updated. Please check again shortly.",
+    "pageTitle": "Financial Market News",
+    "pageIntro": "Follow announcements and expectations that help explain the current market context.",
+    "back": "Back to LGVG Flow",
+    "notice": "This market radar is informational and does not constitute investment advice."
+  },
+  "problem": {
+    "label": "The Problem",
+    "title": { "prefix": "Why do so many traders ", "highlight": "lose money", "suffix": " on WIN?" },
+    "description": "Late entries and price-only indicators hide what is actually moving the market.",
+    "cards": [
+      { "title": "Late entries", "text": "The chart shows the move after it happens. You enter when institutional players may already be leaving." },
+      { "title": "Frequent stop-outs", "text": "Without order flow context, separating noise from institutional movement becomes harder." },
+      { "title": "Lagging indicators", "text": "Moving averages, RSI and MACD use past price and do not show who is executing now." },
+      { "title": "Hidden absorption", "text": "Large participants can absorb aggressive orders before moving price." }
+    ],
+    "quote": "Price moves because someone is executing large orders. Learning to read flow creates a clearer view of that movement.",
+    "quoteBy": "Gustavo Guimarães, creator of LGVG Flow"
+  },
+  "solution": {
+    "label": "The Solution",
+    "title": { "prefix": "What ", "highlight": "LGVG Flow", "suffix": " delivers" },
+    "description": "Built for the B3 mini index after extensive operational testing and validation.",
+    "cards": [
+      { "title": "Aggression Reading", "text": "Analyzes executed buying and selling pressure in real time." },
+      { "title": "Absorption Detection", "text": "Helps identify when large participants absorb aggressive orders to build positions." },
+      { "title": "Institutional Flow View", "text": "Organizes the behavior behind price before it becomes evident on the chart." },
+      { "title": "Clearer Timing", "text": "Supports the reading of entries, continuation and exhaustion." }
+    ]
+  },
+  "technical": {
+    "label": "Technical Development",
+    "title": { "prefix": "Built by someone who ", "highlight": "trades the market", "suffix": "" },
+    "paragraphs": ["LGVG Flow was developed inside Profit using the order flow data provided by the platform.", "Its logic was calibrated for the mini index with an emphasis on visual clarity and decision support."],
+    "features": ["Real-time aggression reading", "Liquidity region mapping", "Visual buy and sell signals", "Calibrated for WIN dynamics"],
+    "specsTitle": "LGVG Flow — Specifications",
+    "specs": [{ "label": "Instrument", "value": "Mini index (WIN)" }, { "label": "Platform", "value": "Profit Pro / Ultra" }, { "label": "Data", "value": "Order flow" }, { "label": "File", "value": "LGVGFLOWATUAL.psf" }]
+  },
+  "compatibility": {
+    "label": "Compatibility",
+    "title": { "prefix": "Available for ", "highlight": "Profit Pro and Profit Ultra", "suffix": "" },
+    "description": "The indicator uses aggression and flow data that lower versions do not provide.",
+    "cards": [{ "name": "Profit Pro", "title": "Compatible version", "text": "Access to the data required for the indicator to work." }, { "name": "Profit Ultra", "title": "Compatible version", "text": "Full compatibility with the platform's advanced tools." }],
+    "noticeTitle": "Versions below Profit Pro are not compatible.",
+    "noticeText": "Without order flow data, the indicator cannot work correctly."
+  },
+  "audience": {
+    "label": "Ideal Profile",
+    "title": { "prefix": "Was LGVG Flow built ", "highlight": "for you?", "suffix": "" },
+    "description": "Designed for mini index traders who are developing their market reading.",
+    "items": ["B3 mini index (WIN) traders", "Day traders and scalpers", "Price action and order flow users", "Profit Pro or Ultra users", "Traders studying institutional activity", "Traders looking to refine entries and exits"]
+  },
+  "faq": {
+    "label": "Frequently Asked Questions",
+    "title": { "prefix": "What to know before ", "highlight": "you trade", "suffix": "" },
+    "items": [
+      { "question": "Does LGVG Flow work with every Profit version?", "answer": "No. It was developed for Profit Pro and Profit Ultra, which provide the required flow data." },
+      { "question": "Which instrument is the indicator focused on?", "answer": "It focuses on the WIN mini index traded on B3." },
+      { "question": "Does the indicator guarantee day-trading results?", "answer": "No. It supports market reading, but trading involves risk and requires risk management." }
+    ]
+  },
+  "pricing": {
+    "label": "Investment",
+    "title": { "prefix": "Choose how you want to ", "highlight": "get started", "suffix": "" },
+    "description": "Test the indicator or start with the complete mentoring package.",
+    "indicator": { "title": "Indicator Only", "subtitle": "60-day trial", "price": "Contact us", "note": "Official file for Profit Pro and Ultra", "features": ["LGVG Flow", "Complete manual", "60-day trial"], "button": "Test the indicator" },
+    "mentoring": { "badge": "Complete package", "title": "Mentoring + Indicator", "subtitle": "Full package", "price": "BRL 1,000", "note": "One-time payment · Indicator for 12 months", "features": ["Individual mentoring", "LGVG Flow", "Operational support"], "button": "Buy now" },
+    "quote": "Mentoring provides the map. The indicator provides the compass.",
+    "quoteHighlight": "A compass is not enough without a map."
+  },
+  "downloads": {
+    "label": "Try It in Practice",
+    "title": { "prefix": "Test LGVG Flow for ", "highlight": "60 days", "suffix": "" },
+    "description": "Download the official indicator and follow the installation manual.",
+    "indicatorTitle": "Start your trial now",
+    "indicatorText": "Import LGVGFLOWATUAL.psf into Profit Pro or Profit Ultra.",
+    "indicatorButton": "Download trial",
+    "manualTitle": "Simple, guided installation",
+    "manualText": "Use the manual to configure the indicator and interpret its signals.",
+    "manualButton": "Open manual",
+    "note": "The indicator does not place orders automatically."
+  },
+  "developer": {
+    "label": "The Creator",
+    "title": { "prefix": "Built by someone who ", "highlight": "trades every day", "suffix": "" },
+    "name": "Gustavo Guimarães",
+    "role": "Trader · Order Flow Specialist · Mentor",
+    "paragraphs": ["LGVG Flow was born from daily mini index practice and the need to organize flow information on the chart.", "The result is a tool designed to support more informed trading decisions."]
+  },
+  "cta": {
+    "label": "Next Step",
+    "title": { "prefix": "Ready to ", "highlight": "see the flow", "suffix": "?" },
+    "description": "Start looking at the market with more context and structure.",
+    "info": "Request information",
+    "whatsapp": "Talk on WhatsApp",
+    "buy": "Buy now — BRL 1,000",
+    "whatsappMessage": "Hello, I would like to learn more about LGVG Flow mentoring and the indicator."
+  },
+  "ecosystem": {
+    "label": "Professional Environment",
+    "title": { "prefix": "The ", "highlight": "LGVG Flow", "suffix": " ecosystem" },
+    "lead": "LGVG Flow is part of the technology ecosystem used daily by professional traders.",
+    "text": "Designed to work with key technologies in the Brazilian financial market.",
+    "disclaimer": "LGVG Flow is an independent indicator compatible with the Profit platform. B3, Nelogica, Profit and Genial are the property of their respective owners and are mentioned solely to indicate compatibility, without implying partnership, endorsement or official affiliation."
+  },
+  "footer": {
+    "rights": "All rights reserved", "tagline": "Trade with structure. Trade professionally.", "socialTitle": "Follow content and updates", "instagram": "Gustavo Guimarães on Instagram", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "manual": "Manual"
+  },
+  "manual": {
+    "metaTitle": "LGVG Flow User Manual", "metaDescription": "Installation and usage guide for LGVG Flow on Profit Pro and Profit Ultra.", "label": "User guide", "title": "LGVG Flow Manual", "intro": "Learn how to import, configure and interpret the indicator safely.",
+    "requirementsTitle": "Before you begin", "requirements": ["Profit Pro or Profit Ultra installed", "LGVGFLOWATUAL.psf file", "Account with access to order flow data"],
+    "stepsTitle": "Installation", "steps": [{ "title": "Download the file", "text": "Save the official indicator file in an easy-to-find folder." }, { "title": "Import into Profit", "text": "Open the strategy manager and import LGVGFLOWATUAL.psf." }, { "title": "Add it to the chart", "text": "Open a WIN chart and add LGVG Flow to the indicators." }, { "title": "Start in simulation", "text": "Validate your reading and risk management before trading a live account." }],
+    "riskTitle": "Risk management", "riskText": "For one contract, the educational example uses a target and stop of up to 250 points, always subject to the trader's risk profile. Results are not guaranteed.", "pdf": "Download the complete PDF manual", "indicator": "Download indicator", "back": "Back to website"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy | LGVG Flow", "metaDescription": "Learn how LGVG Flow handles data and browsing preferences.", "title": "Privacy Policy", "updated": "Last updated: July 21, 2026",
+    "sections": [{ "title": "Data collected", "text": "The website may store language preferences in your browser. External forms follow their providers' policies." }, { "title": "Purpose", "text": "Information is used to answer enquiries, provide requested materials and improve the website experience." }, { "title": "Sharing", "text": "We do not sell personal data. WhatsApp, Google Forms, Eduzz, Instagram and YouTube links are subject to those platforms' policies." }, { "title": "Your rights", "text": "You may request access, correction or deletion of data submitted directly to UAI SOFTWARE LTDA." }], "back": "Back to website"
+  },
+  "terms": {
+    "metaTitle": "Terms of Use | LGVG Flow", "metaDescription": "Terms governing the LGVG Flow website and indicator.", "title": "Terms of Use", "updated": "Last updated: July 21, 2026",
+    "sections": [{ "title": "Nature of the tool", "text": "LGVG Flow supports order flow reading and does not place orders automatically." }, { "title": "Risk", "text": "Financial markets involve risk of loss. Content is not advice or a promise of results." }, { "title": "Compatibility", "text": "Operation requires Profit Pro or Profit Ultra and access to order flow data." }, { "title": "Intellectual property", "text": "The LGVG Flow brand, indicator, manual and materials may not be redistributed without authorization." }], "back": "Back to website"
+  },
+  "contact": {
+    "metaTitle": "Contact | LGVG Flow", "metaDescription": "Contact the LGVG Flow team.", "title": "Contact LGVG Flow", "intro": "Choose the most convenient channel for questions about the indicator and mentoring.", "whatsapp": "Talk on WhatsApp", "instagram": "Follow on Instagram", "form": "Request information through the form", "back": "Back to website"
+  },
+  "errors": { "notFoundTitle": "Page not found", "notFoundText": "The requested page does not exist or has moved.", "back": "Back to home", "generic": "We could not complete the action. Please try again." },
+  "schema": { "applicationCategory": "Financial application", "operatingSystem": "Profit Pro and Profit Ultra", "offerName": "LGVG Flow mentoring with indicator" }
+}
