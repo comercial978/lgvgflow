@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-07-22T18:01:14.306Z",
+  "updatedAt": "2026-07-22T20:54:40.569Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Painel Descobrimento é cedido para exposição no Museu Nacional da China",
+      "publishedAt": "2026-07-22T17:33:35-03:00",
+      "summary": "O painel Descobrimento ao Instituto Portinari foi cedido para integrar a exposição O Brasil de Portinari , que está em cartaz no Museu Nacional da China, em Pequim, até 10 de outubro de 2026. A mostra constitui um dos...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21203/noticia"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-06-12T17:41:09-03:00",
       "summary": "A educação financeira também é elemento central para promover a autonomia da população brasileira. A avaliação foi apresentada pela Diretora de Cidadania e Supervisão de Conduta do Banco Central, Izabela Correa, durante...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21160/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Banco Central divulga relatório com produção e atividades de pesquisa em 2025",
-      "publishedAt": "2026-06-01T11:03:13-03:00",
-      "summary": "O Banco Central (BC) divulgou o Relatório de Pesquisa em Economia e Finanças (RPEF), publicação anual que reúne as principais atividades de pesquisa desenvolvidas pela instituição. Elaborado pelo Departamento de Estudos...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21151/noticia"
     }
   ]
 }
