@@ -33,8 +33,8 @@ export default async function ManualPage({ params }: Props) {
           <section className="risk-panel"><h2>{dictionary.manual.riskTitle}</h2><p>{dictionary.manual.riskText}</p></section>
         </div>
         <div className="manual-actions">
-          <a className="button button-primary" href={siteConfig.manualUrl} target="_blank" rel="noopener noreferrer"><Download aria-hidden="true" size={18} />{dictionary.manual.pdf}</a>
-          <a className="button button-secondary" href={siteConfig.indicatorUrl} download><Download aria-hidden="true" size={18} />{dictionary.manual.indicator}</a>
+          <a className="button button-primary" href={siteConfig.manualUrl} target="_blank" rel="noopener noreferrer" data-ga-event="download_manual" data-ga-file-name="Manual_do_Usuario_LGVG_Flow.pdf"><Download aria-hidden="true" size={18} />{dictionary.manual.pdf}</a>
+          <a className="button button-secondary" href={siteConfig.indicatorUrl} download data-ga-event="download_indicador" data-ga-file-name="LGVGFLOWATUAL.psf"><Download aria-hidden="true" size={18} />{dictionary.manual.indicator}</a>
         </div>
       </InteriorLayout>
     </>

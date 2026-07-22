@@ -230,12 +230,12 @@ export function HomePage({ dictionary, locale }: Props) {
               <article className="download-item fade-up">
                 <div className="download-icon"><FileDown aria-hidden="true" size={26} /></div>
                 <div><h3>{dictionary.downloads.indicatorTitle}</h3><p>{dictionary.downloads.indicatorText}</p></div>
-                <a className="button button-primary" href={siteConfig.indicatorUrl} download><Download aria-hidden="true" size={18} />{dictionary.downloads.indicatorButton}</a>
+                <a className="button button-primary" href={siteConfig.indicatorUrl} download data-ga-event="download_indicador" data-ga-file-name="LGVGFLOWATUAL.psf"><Download aria-hidden="true" size={18} />{dictionary.downloads.indicatorButton}</a>
               </article>
               <article className="download-item fade-up">
                 <div className="download-icon"><BookOpen aria-hidden="true" size={26} /></div>
                 <div><h3>{dictionary.downloads.manualTitle}</h3><p>{dictionary.downloads.manualText}</p></div>
-                <a className="button button-secondary" href={siteConfig.manualUrl} target="_blank" rel="noopener noreferrer"><BookOpen aria-hidden="true" size={18} />{dictionary.downloads.manualButton}</a>
+                <a className="button button-secondary" href={siteConfig.manualUrl} target="_blank" rel="noopener noreferrer" data-ga-event="download_manual" data-ga-file-name="Manual_do_Usuario_LGVG_Flow.pdf"><BookOpen aria-hidden="true" size={18} />{dictionary.downloads.manualButton}</a>
               </article>
             </div>
             <p className="download-note"><ShieldCheck aria-hidden="true" size={17} />{dictionary.downloads.note}</p>
@@ -262,7 +262,7 @@ export function HomePage({ dictionary, locale }: Props) {
             <p>{dictionary.cta.description}</p>
             <div className="cta-actions">
               <a className="button button-primary" href={siteConfig.checkoutUrl} target="_blank" rel="noopener noreferrer">{dictionary.cta.buy}<ArrowRight aria-hidden="true" size={18} /></a>
-              <a className="button button-secondary" href={whatsapp} target="_blank" rel="noopener noreferrer"><MessageCircle aria-hidden="true" size={18} />{dictionary.cta.whatsapp}</a>
+              <a className="button button-secondary" href={whatsapp} target="_blank" rel="noopener noreferrer" data-ga-event="clique_whatsapp" data-ga-file-name="not_applicable"><MessageCircle aria-hidden="true" size={18} />{dictionary.cta.whatsapp}</a>
               <a className="text-link" href={siteConfig.formUrl} target="_blank" rel="noopener noreferrer">{dictionary.cta.info}</a>
             </div>
           </div>
@@ -282,7 +282,7 @@ export function HomePage({ dictionary, locale }: Props) {
       </main>
 
       <Footer locale={locale} dictionary={dictionary} />
-      <a className="whatsapp-float" href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label={dictionary.cta.whatsapp} title={dictionary.cta.whatsapp}>
+      <a className="whatsapp-float" href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label={dictionary.cta.whatsapp} title={dictionary.cta.whatsapp} data-ga-event="clique_whatsapp" data-ga-file-name="not_applicable">
         <MessageCircle aria-hidden="true" size={23} />
       </a>
     </>
