@@ -107,17 +107,6 @@ export function HomePage({ dictionary, locale }: Props) {
           </div>
         </section>
 
-        <section className="section section-alt" id="news">
-          <div className="container">
-            <SectionTitle label={dictionary.news.label} title={dictionary.news.title} description={dictionary.news.description} />
-            <div className="fade-up"><NewsGrid dictionary={dictionary} items={marketNews.items.slice(0, 3)} locale={locale} /></div>
-            <div className="section-action fade-up">
-              <span>{dictionary.news.updated}</span>
-              <a className="text-link" href={`/${locale}/news/`}>{dictionary.news.all}<ArrowRight aria-hidden="true" size={16} /></a>
-            </div>
-          </div>
-        </section>
-
         <section className="section" id="problem">
           <div className="container">
             <SectionTitle label={dictionary.problem.label} title={dictionary.problem.title} description={dictionary.problem.description} />
@@ -279,6 +268,17 @@ export function HomePage({ dictionary, locale }: Props) {
               {ecosystemBrands.map((brand) => <div className={`ecosystem-card ${brand.className}`} key={brand.name}><img src={brand.src} alt={brand.name} loading="lazy" decoding="async" /></div>)}
             </div>
             <p className="ecosystem-disclaimer">{dictionary.ecosystem.disclaimer}</p>
+          </div>
+        </section>
+
+        <section className="section section-alt" id="news">
+          <div className="container">
+            <SectionTitle label={dictionary.news.label} title={dictionary.news.title} description={dictionary.news.description} />
+            <div className="fade-up"><NewsGrid dictionary={dictionary} items={marketNews.items.slice(0, 3)} locale={locale} /></div>
+            <div className="section-action fade-up">
+              <span>{dictionary.news.updated}</span>
+              <a className="text-link" href={`/${locale}/news/`}>{dictionary.news.all}<ArrowRight aria-hidden="true" size={16} /></a>
+            </div>
           </div>
         </section>
       </main>
