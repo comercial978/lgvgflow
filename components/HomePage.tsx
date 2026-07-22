@@ -31,7 +31,7 @@ import { VideoFacade } from '@/components/VideoFacade'
 import type { Dictionary, Locale } from '@/lib/i18n'
 import { marketNews } from '@/lib/news'
 import { homeSchemas } from '@/lib/schema'
-import { siteConfig, whatsappUrl } from '@/lib/site'
+import { getManualFileName, getManualUrl, siteConfig, whatsappUrl } from '@/lib/site'
 
 type Props = {
   dictionary: Dictionary
@@ -49,6 +49,8 @@ const ecosystemBrands = [
 
 export function HomePage({ dictionary, locale }: Props) {
   const whatsapp = whatsappUrl(dictionary.cta.whatsappMessage)
+  const manualFileName = getManualFileName(locale)
+  const manualUrl = getManualUrl(locale)
 
   return (
     <>
@@ -235,7 +237,7 @@ export function HomePage({ dictionary, locale }: Props) {
               <article className="download-item fade-up">
                 <div className="download-icon"><BookOpen aria-hidden="true" size={26} /></div>
                 <div><h3>{dictionary.downloads.manualTitle}</h3><p>{dictionary.downloads.manualText}</p></div>
-                <a className="button button-secondary" href={siteConfig.manualUrl} target="_blank" rel="noopener noreferrer" data-ga-event="download_manual" data-ga-file-name="Manual_do_Usuario_LGVG_Flow.pdf"><BookOpen aria-hidden="true" size={18} />{dictionary.downloads.manualButton}</a>
+                <a className="button button-secondary" href={manualUrl} target="_blank" rel="noopener noreferrer" data-ga-event="download_manual" data-ga-file-name={manualFileName}><BookOpen aria-hidden="true" size={18} />{dictionary.downloads.manualButton}</a>
               </article>
             </div>
             <p className="download-note"><ShieldCheck aria-hidden="true" size={17} />{dictionary.downloads.note}</p>
