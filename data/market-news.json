@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-07-22T20:54:40.569Z",
+  "updatedAt": "2026-07-23T12:18:03.004Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Pesquisa da OCDE avalia conhecimentos e hábitos financeiros dos brasileiros",
+      "publishedAt": "2026-07-23T08:50:37-03:00",
+      "summary": "Pesquisa da Organização para a Cooperação e Desenvolvimento Econômico (OCDE) avalia o letramento, a inclusão e o bem-estar financeiro. Os resultados do levantamento, iniciado em 29 de junho e com término previsto para 7...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21204/noticia"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-06-16T15:30:53-03:00",
       "summary": "O Pix foi registrado como marca de alto renome pelo Instituto Nacional da Propriedade Industrial (INPI). Marcas de alto renome são aquelas bem conhecidas pela população em geral que, ao longo dos anos, ganham prestígio...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21161/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Educação financeira é central para ampliar autonomia da população, diz diretora do BC",
-      "publishedAt": "2026-06-12T17:41:09-03:00",
-      "summary": "A educação financeira também é elemento central para promover a autonomia da população brasileira. A avaliação foi apresentada pela Diretora de Cidadania e Supervisão de Conduta do Banco Central, Izabela Correa, durante...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21160/noticia"
     }
   ]
 }
