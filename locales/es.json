@@ -15,7 +15,9 @@
     "eyebrow": "Indicador propietario para el mini índice B3", "title": "LGVG Flow",
     "headline": { "prefix": "Observa el mercado como los ", "highlight": "grandes participantes", "suffix": "." },
     "description": "Indicador de flujo de órdenes diseñado para revelar la actuación institucional antes de que sea evidente en el precio.",
-    "primary": "Conocer el Indicador", "secondary": "Solicitar Acceso",
+    "primary": "🚀 Prueba Gratis por 60 Días", "secondary": "Ver Manual de Instalación",
+    "trialDetails": "✓ Sin tarjeta de crédito • Compatible con Profit Pro y Ultra • Licencia de prueba por 60 días",
+    "mobileNotice": "📱 ¿Estás accediendo desde tu celular? Guarda esta página o envía el enlace a tu WhatsApp para instalar el indicador después en tu computadora.",
     "stats": [{ "value": "WIN", "label": "Mini índice B3" }, { "value": "Flujo", "label": "Lectura en tiempo real" }, { "value": "Profit", "label": "Pro y Ultra" }]
   },
   "video": {

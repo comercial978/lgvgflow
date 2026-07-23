@@ -22,8 +22,10 @@
     "title": "LGVG Flow",
     "headline": { "prefix": "Enxergue o mercado como os ", "highlight": "tubarões", "suffix": "." },
     "description": "Indicador de fluxo de ordens desenvolvido para revelar a atuação institucional antes que ela fique evidente no preço.",
-    "primary": "Conhecer o Indicador",
-    "secondary": "Solicitar Acesso",
+    "primary": "🚀 Teste Grátis por 60 Dias",
+    "secondary": "Ver Manual de Instalação",
+    "trialDetails": "✓ Sem cartão de crédito • Compatível com Profit Pro e Ultra • Licença de teste por 60 dias",
+    "mobileNotice": "📱 Está acessando pelo celular? Salve esta página ou envie o link para seu WhatsApp para instalar o indicador depois no computador.",
     "stats": [
       { "value": "WIN", "label": "Mini índice B3" },
       { "value": "Fluxo", "label": "Leitura em tempo real" },

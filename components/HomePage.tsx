@@ -68,6 +68,24 @@ export function HomePage({ dictionary, locale }: Props) {
         />
       ) : null}
 
+      <style>{`
+        .hero-cro-note {
+          max-width: 660px;
+          text-align: center;
+        }
+
+        .hero-mobile-notice {
+          display: none;
+          margin-top: 10px;
+        }
+
+        @media (max-width: 760px) {
+          .hero-mobile-notice {
+            display: block;
+          }
+        }
+      `}</style>
+
       <main>
         <section className="hero" id="home">
           <img className="hero-chart" src="/assets/video/lgvg-flow-demo.webp" alt="" width="405" height="720" aria-hidden="true" />
@@ -78,9 +96,11 @@ export function HomePage({ dictionary, locale }: Props) {
             <p className="hero-headline">{dictionary.hero.headline.prefix}<em>{dictionary.hero.headline.highlight}</em>{dictionary.hero.headline.suffix}</p>
             <p className="hero-description">{dictionary.hero.description}</p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#solution">{dictionary.hero.primary}<ArrowRight aria-hidden="true" size={18} /></a>
-              <a className="button button-secondary" href="#final-cta">{dictionary.hero.secondary}</a>
+              <a className="button button-primary" href={siteConfig.indicatorUrl} download data-ga-event="download_indicador" data-ga-file-name="LGVGFLOWATUAL.psf">{dictionary.hero.primary}<ArrowRight aria-hidden="true" size={18} /></a>
+              <a className="button button-secondary" href={manualUrl} target="_blank" rel="noopener noreferrer" data-ga-event="download_manual" data-ga-file-name={manualFileName}>{dictionary.hero.secondary}</a>
             </div>
+            <p className="download-note hero-cro-note">{dictionary.hero.trialDetails}</p>
+            <p className="download-note hero-cro-note hero-mobile-notice">{dictionary.hero.mobileNotice}</p>
             <dl className="hero-stats">
               {dictionary.hero.stats.map((stat) => (
                 <div key={stat.label}><dt>{stat.value}</dt><dd>{stat.label}</dd></div>

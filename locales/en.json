@@ -22,8 +22,10 @@
     "title": "LGVG Flow",
     "headline": { "prefix": "See the market through the eyes of ", "highlight": "institutional players", "suffix": "." },
     "description": "An order flow indicator designed to reveal institutional activity before it becomes clear in price action.",
-    "primary": "Explore the Indicator",
-    "secondary": "Request Access",
+    "primary": "🚀 Free 60-Day Trial",
+    "secondary": "View Installation Manual",
+    "trialDetails": "✓ No credit card • Compatible with Profit Pro and Ultra • 60-day trial license",
+    "mobileNotice": "📱 Viewing on your phone? Save this page or send the link to your WhatsApp so you can install the indicator later on your computer.",
     "stats": [{ "value": "WIN", "label": "B3 mini index" }, { "value": "Flow", "label": "Real-time reading" }, { "value": "Profit", "label": "Pro and Ultra" }]
   },
   "video": {
