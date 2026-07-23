@@ -28,9 +28,20 @@ export function Footer({ locale, dictionary }: Props) {
         </div>
         <nav className="footer-links" aria-label={dictionary.nav.menu}>
           <a href={`/${locale}/manual/`}>{dictionary.footer.manual}</a>
-          <a href={`/${locale}/privacy/`}>{dictionary.footer.privacy}</a>
-          <a href={`/${locale}/terms/`}>{dictionary.footer.terms}</a>
+        </nav>
+      </div>
+      <div className="container footer-institutional">
+        <div className="footer-company">
+          <strong>{dictionary.footer.developedBy}</strong>
+          <span>{dictionary.footer.registration}</span>
+          <span>{dictionary.footer.location}</span>
+        </div>
+        <nav className="footer-legal-links" aria-label={dictionary.nav.menu}>
           <a href={`/${locale}/contact/`}>{dictionary.footer.contact}</a>
+          <span aria-hidden="true">|</span>
+          <a href={`/${locale}/privacy/`}>{dictionary.footer.privacy}</a>
+          <span aria-hidden="true">|</span>
+          <a href={`/${locale}/terms/`}>{dictionary.footer.terms}</a>
         </nav>
       </div>
       <div className="container footer-bottom">

@@ -145,11 +145,27 @@
     "note": "O indicador não envia ordens automaticamente."
   },
   "developer": {
-    "label": "Quem Desenvolveu",
-    "title": { "prefix": "Feito por quem ", "highlight": "opera todo dia", "suffix": "" },
+    "label": "Autoridade e Experiência",
+    "title": { "prefix": "Quem está por trás do ", "highlight": "LGVG Flow", "suffix": "" },
     "name": "Gustavo Guimarães",
-    "role": "Trader · Especialista em Fluxo de Ordens · Mentor",
-    "paragraphs": ["O LGVG Flow nasceu da prática diária no mini índice e da necessidade de organizar informações do fluxo no gráfico.", "O resultado é uma ferramenta criada para apoiar traders em decisões mais conscientes."]
+    "productRole": "Criador do LGVG Flow",
+    "role": "Empresário · Cientista da Computação · Especialista em Tecnologia",
+    "photoAlt": "Retrato profissional de Gustavo Guimarães, criador do LGVG Flow",
+    "paragraphs": [
+      "Criador do LGVG Flow, Gustavo Guimarães é empresário, Cientista da Computação e especialista em desenvolvimento de soluções tecnológicas para empresas e para o mercado financeiro.",
+      "Fundador da UAI Software e consultor do Grupo Cybersul, possui experiência em desenvolvimento de softwares de gestão, plataformas web, dashboards corporativos e sistemas de rastreamento veicular.",
+      "É especialista em Engenharia de Telecomunicações e Informática, possui formação complementar em Direito e especialização em Web 3.0 (Blockchain, Smart Contracts e Metaverso) pelo Ministério da Ciência, Tecnologia e Inovação (MCTI).",
+      "Também é autor de uma obra técnica sobre GSM aprovada pelo Instituto Superior de Engenharia de Lisboa (ISEL), em parceria com a Universidade de Franca.",
+      "Toda essa experiência em tecnologia, análise de sistemas e desenvolvimento de software foi aplicada na criação do LGVG Flow, um indicador desenvolvido para auxiliar traders na leitura de fluxo, liquidez e contexto operacional no Mini Índice da B3."
+    ],
+    "credentials": [
+      "Fundador da UAI Software",
+      "Consultor do Grupo Cybersul",
+      "Cientista da Computação",
+      "Especialista em Engenharia de Telecomunicações",
+      "Especialista em Web 3.0 (MCTI)",
+      "Autor de obra técnica aprovada pelo ISEL (Portugal)"
+    ]
   },
   "cta": {
     "label": "Próximo Passo",
@@ -175,7 +191,10 @@
     "privacy": "Política de Privacidade",
     "terms": "Termos de Uso",
     "contact": "Contato",
-    "manual": "Manual"
+    "manual": "Manual",
+    "developedBy": "Desenvolvido por UAI SOFTWARE LTDA",
+    "registration": "CNPJ: 06.152.914/0001-54",
+    "location": "Uberaba – MG – Brasil"
   },
   "manual": {
     "metaTitle": "Manual do LGVG Flow",

@@ -130,11 +130,27 @@
     "note": "The indicator does not place orders automatically."
   },
   "developer": {
-    "label": "The Creator",
-    "title": { "prefix": "Built by someone who ", "highlight": "trades every day", "suffix": "" },
+    "label": "Authority and Experience",
+    "title": { "prefix": "Who is behind ", "highlight": "LGVG Flow", "suffix": "" },
     "name": "Gustavo Guimarães",
-    "role": "Trader · Order Flow Specialist · Mentor",
-    "paragraphs": ["LGVG Flow was born from daily mini index practice and the need to organize flow information on the chart.", "The result is a tool designed to support more informed trading decisions."]
+    "productRole": "Creator of LGVG Flow",
+    "role": "Entrepreneur · Computer Scientist · Technology Specialist",
+    "photoAlt": "Professional portrait of Gustavo Guimarães, creator of LGVG Flow",
+    "paragraphs": [
+      "Creator of LGVG Flow, Gustavo Guimarães is an entrepreneur, Computer Scientist and specialist in developing technology solutions for companies and the financial market.",
+      "Founder of UAI Software and consultant to Grupo Cybersul, he has experience developing management software, web platforms, corporate dashboards and vehicle tracking systems.",
+      "He specializes in Telecommunications Engineering and Information Technology, has complementary studies in Law and a specialization in Web 3.0 (Blockchain, Smart Contracts and the Metaverse) from Brazil's Ministry of Science, Technology and Innovation (MCTI).",
+      "He is also the author of a technical work on GSM approved by the Instituto Superior de Engenharia de Lisboa (ISEL), in partnership with the University of Franca.",
+      "This experience in technology, systems analysis and software development was applied to the creation of LGVG Flow, an indicator designed to help traders read order flow, liquidity and operational context in B3 Mini Index trading."
+    ],
+    "credentials": [
+      "Founder of UAI Software",
+      "Consultant to Grupo Cybersul",
+      "Computer Scientist",
+      "Telecommunications Engineering Specialist",
+      "Web 3.0 Specialist (MCTI)",
+      "Author of a technical work approved by ISEL (Portugal)"
+    ]
   },
   "cta": {
     "label": "Next Step",
@@ -153,7 +169,7 @@
     "disclaimer": "LGVG Flow is an independent indicator compatible with the Profit platform. B3, Nelogica, Profit and Genial are the property of their respective owners and are mentioned solely to indicate compatibility, without implying partnership, endorsement or official affiliation."
   },
   "footer": {
-    "rights": "All rights reserved", "tagline": "Trade with structure. Trade professionally.", "socialTitle": "Follow content and updates", "instagram": "Gustavo Guimarães on Instagram", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "manual": "Manual"
+    "rights": "All rights reserved", "tagline": "Trade with structure. Trade professionally.", "socialTitle": "Follow content and updates", "instagram": "Gustavo Guimarães on Instagram", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "manual": "Manual", "developedBy": "Developed by UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brazil"
   },
   "manual": {
     "metaTitle": "LGVG Flow User Manual", "metaDescription": "Installation and usage guide for LGVG Flow on Profit Pro and Profit Ultra.", "label": "User guide", "title": "LGVG Flow Manual", "intro": "Learn how to import, configure and interpret the indicator safely.",

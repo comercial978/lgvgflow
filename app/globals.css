@@ -1015,46 +1015,92 @@ h3 {
   color: var(--green);
 }
 
-.developer-layout {
+.founder-section {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.founder-layout {
   align-items: center;
   display: grid;
-  gap: 80px;
-  grid-template-columns: 300px 1fr;
-  max-width: 960px;
+  gap: 72px;
+  grid-template-columns: 290px minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1080px;
 }
 
-.developer-monogram {
-  align-items: center;
+.founder-photo-frame {
   aspect-ratio: 1;
-  background: var(--panel);
   border: 1px solid var(--gold-border);
-  border-radius: 6px;
+  border-radius: 50%;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.35);
+  padding: 6px;
+  width: 290px;
+}
+
+.founder-photo {
+  border-radius: 50%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 28%;
+  width: 100%;
+}
+
+.founder-product-role {
   color: var(--gold);
-  display: flex;
-  font-family: "Syne", sans-serif;
-  font-size: 4.4rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  justify-content: center;
+  margin: 0 0 8px;
+  text-transform: uppercase;
 }
 
-.developer-layout .section-title {
-  margin-bottom: 18px;
-}
-
-.developer-layout h3 {
-  font-size: 1.3rem;
-  margin-bottom: 4px;
+.founder-copy h3 {
+  font-size: 2rem;
+  margin-bottom: 6px;
 }
 
 .developer-role {
-  color: var(--gold);
-  font-size: 0.8rem;
+  color: var(--muted-strong);
+  font-size: 0.84rem;
   font-weight: 700;
   margin-bottom: 24px;
 }
 
-.developer-layout .text-link {
+.founder-copy .body-copy {
+  max-width: 760px;
+}
+
+.founder-copy .text-link {
   margin-top: 22px;
+}
+
+.founder-credentials {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  margin: 46px auto 0;
+  max-width: 1080px;
+  padding: 0;
+}
+
+.founder-credential {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  display: flex;
+  font-size: 0.79rem;
+  font-weight: 700;
+  gap: 12px;
+  min-height: 82px;
+  padding: 18px;
+}
+
+.founder-credential svg {
+  color: var(--gold);
+  flex: 0 0 auto;
 }
 
 .final-cta {
@@ -1297,6 +1343,48 @@ h3 {
   color: var(--text);
 }
 
+.footer-institutional {
+  align-items: flex-end;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  padding-block: 22px;
+}
+
+.footer-company {
+  display: grid;
+  gap: 4px;
+}
+
+.footer-company strong {
+  color: var(--muted-strong);
+  font-size: 0.72rem;
+}
+
+.footer-company span,
+.footer-legal-links {
+  color: #727987;
+  font-size: 0.68rem;
+}
+
+.footer-legal-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.footer-legal-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-legal-links a:hover {
+  color: var(--text);
+}
+
 .footer-bottom {
   border-top: 1px solid var(--border);
   padding-block: 18px;
@@ -1531,6 +1619,19 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .founder-layout {
+    gap: 46px;
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+
+  .founder-photo-frame {
+    width: 240px;
+  }
+
+  .founder-credentials {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .news-card:last-child:nth-child(odd) {
     grid-column: 1 / -1;
   }
@@ -1652,7 +1753,7 @@ h3 {
 
   .video-layout,
   .split-layout,
-  .developer-layout {
+  .founder-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1709,12 +1810,31 @@ h3 {
     width: 100%;
   }
 
-  .developer-layout {
+  .founder-layout {
     gap: 34px;
   }
 
-  .developer-monogram {
-    max-width: 220px;
+  .founder-photo-frame {
+    margin-inline: auto;
+    max-width: 240px;
+    width: 68vw;
+  }
+
+  .founder-copy {
+    text-align: center;
+  }
+
+  .founder-copy .body-copy {
+    text-align: left;
+  }
+
+  .founder-copy .text-link {
+    justify-content: center;
+  }
+
+  .founder-credentials {
+    grid-template-columns: 1fr;
+    margin-top: 36px;
   }
 
   .final-cta {
@@ -1732,6 +1852,15 @@ h3 {
 
   .footer-main {
     grid-template-columns: 1fr;
+  }
+
+  .footer-institutional {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-legal-links {
+    justify-content: flex-start;
   }
 
   .interior-main {

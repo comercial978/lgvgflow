@@ -2,6 +2,7 @@ import {
   Activity,
   AlertTriangle,
   ArrowRight,
+  BadgeCheck,
   BookOpen,
   Camera,
   Check,
@@ -253,19 +254,6 @@ export function HomePage({ dictionary, locale }: Props) {
           </div>
         </section>
 
-        <section className="section" id="developer">
-          <div className="container developer-layout">
-            <div className="developer-monogram fade-up" aria-hidden="true">GG</div>
-            <div className="fade-up">
-              <SectionTitle label={dictionary.developer.label} title={dictionary.developer.title} align="left" />
-              <h3>{dictionary.developer.name}</h3>
-              <p className="developer-role">{dictionary.developer.role}</p>
-              {dictionary.developer.paragraphs.map((paragraph) => <p className="body-copy" key={paragraph}>{paragraph}</p>)}
-              <a className="text-link" href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer"><Camera aria-hidden="true" size={17} />{siteConfig.instagramHandle}</a>
-            </div>
-          </div>
-        </section>
-
         <section className="final-cta" id="final-cta">
           <div className="container final-cta-inner fade-up">
             <p className="eyebrow">{dictionary.cta.label}</p>
@@ -299,6 +287,40 @@ export function HomePage({ dictionary, locale }: Props) {
               <span>{dictionary.news.updated}</span>
               <a className="text-link" href={`/${locale}/news/`}>{dictionary.news.all}<ArrowRight aria-hidden="true" size={16} /></a>
             </div>
+          </div>
+        </section>
+
+        <section className="section founder-section" id="developer" aria-labelledby="developer-title">
+          <div className="container">
+            <SectionTitle label={dictionary.developer.label} title={dictionary.developer.title} id="developer-title" />
+            <div className="founder-layout">
+              <div className="founder-photo-frame fade-up">
+                <img
+                  className="founder-photo"
+                  src="/assets/founder/gustavo-guimaraes.jpg"
+                  alt={dictionary.developer.photoAlt}
+                  width="640"
+                  height="962"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="founder-copy fade-up">
+                <p className="founder-product-role">{dictionary.developer.productRole}</p>
+                <h3>{dictionary.developer.name}</h3>
+                <p className="developer-role">{dictionary.developer.role}</p>
+                {dictionary.developer.paragraphs.map((paragraph) => <p className="body-copy" key={paragraph}>{paragraph}</p>)}
+                <a className="text-link" href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer"><Camera aria-hidden="true" size={17} />{siteConfig.instagramHandle}</a>
+              </div>
+            </div>
+            <ul className="founder-credentials">
+              {dictionary.developer.credentials.map((credential) => (
+                <li className="founder-credential fade-up" key={credential}>
+                  <BadgeCheck aria-hidden="true" size={21} />
+                  <span>{credential}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       </main>
