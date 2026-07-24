@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-07-24T18:10:31.862Z",
+  "updatedAt": "2026-07-24T20:54:36.816Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "FMI e Banco Mundial reconhecem avanços do sistema financeiro e apontam agenda para fortalecer supervisão",
+      "publishedAt": "2026-07-24T16:10:25-03:00",
+      "summary": "O Fundo Monetário Internacional (FMI) divulgou, nesta semana, o Financial System Stability Assessment (FSSA), relatório elaborado no âmbito do Programa de Avaliação do Setor Financeiro (Financial Sector Assessment...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21208/noticia"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-06-19T16:01:50-03:00",
       "summary": "​O Banco Central (BC) alterou as regras do Pix por aproximação e retirou o teto fixo de R$500 que vigorava para esse tipo de pagamento. Pela Instrução Normativa BCB 746, publicada em 17 de junho, as transações por...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21169/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Pix recebe registro de marca de alto renome",
-      "publishedAt": "2026-06-16T15:30:53-03:00",
-      "summary": "O Pix foi registrado como marca de alto renome pelo Instituto Nacional da Propriedade Industrial (INPI). Marcas de alto renome são aquelas bem conhecidas pela população em geral que, ao longo dos anos, ganham prestígio...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21161/noticia"
     }
   ]
 }
