@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T20:54:36.816Z",
+  "updatedAt": "2026-07-27T13:31:54.602Z",
   "source": "Banco Central do Brasil",
   "items": [
     {
@@ -9,6 +9,14 @@
       "publishedAt": "2026-07-24T16:10:25-03:00",
       "summary": "O Fundo Monetário Internacional (FMI) divulgou, nesta semana, o Financial System Stability Assessment (FSSA), relatório elaborado no âmbito do Programa de Avaliação do Setor Financeiro (Financial Sector Assessment...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21208/noticia"
+    },
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 24/07/2026",
+      "publishedAt": "2026-07-24T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/24072026"
     },
     {
       "category": "Banco Central",
@@ -65,14 +73,6 @@
       "publishedAt": "2026-07-01T09:45:15-03:00",
       "summary": "​O Banco Central (BC) anunciou, em 18 de junho, um novo passo no processo de modernização do mercado de câmbio brasileiro. A Resolução BCB 575 ampliou as possibilidades de abertura e movimentação de contas de depósito...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21191/noticia"
-    },
-    {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 26/06/2026",
-      "publishedAt": "2026-06-26T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/26062026"
     },
     {
       "category": "Banco Central",
