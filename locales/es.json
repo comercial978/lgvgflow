@@ -43,6 +43,24 @@
     "features": ["Lectura de agresión en tiempo real", "Mapeo de regiones de liquidez", "Señales visuales de compra y venta", "Calibrado para la dinámica de WIN"], "specsTitle": "LGVG Flow — Especificaciones",
     "specs": [{ "label": "Instrumento", "value": "Mini índice (WIN)" }, { "label": "Plataforma", "value": "Profit Pro / Ultra" }, { "label": "Datos", "value": "Flujo de órdenes" }, { "label": "Archivo", "value": "LGVGFLOWATUAL.psf" }]
   },
+  "authority": {
+    "label": "Formación tecnológica",
+    "title": { "prefix": "Tecnología desarrollada con ", "highlight": "conocimiento y experiencia", "suffix": "" },
+    "name": "Gustavo Guimarães",
+    "role": "Científico de la Computación • Empresario • Desarrollador de LGVG Flow",
+    "credentialTitle": "Capacitación Tecnológica en Web 3.0 — 120 horas",
+    "description": "Formación teórica y práctica realizada por el Instituto iRede, en el marco del Proyecto Residencia en TIC 29, apoyado por el Ministerio de Ciencia, Tecnología e Innovación de Brasil — MCTI.",
+    "knowledge": "Durante la capacitación se desarrollaron conocimientos en Blockchain, criptografía, seguridad digital, Smart Contracts, Solidity, Ethereum, tokenización de activos y aplicaciones descentralizadas.",
+    "connection": "LGVG Flow combina experiencia práctica en el mercado financiero con desarrollo de software, análisis de sistemas y actualización tecnológica continua.",
+    "support": "Proyecto apoyado por el Ministerio de Ciencia, Tecnología e Innovación de Brasil — MCTI.",
+    "badgeLabel": "Credencial tecnológica",
+    "badgeItems": ["120 horas de formación", "Proyecto apoyado por el MCTI", "Instituto iRede", "Blockchain • Smart Contracts • Seguridad Digital"],
+    "button": "Ver credencial",
+    "modalTitle": "Credencial pública — Capacitación Tecnológica en Web 3.0",
+    "modalClose": "Cerrar credencial",
+    "imageAlt": "Versión pública del certificado de Capacitación Tecnológica en Web 3.0 de Gustavo Guimarães, emitido por el Instituto iRede, con 120 horas de formación",
+    "privacyNote": "Versión pública con datos personales protegidos."
+  },
   "compatibility": {
     "label": "Compatibilidad", "title": { "prefix": "Disponible para ", "highlight": "Profit Pro y Profit Ultra", "suffix": "" }, "description": "El indicador utiliza datos de agresión y flujo que las versiones inferiores no ofrecen.",
     "cards": [{ "name": "Profit Pro", "title": "Versión compatible", "text": "Acceso a los datos necesarios para el funcionamiento del indicador." }, { "name": "Profit Ultra", "title": "Versión compatible", "text": "Compatibilidad total con los recursos avanzados de la plataforma." }], "noticeTitle": "Las versiones inferiores a Profit Pro no son compatibles.", "noticeText": "Sin datos de flujo, el indicador no puede funcionar correctamente."

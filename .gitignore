@@ -2,6 +2,8 @@ node_modules/
 .next/
 out/
 public/
+certificado/
+tmp/
 *.tsbuildinfo
 .env*
 !.env.example

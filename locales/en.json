@@ -85,6 +85,24 @@
     "specsTitle": "LGVG Flow — Specifications",
     "specs": [{ "label": "Instrument", "value": "Mini index (WIN)" }, { "label": "Platform", "value": "Profit Pro / Ultra" }, { "label": "Data", "value": "Order flow" }, { "label": "File", "value": "LGVGFLOWATUAL.psf" }]
   },
+  "authority": {
+    "label": "Technology education",
+    "title": { "prefix": "Technology developed with ", "highlight": "knowledge and experience", "suffix": "" },
+    "name": "Gustavo Guimarães",
+    "role": "Computer Scientist • Entrepreneur • Developer of LGVG Flow",
+    "credentialTitle": "Web 3.0 Technology Training — 120 hours",
+    "description": "Theoretical and practical training delivered by Instituto iRede within the ICT Residency Project 29, supported by Brazil's Ministry of Science, Technology and Innovation — MCTI.",
+    "knowledge": "The training covered Blockchain, cryptography, digital security, Smart Contracts, Solidity, Ethereum, asset tokenization and decentralized applications.",
+    "connection": "LGVG Flow combines practical financial market experience with software development, systems analysis and continuous technology education.",
+    "support": "Project supported by Brazil's Ministry of Science, Technology and Innovation — MCTI.",
+    "badgeLabel": "Technology credential",
+    "badgeItems": ["120 hours of training", "Project supported by MCTI", "Instituto iRede", "Blockchain • Smart Contracts • Digital Security"],
+    "button": "View credential",
+    "modalTitle": "Public credential — Web 3.0 Technology Training",
+    "modalClose": "Close credential",
+    "imageAlt": "Public version of Gustavo Guimarães's Web 3.0 Technology Training certificate, issued by Instituto iRede, with 120 hours of training",
+    "privacyNote": "Public version with personal data protected."
+  },
   "compatibility": {
     "label": "Compatibility",
     "title": { "prefix": "Available for ", "highlight": "Profit Pro and Profit Ultra", "suffix": "" },

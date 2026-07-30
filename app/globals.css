@@ -809,6 +809,194 @@ h3 {
   margin: 3px 0 0;
 }
 
+.authority-section {
+  background: #0a0d12;
+  border-block: 1px solid rgba(242, 200, 75, 0.12);
+}
+
+.authority-layout {
+  align-items: center;
+  display: grid;
+  gap: 76px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.75fr);
+}
+
+.authority-copy .section-title {
+  margin-bottom: 28px;
+}
+
+.authority-identity {
+  border-inline-start: 2px solid var(--gold);
+  margin-bottom: 30px;
+  padding-inline-start: 18px;
+}
+
+.authority-identity h3 {
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+}
+
+.authority-identity p {
+  color: var(--muted-strong);
+  font-size: 0.84rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.authority-credential-title {
+  font-size: 1.13rem;
+  margin-bottom: 16px;
+}
+
+.authority-copy .body-copy {
+  max-width: 720px;
+}
+
+.authority-support {
+  align-items: flex-start;
+  color: var(--gold-light);
+  display: flex;
+  font-size: 0.84rem;
+  font-weight: 700;
+  gap: 9px;
+  margin: 22px 0 0;
+}
+
+.authority-support svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.authority-connection {
+  border-top: 1px solid var(--border);
+  color: var(--muted-strong);
+  font-size: 0.92rem;
+  font-weight: 650;
+  margin: 28px 0 0;
+  max-width: 720px;
+  padding-top: 24px;
+}
+
+.authority-credential-button {
+  margin-top: 24px;
+}
+
+.authority-badge {
+  background: var(--panel);
+  border: 1px solid var(--gold-border);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  padding: 30px;
+}
+
+.authority-badge-icon {
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.authority-badge-label {
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.authority-badge > strong {
+  display: block;
+  font-family: "Syne", "DM Sans", sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.authority-badge ul {
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 13px;
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 24px 0 0;
+}
+
+.authority-badge li {
+  align-items: flex-start;
+  color: var(--muted-strong);
+  display: flex;
+  font-size: 0.82rem;
+  gap: 9px;
+}
+
+.authority-badge li svg {
+  color: var(--green);
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.credential-modal-backdrop {
+  align-items: center;
+  background: rgba(3, 4, 7, 0.88);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 24px;
+  position: fixed;
+  z-index: 100;
+}
+
+.credential-modal {
+  background: var(--panel);
+  border: 1px solid var(--gold-border);
+  border-radius: 6px;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.65);
+  max-height: calc(100svh - 48px);
+  max-width: 1220px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 20px;
+  width: 100%;
+}
+
+.credential-modal-header {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.credential-modal-header h2 {
+  font-size: 1.16rem;
+  margin-bottom: 0;
+}
+
+.credential-modal-close {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  flex: 0 0 auto;
+}
+
+.credential-modal-close:hover {
+  border-color: var(--gold-border);
+  color: var(--text);
+}
+
+.credential-public-figure {
+  margin: 0;
+}
+
+.credential-public-figure img {
+  background: white;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.credential-public-figure figcaption {
+  color: var(--muted);
+  font-size: 0.74rem;
+  margin-top: 12px;
+  text-align: center;
+}
+
 .audience-layout {
   align-items: start;
 }
@@ -1614,6 +1802,11 @@ h3 {
     gap: 50px;
   }
 
+  .authority-layout {
+    gap: 48px;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  }
+
   .news-grid,
   .interior-main .news-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1753,7 +1946,8 @@ h3 {
 
   .video-layout,
   .split-layout,
-  .founder-layout {
+  .founder-layout,
+  .authority-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1794,6 +1988,35 @@ h3 {
 
   .split-layout {
     gap: 38px;
+  }
+
+  .authority-layout {
+    gap: 36px;
+  }
+
+  .authority-support {
+    padding-inline-end: 58px;
+  }
+
+  .authority-credential-button {
+    width: 100%;
+  }
+
+  .authority-badge {
+    padding: 24px;
+  }
+
+  .credential-modal-backdrop {
+    padding: 8px;
+  }
+
+  .credential-modal {
+    max-height: calc(100svh - 16px);
+    padding: 12px;
+  }
+
+  .credential-modal-header h2 {
+    font-size: 0.98rem;
   }
 
   .pricing-card ul {

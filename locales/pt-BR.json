@@ -97,6 +97,24 @@
       { "label": "Arquivo", "value": "LGVGFLOWATUAL.psf" }
     ]
   },
+  "authority": {
+    "label": "Formação tecnológica",
+    "title": { "prefix": "Tecnologia desenvolvida com ", "highlight": "conhecimento e experiência", "suffix": "" },
+    "name": "Gustavo Guimarães",
+    "role": "Cientista da Computação • Empresário • Desenvolvedor do LGVG Flow",
+    "credentialTitle": "Capacitação Tecnológica em Web 3.0 — 120 horas",
+    "description": "Formação teórica e prática realizada pelo Instituto iRede, no âmbito do Projeto Residência em TIC 29, apoiado pelo Ministério da Ciência, Tecnologia e Inovações — MCTI.",
+    "knowledge": "Durante a capacitação, foram desenvolvidos conhecimentos em Blockchain, criptografia, segurança digital, Smart Contracts, Solidity, Ethereum, tokenização de ativos e aplicações descentralizadas.",
+    "connection": "O LGVG Flow combina experiência prática no mercado financeiro com desenvolvimento de software, análise de sistemas e atualização tecnológica contínua.",
+    "support": "Projeto apoiado pelo Ministério da Ciência, Tecnologia e Inovações — MCTI.",
+    "badgeLabel": "Credencial tecnológica",
+    "badgeItems": ["120 horas de formação", "Projeto apoiado pelo MCTI", "Instituto iRede", "Blockchain • Smart Contracts • Segurança Digital"],
+    "button": "Visualizar credencial",
+    "modalTitle": "Credencial pública — Capacitação Tecnológica em Web 3.0",
+    "modalClose": "Fechar credencial",
+    "imageAlt": "Versão pública do certificado de Capacitação Tecnológica em Web 3.0 de Gustavo Guimarães, emitido pelo Instituto iRede, com 120 horas de formação",
+    "privacyNote": "Versão pública com dados pessoais protegidos."
+  },
   "compatibility": {
     "label": "Compatibilidade",
     "title": { "prefix": "Disponível para ", "highlight": "Profit Pro e Profit Ultra", "suffix": "" },

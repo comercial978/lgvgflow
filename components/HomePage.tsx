@@ -24,6 +24,7 @@ import {
 import { FadeObserver } from '@/components/FadeObserver'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { CredentialModal } from '@/components/CredentialModal'
 import { LocaleSuggestion } from '@/components/LocaleSuggestion'
 import { NewsGrid } from '@/components/NewsGrid'
 import { SectionTitle } from '@/components/SectionTitle'
@@ -186,6 +187,45 @@ export function HomePage({ dictionary, locale }: Props) {
               ))}
             </div>
             <div className="notice-box fade-up"><AlertTriangle aria-hidden="true" size={20} /><div><strong>{dictionary.compatibility.noticeTitle}</strong><p>{dictionary.compatibility.noticeText}</p></div></div>
+          </div>
+        </section>
+
+        <section className="section authority-section" id="technology-authority" aria-labelledby="technology-authority-title">
+          <div className="container authority-layout">
+            <div className="authority-copy fade-up">
+              <SectionTitle
+                align="left"
+                id="technology-authority-title"
+                label={dictionary.authority.label}
+                title={dictionary.authority.title}
+              />
+              <div className="authority-identity">
+                <h3>{dictionary.authority.name}</h3>
+                <p>{dictionary.authority.role}</p>
+              </div>
+              <h3 className="authority-credential-title">{dictionary.authority.credentialTitle}</h3>
+              <p className="body-copy">{dictionary.authority.description}</p>
+              <p className="body-copy">{dictionary.authority.knowledge}</p>
+              <p className="authority-support"><ShieldCheck aria-hidden="true" size={18} />{dictionary.authority.support}</p>
+              <p className="authority-connection">{dictionary.authority.connection}</p>
+              <CredentialModal
+                buttonLabel={dictionary.authority.button}
+                closeLabel={dictionary.authority.modalClose}
+                imageAlt={dictionary.authority.imageAlt}
+                modalTitle={dictionary.authority.modalTitle}
+                privacyNote={dictionary.authority.privacyNote}
+              />
+            </div>
+            <aside className="authority-badge fade-up" aria-label={dictionary.authority.badgeLabel}>
+              <BadgeCheck aria-hidden="true" className="authority-badge-icon" size={34} />
+              <p className="authority-badge-label">{dictionary.authority.badgeLabel}</p>
+              <strong>{dictionary.authority.credentialTitle}</strong>
+              <ul>
+                {dictionary.authority.badgeItems.map((item) => (
+                  <li key={item}><Check aria-hidden="true" size={17} />{item}</li>
+                ))}
+              </ul>
+            </aside>
           </div>
         </section>
 
