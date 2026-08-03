@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-07-31T20:52:37.389Z",
+  "updatedAt": "2026-08-03T13:32:55.182Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 31/07/2026",
+      "publishedAt": "2026-07-31T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/31072026"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -57,14 +65,6 @@
       "publishedAt": "2026-07-03T10:54:54-03:00",
       "summary": "O Banco Central (BC) lançou nesta terça-feira (30/6) o ecossistema de duplicatas escriturais, marco relevante para a modernização do mercado de crédito no país. O início da negociação desses ativos em formato digital,...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21194/noticia"
-    },
-    {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 03/07/2026",
-      "publishedAt": "2026-07-03T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/03072026"
     },
     {
       "category": "Banco Central",
