@@ -4,6 +4,7 @@ import { Globe2 } from 'lucide-react'
 import { usePathname, useRouter } from 'next/navigation'
 import type { ChangeEvent } from 'react'
 
+import { getGuideId, guidePath } from '@/lib/guides'
 import { supportedLocales, type Locale } from '@/lib/i18n-config'
 
 type Props = {
@@ -25,6 +26,15 @@ export function LanguageSwitcher({ locale, label, names, flags }: Props) {
   const changeLocale = (event: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = event.target.value as Locale
     const parts = pathname.split('/').filter(Boolean)
+    const guideId = parts[1] === 'guides' && parts[2]
+      ? getGuideId(locale, parts[2])
+      : undefined
+
+    if (guideId) {
+      persistLocale(nextLocale)
+      router.push(guidePath(nextLocale, guideId))
+      return
+    }
 
     if (parts.length && supportedLocales.includes(parts[0] as Locale)) {
       parts[0] = nextLocale

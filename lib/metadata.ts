@@ -9,12 +9,21 @@ type MetadataInput = {
   path?: string
   title?: string
   description?: string
+  languagePaths?: Record<Locale, string>
 }
 
-export function buildMetadata({ locale, dictionary, path = '', title, description }: MetadataInput): Metadata {
-  const canonicalPath = `/${locale}${path ? `/${path}` : ''}`
+export function buildMetadata({ locale, dictionary, path = '', title, description, languagePaths }: MetadataInput): Metadata {
+  const canonicalPath = `/${locale}${path ? `/${path}` : ''}/`
   const pageTitle = title ?? dictionary.meta.title
   const pageDescription = description ?? dictionary.meta.description
+  const languages = languagePaths
+    ? {
+        'pt-BR': `/pt/${languagePaths.pt}/`,
+        en: `/en/${languagePaths.en}/`,
+        es: `/es/${languagePaths.es}/`,
+        'x-default': `/en/${languagePaths.en}/`,
+      }
+    : languageAlternates(path)
 
   return {
     metadataBase: new URL(siteConfig.url),
@@ -25,7 +34,7 @@ export function buildMetadata({ locale, dictionary, path = '', title, descriptio
     icons: { icon: '/assets/favicon.svg', shortcut: '/assets/favicon.svg' },
     alternates: {
       canonical: canonicalPath,
-      languages: languageAlternates(path),
+      languages,
     },
     openGraph: {
       type: 'website',

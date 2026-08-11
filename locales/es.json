@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "LGVG Flow | Indicador de Flujo de Órdenes para Mini Índice B3",
-    "description": "Indicador de flujo de órdenes para traders del mini índice WIN. Lectura de agresión, absorción y presión institucional en Profit Pro y Profit Ultra.",
-    "keywords": ["mini índice", "flujo de órdenes", "indicador WIN", "B3", "Profit Pro", "day trading"],
+    "title": "Indicador de Flujo de Órdenes para Mini Índice | LGVG Flow",
+    "description": "Indicador de flujo de órdenes para Mini Índice WIN en Profit de Nelogica. Visualiza agresión, absorción y liquidez. Prueba gratis durante 60 días.",
+    "keywords": ["indicador de flujo de órdenes", "indicador mini índice", "indicador Profit", "Nelogica", "WIN", "B3", "day trading"],
     "ogTitle": "LGVG Flow | Lee el flujo con mayor claridad",
     "ogDescription": "Lectura avanzada del flujo institucional para traders de mini índice."
   },
@@ -10,7 +10,7 @@
     "selector": "Seleccionar idioma", "current": "Idioma actual", "names": { "pt": "Português (Brasil)", "en": "English", "es": "Español" },
     "detected": "Detectamos que tu idioma es {language}.", "question": "¿Deseas utilizar esta versión?", "yes": "Sí, cambiar idioma", "continue": "Continuar en portugués", "never": "No volver a preguntar"
   },
-  "nav": { "news": "Noticias", "test": "Probar el Indicador", "access": "Solicitar Acceso", "menu": "Navegación principal" },
+  "nav": { "news": "Noticias", "guides": "Guías", "test": "Probar el Indicador", "access": "Solicitar Acceso", "menu": "Navegación principal" },
   "hero": {
     "eyebrow": "Indicador propietario para el mini índice B3", "title": "LGVG Flow",
     "headline": { "prefix": "Observa el mercado como los ", "highlight": "grandes participantes", "suffix": "." },
@@ -71,7 +71,194 @@
   },
   "faq": {
     "label": "Preguntas Frecuentes", "title": { "prefix": "Información antes de ", "highlight": "operar", "suffix": "" },
-    "items": [{ "question": "¿LGVG Flow funciona con cualquier versión de Profit?", "answer": "No. Fue desarrollado para Profit Pro y Profit Ultra, que ofrecen los datos de flujo necesarios." }, { "question": "¿En qué instrumento se enfoca el indicador?", "answer": "Se enfoca en el mini índice WIN negociado en B3." }, { "question": "¿El indicador garantiza resultados en day trading?", "answer": "No. Apoya la lectura del mercado, pero operar implica riesgos y exige gestión de riesgo." }]
+    "items": [{ "question": "¿LGVG Flow funciona con cualquier versión de Profit?", "answer": "No. Fue desarrollado para Profit Pro y Profit Ultra, que ofrecen los datos de flujo necesarios." }, { "question": "¿En qué instrumento se enfoca el indicador?", "answer": "Se enfoca en el mini índice WIN negociado en B3." }, { "question": "¿LGVG Flow es un indicador de Nelogica?", "answer": "No. LGVG Flow es un indicador independiente creado para usar los datos de flujo disponibles en Profit Pro y Profit Ultra de Nelogica. No existe afiliación ni respaldo oficial." }, { "question": "¿En qué se diferencia el flujo de órdenes de los indicadores basados en precio?", "answer": "El flujo observa operaciones ejecutadas, agresión, absorción y liquidez. Las medias, RSI y MACD se calculan principalmente con precios históricos. Ambos enfoques pueden complementarse." }, { "question": "¿El indicador garantiza resultados en day trading?", "answer": "No. Apoya la lectura del mercado, pero operar implica riesgos y exige gestión de riesgo." }]
+  },
+  "guides": {
+    "label": "Contenido educativo",
+    "homeTitle": { "prefix": "Guías sobre ", "highlight": "flujo de órdenes y Mini Índice", "suffix": "" },
+    "homeDescription": "Contenido original para comprender el flujo, elegir un indicador para WIN y usar LGVG Flow en Profit con mayor contexto.",
+    "metaTitle": "Guías de Flujo de Órdenes y Mini Índice | LGVG Flow",
+    "metaDescription": "Aprende sobre indicadores de flujo de órdenes, Mini Índice WIN y compatibilidad con Profit Pro y Profit Ultra de Nelogica.",
+    "indexTitle": "Guías de flujo de órdenes, Mini Índice y Profit",
+    "indexIntro": "Contenido práctico para entender los datos detrás del precio, evaluar indicadores y utilizar Profit con responsabilidad.",
+    "read": "Leer la guía completa",
+    "contents": "En esta guía",
+    "byline": "Por Gustavo Guimarães",
+    "reviewed": "Revisado el 11 de agosto de 2026",
+    "faqTitle": "Preguntas frecuentes",
+    "riskTitle": "Aviso de riesgo",
+    "riskText": "El day trading y los futuros de Mini Índice implican un alto riesgo de pérdida. Este contenido es educativo, no constituye asesoramiento de inversión ni garantiza resultados.",
+    "ctaTitle": "Observa el flujo en el gráfico",
+    "ctaText": "Prueba LGVG Flow durante 60 días en Profit Pro o Profit Ultra y consulta el manual antes de usar el indicador.",
+    "ctaButton": "Probar el indicador",
+    "relatedTitle": "Continúa aprendiendo",
+    "items": {
+      "orderFlow": {
+        "cardTitle": "Indicador de flujo de órdenes: agresión, absorción y liquidez",
+        "cardText": "Comprende qué datos observa un indicador de flujo y cómo se diferencia de los indicadores calculados solo con el precio.",
+        "metaTitle": "Indicador de Flujo de Órdenes en Mini Índice | LGVG Flow",
+        "metaDescription": "Entiende cómo un indicador de flujo lee agresión, absorción y liquidez en el Mini Índice WIN y cómo LGVG Flow organiza estos datos.",
+        "eyebrow": "Lectura de mercado",
+        "title": "Indicador de flujo de órdenes: cómo leer agresión, absorción y liquidez en el Mini Índice",
+        "intro": "Un indicador de flujo ayuda a observar la actividad que existe detrás de una vela. Esta guía explica qué información se analiza, qué puede indicar y cuáles son sus límites.",
+        "sections": [
+          {
+            "title": "¿Qué es un indicador de flujo de órdenes?",
+            "paragraphs": [
+              "El flujo de órdenes representa las operaciones realmente ejecutadas entre compradores y vendedores. En vez de mirar únicamente el precio final de una vela, analiza cómo se agredieron las órdenes, dónde se concentraron los negocios y en qué regiones apareció liquidez.",
+              "Un indicador organiza visualmente parte de esos datos. No predice el futuro ni sustituye la decisión del trader, pero facilita evaluar agresión, Times and Trades y comportamiento del precio en conjunto."
+            ],
+            "items": []
+          },
+          {
+            "title": "Qué observar en el Mini Índice WIN",
+            "paragraphs": ["La velocidad y volatilidad de WIN pueden exigir una lectura más atenta. El objetivo es buscar coherencia entre flujo, región de precio y contexto de la sesión."],
+            "items": ["Agresión compradora y vendedora ejecutada", "Posible absorción cuando mucho volumen produce poco avance", "Regiones de liquidez aún no probadas", "Continuación, pérdida de fuerza o agotamiento cerca de niveles relevantes"]
+          },
+          {
+            "title": "Flujo de órdenes frente a indicadores de precio",
+            "paragraphs": [
+              "Las medias móviles, RSI y MACD utilizan principalmente precios registrados. Pueden mostrar tendencia o aceleración, pero no indican directamente quién agredió la compra o la venta.",
+              "El flujo analiza otra capa: la ejecución. La estructura del precio puede localizar el contexto y el flujo puede ayudar a evaluar el momento de la decisión."
+            ],
+            "items": []
+          },
+          {
+            "title": "Cómo organiza LGVG Flow la lectura",
+            "paragraphs": [
+              "LGVG Flow fue desarrollado para el Mini Índice y utiliza datos de flujo suministrados por Profit. Presenta señales visuales y regiones de liquidez para comparar el precio con la presión ejecutada.",
+              "Una señal no es una orden automática. Hay que comprobar si la región ya fue mitigada, evaluar el contexto y definir riesgo, stop y cantidad de contratos antes de entrar."
+            ],
+            "items": ["Lectura de agresión en tiempo real", "Mapeo de regiones de liquidez", "Señales visuales de compra y venta", "Manual de instalación e interpretación"]
+          },
+          {
+            "title": "Compatibilidad, prueba y limitaciones",
+            "paragraphs": [
+              "LGVG Flow requiere Profit Pro o Profit Ultra porque depende de datos reales de flujo. Las versiones inferiores no ofrecen toda la información necesaria.",
+              "La prueba de 60 días permite observarlo en simulación. Ningún indicador elimina el ruido, el deslizamiento, los cambios de volatilidad o el riesgo financiero."
+            ],
+            "items": ["Plataformas: Profit Pro y Profit Ultra", "Instrumento principal: Mini Índice WIN de B3", "Archivo: LGVGFLOWATUAL.psf", "No envía órdenes automáticamente"]
+          }
+        ],
+        "faq": [
+          { "question": "¿Un indicador de flujo garantiza una entrada correcta?", "answer": "No. Organiza datos para apoyar la lectura, pero toda operación depende del contexto, la ejecución y el riesgo." },
+          { "question": "¿El flujo sustituye el análisis del precio?", "answer": "No necesariamente. Flujo, estructura de precio y gestión de riesgo pueden utilizarse juntos." },
+          { "question": "¿LGVG Flow funciona en Profit One?", "answer": "No. Requiere Profit Pro o Profit Ultra por los datos de flujo utilizados." },
+          { "question": "¿Puedo comenzar en simulación?", "answer": "Sí. La simulación es el entorno adecuado para aprender las señales y validar una rutina antes de operar en real." }
+        ]
+      },
+      "miniIndex": {
+        "cardTitle": "Indicador para Mini Índice: cómo elegirlo y probarlo",
+        "cardText": "Descubre qué evaluar en un indicador para WIN: datos, compatibilidad, claridad visual y gestión de riesgo.",
+        "metaTitle": "Indicador para Mini Índice WIN y Day Trading | LGVG Flow",
+        "metaDescription": "Aprende a elegir y probar un indicador para Mini Índice WIN, qué datos observar y por qué el contexto y el riesgo siguen siendo esenciales.",
+        "eyebrow": "Mini Índice WIN",
+        "title": "Indicador para Mini Índice: criterios para elegirlo y usarlo en day trading",
+        "intro": "No todos los indicadores para Mini Índice analizan la misma información. Antes de instalar una herramienta, conoce el origen de sus datos, la finalidad de sus señales y su lugar dentro del plan operativo.",
+        "sections": [
+          {
+            "title": "Qué debe explicar un indicador para Mini Índice",
+            "paragraphs": [
+              "WIN es un contrato futuro negociado en B3 y puede moverse rápidamente durante la sesión. Un indicador útil debe explicar qué calcula, qué información utiliza y cómo interpretar sus señales.",
+              "Una herramienta no debe presentarse como solución automática ni garantía de acierto. Su valor está en organizar información, no en eliminar la incertidumbre."
+            ],
+            "items": []
+          },
+          {
+            "title": "Criterios para comparar indicadores de day trading",
+            "paragraphs": ["La elección debe considerar el proceso del trader y no solo la apariencia del gráfico. Los indicadores pueden medir tendencia, volatilidad, volumen, agresión o regiones de precio."],
+            "items": ["Origen y actualización de los datos", "Compatibilidad con la versión de la plataforma", "Claridad en momentos de volatilidad", "Manual, período de prueba y aviso de riesgo", "Validación en cuenta simulada"]
+          },
+          {
+            "title": "Cómo complementa el flujo al gráfico",
+            "paragraphs": [
+              "Una vela resume apertura, máximo, mínimo y cierre. El flujo añade información sobre cómo compradores y vendedores ejecutaron negocios dentro del movimiento.",
+              "En WIN, agresión, absorción y liquidez pueden ayudar a diferenciar un desplazamiento acompañado de presión de uno con menor continuidad. No es una confirmación absoluta."
+            ],
+            "items": []
+          },
+          {
+            "title": "Cómo probar un indicador con responsabilidad",
+            "paragraphs": [
+              "Comienza en simulación, observa distintos horarios y registra qué ocurrió antes y después de cada señal. Evalúa también movimientos falsos y condiciones poco claras.",
+              "La prueba gratuita de 60 días de LGVG Flow permite hacer esta evaluación sin tarjeta. El archivo PSF y el manual explican configuración, liquidez y tipos de entrada."
+            ],
+            "items": ["Define qué vas a medir", "Mantén reglas de riesgo constantes", "Registra horario, contexto, entrada, stop y resultado", "No conviertas pocos ejemplos en expectativa de rentabilidad"]
+          },
+          {
+            "title": "El papel de la gestión de riesgo",
+            "paragraphs": [
+              "Incluso una lectura coherente puede terminar en stop. Tamaño de posición, límite diario y distancia del stop deben definirse antes de la entrada.",
+              "LGVG Flow es una herramienta visual. No administra la cuenta, no evita operaciones impulsivas ni sustituye el conocimiento del instrumento."
+            ],
+            "items": []
+          }
+        ],
+        "faq": [
+          { "question": "¿Cuál es el mejor indicador para Mini Índice?", "answer": "No existe uno universalmente mejor. Depende de los datos, el método del trader, la claridad y una evaluación responsable en simulación." },
+          { "question": "¿LGVG Flow también funciona en Mini Dólar?", "answer": "El producto y su calibración fueron desarrollados específicamente para Mini Índice WIN." },
+          { "question": "¿Un principiante puede estudiar flujo?", "answer": "Sí, preferentemente en simulación y junto con fundamentos de mercado, plataforma y gestión de riesgo." },
+          { "question": "¿El indicador opera solo?", "answer": "No. LGVG Flow muestra información en el gráfico, pero no envía órdenes." }
+        ]
+      },
+      "profitNelogica": {
+        "cardTitle": "Indicador para Profit de Nelogica: compatibilidad e instalación",
+        "cardText": "Conoce qué versiones de Profit ofrecen los datos necesarios, cómo importar el archivo PSF y qué significa compatibilidad independiente.",
+        "metaTitle": "Indicador para Profit de Nelogica | LGVG Flow",
+        "metaDescription": "Conoce LGVG Flow, indicador independiente para Profit Pro y Profit Ultra de Nelogica con lectura de flujo en Mini Índice WIN.",
+        "eyebrow": "Profit Pro y Profit Ultra",
+        "title": "Indicador para Profit de Nelogica: compatibilidad, instalación y lectura de flujo",
+        "intro": "LGVG Flow es un indicador independiente desarrollado para Profit Pro y Profit Ultra. Descubre por qué importa la versión de la plataforma y cómo instalarlo con seguridad.",
+        "sections": [
+          {
+            "title": "LGVG Flow y la plataforma Profit",
+            "paragraphs": [
+              "Profit es una plataforma de negociación desarrollada por Nelogica. LGVG Flow utiliza sus recursos de importación y los datos de flujo disponibles en versiones compatibles para mostrar la lectura del Mini Índice.",
+              "LGVG Flow no fue desarrollado, vendido ni respaldado por Nelogica. Las marcas se mencionan únicamente para explicar compatibilidad técnica."
+            ],
+            "items": []
+          },
+          {
+            "title": "¿Qué versiones de Profit son compatibles?",
+            "paragraphs": [
+              "El indicador requiere Profit Pro o Profit Ultra porque esas versiones ofrecen los datos de agresión y flujo utilizados por su lógica.",
+              "Las versiones inferiores pueden aceptar otros indicadores, pero no proporcionan toda la información requerida por LGVG Flow."
+            ],
+            "items": ["Profit Pro: compatible", "Profit Ultra: compatible", "Versiones inferiores: no compatibles", "Se requiere acceso activo a datos de mercado"]
+          },
+          {
+            "title": "Cómo importar el indicador en Profit",
+            "paragraphs": [
+              "El archivo oficial se llama LGVGFLOWATUAL.psf. Se importa mediante el gestor de estrategias de Profit y después se añade a un gráfico de WIN.",
+              "Consulta el manual antes de usarlo porque explica la instalación, las señales y las líneas de liquidez."
+            ],
+            "items": ["Descarga solo desde el sitio oficial", "Importa LGVGFLOWATUAL.psf", "Abre el gráfico del Mini Índice WIN", "Añade el indicador y valida en simulación"]
+          },
+          {
+            "title": "Qué datos muestra la lectura",
+            "paragraphs": [
+              "La herramienta organiza agresión compradora y vendedora, posibles zonas de absorción y niveles de liquidez del día para ofrecer contexto sin exigir observar todos los datos brutos a la vez.",
+              "Las señales deben compararse con el precio actual. Una región ya tocada puede perder relevancia y una señal aislada no elimina la necesidad de stop."
+            ],
+            "items": []
+          },
+          {
+            "title": "Prueba gratuita y manual",
+            "paragraphs": [
+              "El sitio ofrece una prueba gratuita de 60 días sin tarjeta de crédito. La descarga no exige registro y el manual está disponible en portugués, inglés y español.",
+              "Usa el período para verificar compatibilidad, conocer el comportamiento visual y decidir si la herramienta encaja en tu rutina."
+            ],
+            "items": ["Prueba gratuita de 60 días", "Manual de instalación", "Compatibilidad con Profit Pro y Profit Ultra", "Sin promesa de resultados financieros"]
+          }
+        ],
+        "faq": [
+          { "question": "¿LGVG Flow es un indicador oficial de Nelogica?", "answer": "No. Es independiente y compatible con Profit Pro y Profit Ultra, sin asociación, respaldo ni afiliación oficial." },
+          { "question": "¿Por qué no funciona en todas las versiones?", "answer": "Su lógica depende de datos de agresión y flujo disponibles a partir de Profit Pro." },
+          { "question": "¿Necesito cambiar mi layout de Profit?", "answer": "El indicador se añade al gráfico de WIN. El manual explica importación y configuración." },
+          { "question": "¿Puedo descargar el PSF desde el celular?", "answer": "Sí, pero deberá importarse después en una computadora con Profit Pro o Profit Ultra." }
+        ]
+      }
+    }
   },
   "pricing": {
     "label": "Inversión", "title": { "prefix": "Elige cómo quieres ", "highlight": "comenzar", "suffix": "" }, "description": "Prueba el indicador o comienza con el paquete completo de mentoría.",
@@ -94,7 +281,7 @@
   "ecosystem": {
     "label": "Entorno Profesional", "title": { "prefix": "Ecosistema de ", "highlight": "LGVG Flow", "suffix": "" }, "lead": "LGVG Flow forma parte del ecosistema tecnológico utilizado diariamente por traders profesionales.", "text": "Diseñado para trabajar con tecnologías clave del mercado financiero brasileño.", "disclaimer": "LGVG Flow es un indicador independiente compatible con la plataforma Profit. B3, Nelogica, Profit y Genial pertenecen a sus respectivos propietarios y se mencionan únicamente para indicar compatibilidad, sin implicar asociación, respaldo o afiliación oficial."
   },
-  "footer": { "rights": "Todos los derechos reservados", "tagline": "Opera con estructura. Opera profesionalmente.", "socialTitle": "Sigue contenidos y novedades", "instagram": "Gustavo Guimarães en Instagram", "privacy": "Política de Privacidad", "terms": "Términos de Uso", "contact": "Contacto", "manual": "Manual", "developedBy": "Desarrollado por UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brasil" },
+  "footer": { "rights": "Todos los derechos reservados", "tagline": "Opera con estructura. Opera profesionalmente.", "socialTitle": "Sigue contenidos y novedades", "instagram": "Gustavo Guimarães en Instagram", "privacy": "Política de Privacidad", "terms": "Términos de Uso", "contact": "Contacto", "guides": "Guías", "news": "Noticias", "manual": "Manual", "developedBy": "Desarrollado por UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brasil" },
   "manual": {
     "metaTitle": "Manual de LGVG Flow", "metaDescription": "Guía de instalación y uso de LGVG Flow en Profit Pro y Profit Ultra.", "label": "Guía del usuario", "title": "Manual de LGVG Flow", "intro": "Aprende a importar, configurar e interpretar el indicador con seguridad.",
     "requirementsTitle": "Antes de comenzar", "requirements": ["Profit Pro o Profit Ultra instalado", "Archivo LGVGFLOWATUAL.psf", "Cuenta con acceso a datos de flujo"],

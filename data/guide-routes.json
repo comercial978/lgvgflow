@@ -1,0 +1,21 @@
+{
+  "publishedAt": "2026-08-11",
+  "modifiedAt": "2026-08-11",
+  "guides": {
+    "orderFlow": {
+      "pt": "indicador-fluxo-ordens",
+      "en": "order-flow-indicator",
+      "es": "indicador-flujo-ordenes"
+    },
+    "miniIndex": {
+      "pt": "indicador-mini-indice",
+      "en": "mini-index-indicator",
+      "es": "indicador-mini-indice"
+    },
+    "profitNelogica": {
+      "pt": "indicador-profit-nelogica",
+      "en": "profit-nelogica-indicator",
+      "es": "indicador-profit-nelogica"
+    }
+  }
+}

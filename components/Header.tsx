@@ -21,6 +21,7 @@ export function Header({ locale, dictionary }: Props) {
           <span>LGVG <strong>Flow</strong></span>
         </a>
         <nav className="main-nav" aria-label={dictionary.nav.menu}>
+          <a href={`/${locale}/guides/`}>{dictionary.nav.guides}</a>
           <a href={`/${locale}/#news`}>{dictionary.nav.news}</a>
           <a href={`/${locale}/#downloads`}>{dictionary.nav.test}</a>
         </nav>

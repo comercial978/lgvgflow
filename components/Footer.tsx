@@ -27,6 +27,8 @@ export function Footer({ locale, dictionary }: Props) {
           </a>
         </div>
         <nav className="footer-links" aria-label={dictionary.nav.menu}>
+          <a href={`/${locale}/guides/`}>{dictionary.footer.guides}</a>
+          <a href={`/${locale}/news/`}>{dictionary.footer.news}</a>
           <a href={`/${locale}/manual/`}>{dictionary.footer.manual}</a>
         </nav>
       </div>

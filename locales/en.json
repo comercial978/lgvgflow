@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "LGVG Flow | Order Flow Indicator for B3 Mini Index",
-    "description": "Order flow indicator for WIN mini index traders. Read aggression, absorption and institutional pressure on Profit Pro and Profit Ultra.",
-    "keywords": ["mini index", "order flow", "WIN indicator", "B3", "Profit Pro", "day trading"],
+    "title": "Order Flow Indicator for the B3 Mini Index | LGVG Flow",
+    "description": "Order flow indicator for the B3 Mini Index (WIN) on Nelogica Profit. View aggression, absorption and liquidity. Start a free 60-day trial.",
+    "keywords": ["order flow indicator", "mini index indicator", "Profit indicator", "Nelogica", "WIN", "B3", "day trading"],
     "ogTitle": "LGVG Flow | Read order flow with greater clarity",
     "ogDescription": "Advanced institutional order flow reading for mini index traders."
   },
@@ -16,7 +16,7 @@
     "continue": "Continue in Portuguese",
     "never": "Never ask again"
   },
-  "nav": { "news": "Market News", "test": "Test the Indicator", "access": "Request Access", "menu": "Main navigation" },
+  "nav": { "news": "Market News", "guides": "Guides", "test": "Test the Indicator", "access": "Request Access", "menu": "Main navigation" },
   "hero": {
     "eyebrow": "Proprietary indicator for the B3 mini index",
     "title": "LGVG Flow",
@@ -123,8 +123,202 @@
     "items": [
       { "question": "Does LGVG Flow work with every Profit version?", "answer": "No. It was developed for Profit Pro and Profit Ultra, which provide the required flow data." },
       { "question": "Which instrument is the indicator focused on?", "answer": "It focuses on the WIN mini index traded on B3." },
+      { "question": "Is LGVG Flow a Nelogica indicator?", "answer": "No. LGVG Flow is an independent indicator built to use the flow data available in Nelogica's Profit Pro and Profit Ultra platforms. There is no official affiliation or endorsement." },
+      { "question": "How is order flow different from price-based indicators?", "answer": "Order flow looks at executed trades, aggression, absorption and liquidity. Moving averages, RSI and MACD are calculated mainly from historical prices. The approaches can complement each other." },
       { "question": "Does the indicator guarantee day-trading results?", "answer": "No. It supports market reading, but trading involves risk and requires risk management." }
     ]
+  },
+  "guides": {
+    "label": "Educational content",
+    "homeTitle": { "prefix": "Guides to ", "highlight": "order flow and the B3 Mini Index", "suffix": "" },
+    "homeDescription": "Original content on order flow, choosing a WIN indicator and using LGVG Flow on Profit with greater context.",
+    "metaTitle": "Order Flow and B3 Mini Index Guides | LGVG Flow",
+    "metaDescription": "Learn about order flow indicators, the B3 Mini Index and compatibility with Nelogica Profit Pro and Profit Ultra.",
+    "indexTitle": "Guides to order flow, the B3 Mini Index and Profit",
+    "indexIntro": "Practical content to understand the data behind price, evaluate indicators and use the Profit platform responsibly.",
+    "read": "Read the complete guide",
+    "contents": "In this guide",
+    "byline": "By Gustavo Guimarães",
+    "reviewed": "Reviewed August 11, 2026",
+    "faqTitle": "Frequently asked questions",
+    "riskTitle": "Risk notice",
+    "riskText": "Day trading and B3 Mini Index futures involve a high risk of loss. This content is educational, is not investment advice and does not guarantee results.",
+    "ctaTitle": "See order flow on the chart",
+    "ctaText": "Test LGVG Flow for 60 days on Profit Pro or Profit Ultra and read the manual before using the indicator.",
+    "ctaButton": "Test the indicator",
+    "relatedTitle": "Continue learning",
+    "items": {
+      "orderFlow": {
+        "cardTitle": "Order flow indicators: aggression, absorption and liquidity",
+        "cardText": "Understand what an order flow indicator observes and how this reading differs from indicators calculated only from price.",
+        "metaTitle": "Order Flow Guide for the B3 Mini Index | LGVG Flow",
+        "metaDescription": "Learn how an order flow indicator reads aggression, absorption and liquidity in the B3 Mini Index and how LGVG Flow organizes this data.",
+        "eyebrow": "Market reading",
+        "title": "Order flow indicators: reading aggression, absorption and liquidity in the B3 Mini Index",
+        "intro": "An order flow indicator helps reveal activity taking place behind a candle. This guide explains which data is observed, what it may indicate and the limits of this type of reading.",
+        "sections": [
+          {
+            "title": "What is an order flow indicator?",
+            "paragraphs": [
+              "Order flow represents trades actually executed between buyers and sellers. Instead of looking only at the final price of a candle, order flow analysis examines how orders were taken, where trading concentrated and where the market encountered liquidity.",
+              "An order flow indicator organizes part of that data visually. It does not predict the future or replace the trader's decision, but it can make aggression, Times and Trades and price behavior easier to evaluate together."
+            ],
+            "items": []
+          },
+          {
+            "title": "What to observe in the B3 Mini Index",
+            "paragraphs": ["The speed and volatility of WIN can make manual reading demanding. The goal is not to react to every color change, but to look for agreement between flow, price region and the session context."],
+            "items": [
+              "Executed buying and selling aggression",
+              "Possible absorption when high volume produces limited price progress",
+              "Liquidity regions not yet tested during the session",
+              "Continuation, loss of strength or exhaustion near relevant levels"
+            ]
+          },
+          {
+            "title": "Order flow versus price-based indicators",
+            "paragraphs": [
+              "Moving averages, RSI and MACD mainly use previously recorded prices. They can help identify trend, acceleration or market conditions, but they do not directly show who aggressively bought or sold at that moment.",
+              "Order flow examines another information layer: execution. The approaches do not have to compete. Price structure can establish context while order flow helps qualify timing."
+            ],
+            "items": []
+          },
+          {
+            "title": "How LGVG Flow organizes the reading",
+            "paragraphs": [
+              "LGVG Flow was developed for the B3 Mini Index and uses flow data supplied by Profit. It displays visual signals and colored liquidity regions so traders can compare price behavior with executed pressure.",
+              "A signal is not an automatic order. Traders still need to check whether a region has already been mitigated, assess the day's context and define risk, stop and position size before entering."
+            ],
+            "items": ["Real-time aggression reading", "Liquidity-region mapping", "Visual buy and sell signals", "Educational use supported by an installation and interpretation manual"]
+          },
+          {
+            "title": "Compatibility, trial and limitations",
+            "paragraphs": [
+              "Because it depends on actual flow data, LGVG Flow requires Profit Pro or Profit Ultra. Lower versions do not supply all the information needed for correct operation.",
+              "The 60-day trial lets traders observe the indicator in simulation and decide whether its reading fits their process. No indicator removes noise, slippage, changing volatility or financial risk."
+            ],
+            "items": ["Compatible platforms: Profit Pro and Profit Ultra", "Primary instrument: B3 Mini Index WIN", "Import file: LGVGFLOWATUAL.psf", "The indicator does not place orders automatically"]
+          }
+        ],
+        "faq": [
+          { "question": "Does an order flow indicator guarantee a correct entry?", "answer": "No. It organizes data to support market reading, but every trade remains subject to context, execution and risk." },
+          { "question": "Does order flow replace price analysis?", "answer": "Not necessarily. Flow, price structure and risk management can be used together." },
+          { "question": "Does LGVG Flow work on Profit One?", "answer": "No. It requires Profit Pro or Profit Ultra because of the flow data used." },
+          { "question": "Can I start in a simulated account?", "answer": "Yes. Simulation is the appropriate environment for learning the signals and validating a routine before considering live trading." }
+        ]
+      },
+      "miniIndex": {
+        "cardTitle": "B3 Mini Index indicators: how to choose and test one",
+        "cardText": "Learn what to evaluate in a WIN indicator, from its data source to compatibility, visual clarity and risk management.",
+        "metaTitle": "B3 Mini Index WIN Indicator for Day Trading | LGVG Flow",
+        "metaDescription": "Learn how to choose and test a B3 Mini Index WIN indicator, which data to observe and why context and risk management remain essential.",
+        "eyebrow": "B3 Mini Index WIN",
+        "title": "B3 Mini Index indicators: criteria for choosing and using one in day trading",
+        "intro": "Not every B3 Mini Index indicator analyzes the same information. Before installing a tool, understand its data source, the purpose of its signals and how it fits your trading plan.",
+        "sections": [
+          {
+            "title": "What a B3 Mini Index indicator should explain",
+            "paragraphs": [
+              "WIN is a futures contract traded on B3 and often moves quickly during the session. A useful indicator should clearly explain what it calculates, which information it uses and under which conditions its signals should be interpreted.",
+              "Be cautious with tools presented as an automatic solution or a guarantee of accuracy. An indicator's value is in organizing relevant information consistently, not removing market uncertainty."
+            ],
+            "items": []
+          },
+          {
+            "title": "Criteria for comparing day-trading indicators",
+            "paragraphs": ["The choice should reflect the trader's process, not only the chart's appearance. Indicators may measure trend, volatility, volume, aggression or price regions."],
+            "items": ["Source and freshness of the data", "Compatibility with the platform version", "Signal clarity during higher volatility", "Availability of a manual, trial period and risk notice", "Ability to validate the reading in simulation"]
+          },
+          {
+            "title": "How order flow can complement the chart",
+            "paragraphs": [
+              "A candle summarizes open, high, low and close for a period. Order flow adds information about how buyers and sellers executed trades inside that movement.",
+              "In WIN, aggression, absorption and liquidity can help distinguish a move backed by executed pressure from one with limited continuation. This remains contextual information, not absolute confirmation."
+            ],
+            "items": []
+          },
+          {
+            "title": "How to test an indicator responsibly",
+            "paragraphs": [
+              "Start in simulation, observe different trading hours and record what happened before and after each signal. Evaluate false moves and unclear conditions as carefully as successful examples.",
+              "LGVG Flow's free 60-day trial supports this evaluation without a credit card. The PSF installation file and manual cover configuration, liquidity regions and entry types."
+            ],
+            "items": ["Define what will be measured", "Use consistent risk rules", "Record time, context, entry, stop and outcome", "Do not turn a small sample into a profit expectation"]
+          },
+          {
+            "title": "The role of risk management",
+            "paragraphs": [
+              "Even a coherent reading can end in a stop. Position size, daily loss limits and stop distance must be established before entry according to each person's profile and experience.",
+              "LGVG Flow is a visual support tool. It does not manage an account, prevent impulsive trades or replace knowledge of the instrument."
+            ],
+            "items": []
+          }
+        ],
+        "faq": [
+          { "question": "What is the best indicator for the B3 Mini Index?", "answer": "There is no universally best indicator. The choice depends on the data, the trader's method, clarity and responsible testing in simulation." },
+          { "question": "Does LGVG Flow also work with the B3 Mini Dollar?", "answer": "The product and its calibration were developed specifically for the B3 Mini Index WIN." },
+          { "question": "Can a beginner study order flow?", "answer": "Yes, preferably in simulation and alongside fundamentals about the market, platform and risk management." },
+          { "question": "Does the indicator trade automatically?", "answer": "No. LGVG Flow displays information on the chart but does not place orders." }
+        ]
+      },
+      "profitNelogica": {
+        "cardTitle": "Indicator for Nelogica Profit: compatibility and installation",
+        "cardText": "Understand which Profit versions provide the required data, how to import the PSF file and what independent compatibility means.",
+        "metaTitle": "Indicator for Nelogica Profit Pro and Ultra | LGVG Flow",
+        "metaDescription": "Meet LGVG Flow, an independent indicator for Nelogica Profit Pro and Profit Ultra with order flow reading for the B3 Mini Index WIN.",
+        "eyebrow": "Profit Pro and Profit Ultra",
+        "title": "Indicator for Nelogica Profit: compatibility, installation and order flow",
+        "intro": "LGVG Flow is an independent indicator developed for Profit Pro and Profit Ultra. Learn why the platform version matters and how to complete a safe installation.",
+        "sections": [
+          {
+            "title": "LGVG Flow and the Profit platform",
+            "paragraphs": [
+              "Profit is a trading platform developed by Nelogica. LGVG Flow uses the platform's import features and the flow data available in compatible versions to display its B3 Mini Index reading on the chart.",
+              "LGVG Flow is not developed, sold or endorsed by Nelogica. The trademarks are mentioned only to explain technical compatibility."
+            ],
+            "items": []
+          },
+          {
+            "title": "Which Profit versions are compatible?",
+            "paragraphs": [
+              "The indicator requires Profit Pro or Profit Ultra because those versions provide the aggression and order flow data used by its logic.",
+              "Lower versions may support other indicators, but they do not provide every input required by LGVG Flow."
+            ],
+            "items": ["Profit Pro: compatible", "Profit Ultra: compatible", "Versions below Profit Pro: not compatible", "An active market-data connection is required"]
+          },
+          {
+            "title": "How to import the indicator into Profit",
+            "paragraphs": [
+              "The official file is named LGVGFLOWATUAL.psf. Import it through Profit's strategy manager, then add the indicator to a WIN chart.",
+              "Read the manual before use because it covers both installation and the meaning of the signals and colored liquidity lines."
+            ],
+            "items": ["Download only from the official LGVG Flow website", "Import LGVGFLOWATUAL.psf into Profit", "Open a B3 Mini Index WIN chart", "Add the indicator and validate it in simulation"]
+          },
+          {
+            "title": "What the reading displays",
+            "paragraphs": [
+              "The tool organizes buying and selling aggression, possible absorption regions and the day's liquidity levels. It is designed to provide flow context without requiring the trader to watch every raw data source at once.",
+              "Signals and lines still need to be compared with current price behavior. A level already touched may have lost relevance, and an isolated signal never removes the need for a stop."
+            ],
+            "items": []
+          },
+          {
+            "title": "Free trial and installation support",
+            "paragraphs": [
+              "The website provides a free 60-day trial without a credit card. The download does not require registration, and manuals are available in Portuguese, English and Spanish.",
+              "Use the trial to confirm compatibility, understand the visual behavior and decide whether the tool fits your routine."
+            ],
+            "items": ["Free 60-day trial", "Installation manual", "Profit Pro and Profit Ultra compatibility", "No promise of financial results"]
+          }
+        ],
+        "faq": [
+          { "question": "Is LGVG Flow an official Nelogica indicator?", "answer": "No. It is an independent indicator compatible with Profit Pro and Profit Ultra, with no official partnership, endorsement or affiliation." },
+          { "question": "Why does it not work in every Profit version?", "answer": "Its logic depends on aggression and flow data available from Profit Pro upward." },
+          { "question": "Do I need to replace my Profit layout?", "answer": "The indicator is added to a WIN chart. The manual explains the import and configuration steps." },
+          { "question": "Can I download the PSF file on a phone?", "answer": "Yes, but it must later be imported on a computer with Profit Pro or Profit Ultra installed." }
+        ]
+      }
+    }
   },
   "pricing": {
     "label": "Investment",
@@ -187,7 +381,7 @@
     "disclaimer": "LGVG Flow is an independent indicator compatible with the Profit platform. B3, Nelogica, Profit and Genial are the property of their respective owners and are mentioned solely to indicate compatibility, without implying partnership, endorsement or official affiliation."
   },
   "footer": {
-    "rights": "All rights reserved", "tagline": "Trade with structure. Trade professionally.", "socialTitle": "Follow content and updates", "instagram": "Gustavo Guimarães on Instagram", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "manual": "Manual", "developedBy": "Developed by UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brazil"
+    "rights": "All rights reserved", "tagline": "Trade with structure. Trade professionally.", "socialTitle": "Follow content and updates", "instagram": "Gustavo Guimarães on Instagram", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "guides": "Guides", "news": "Market News", "manual": "Manual", "developedBy": "Developed by UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brazil"
   },
   "manual": {
     "metaTitle": "LGVG Flow User Manual", "metaDescription": "Installation and usage guide for LGVG Flow on Profit Pro and Profit Ultra.", "label": "User guide", "title": "LGVG Flow Manual", "intro": "Learn how to import, configure and interpret the indicator safely.",

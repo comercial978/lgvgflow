@@ -30,6 +30,7 @@ import { NewsGrid } from '@/components/NewsGrid'
 import { SectionTitle } from '@/components/SectionTitle'
 import { StructuredData } from '@/components/StructuredData'
 import { VideoFacade } from '@/components/VideoFacade'
+import { guideIds, guidePath } from '@/lib/guides'
 import type { Dictionary, Locale } from '@/lib/i18n'
 import { marketNews } from '@/lib/news'
 import { homeSchemas } from '@/lib/schema'
@@ -245,6 +246,31 @@ export function HomePage({ dictionary, locale }: Props) {
               {dictionary.faq.items.map((item) => (
                 <details key={item.question}><summary>{item.question}<ChevronRight aria-hidden="true" size={18} /></summary><p>{item.answer}</p></details>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section guides-section" id="guides">
+          <div className="container">
+            <SectionTitle
+              label={dictionary.guides.label}
+              title={dictionary.guides.homeTitle}
+              description={dictionary.guides.homeDescription}
+            />
+            <div className="guide-card-grid">
+              {guideIds.map((guideId) => {
+                const guide = dictionary.guides.items[guideId]
+                return (
+                  <article className="guide-card fade-up" key={guideId}>
+                    <BookOpen aria-hidden="true" size={24} />
+                    <h3>{guide.cardTitle}</h3>
+                    <p>{guide.cardText}</p>
+                    <a className="text-link" href={guidePath(locale, guideId)}>
+                      {dictionary.guides.read}<ArrowRight aria-hidden="true" size={15} />
+                    </a>
+                  </article>
+                )
+              })}
             </div>
           </div>
         </section>

@@ -16,7 +16,7 @@ export const isLocale = (value: string): value is Locale =>
   supportedLocales.includes(value as Locale)
 
 export const localizedPath = (locale: Locale, path = '') =>
-  `/${locale}${path ? `/${path.replace(/^\//, '')}` : ''}`
+  `/${locale}${path ? `/${path.replace(/^\//, '').replace(/\/$/, '')}` : ''}/`
 
 export const languageAlternates = (path = '') => ({
   'pt-BR': localizedPath('pt', path),
