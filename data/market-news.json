@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-08-13T14:49:45.275Z",
+  "updatedAt": "2026-08-13T17:48:50.948Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "BC reforça combate a fraudes com novas regras para transferências de ativos virtuais",
+      "publishedAt": "2026-08-13T12:42:03-03:00",
+      "summary": "O Banco Central (BC) aprovou um novo conjunto de medidas para fortalecer a prevenção de fraudes em operações com ativos virtuais no Brasil. A Resolução BCB 584 , publicada em 7 de agosto, amplia o alcance da Resolução...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21224/noticia"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-06-22T08:30:42-03:00",
       "summary": "Mais uma novidade para os usuários do Open Finance . A partir de hoje, o cliente poderá optar pelo compartilhamento dos dados de saldo e limite ao conectar sua conta no Pix por Aproximação em carteiras digitais ou ao...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21170/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Pix por aproximação ganha mais flexibilidade e deixa de ter teto fixo de R$500",
-      "publishedAt": "2026-06-19T16:01:50-03:00",
-      "summary": "​O Banco Central (BC) alterou as regras do Pix por aproximação e retirou o teto fixo de R$500 que vigorava para esse tipo de pagamento. Pela Instrução Normativa BCB 746, publicada em 17 de junho, as transações por...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21169/noticia"
     }
   ]
 }
