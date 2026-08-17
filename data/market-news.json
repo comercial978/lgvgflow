@@ -1,7 +1,23 @@
 {
-  "updatedAt": "2026-08-17T11:15:38.602Z",
+  "updatedAt": "2026-08-17T14:16:57.239Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Pix consolida liderança nos pagamentos digitais e projeta novas evoluções até 2030",
+      "publishedAt": "2026-08-17T09:46:52-03:00",
+      "summary": "​O Banco Central (BC) divulgou, em 10 de agosto, o Relatório de Gestão do Pix 2023-2025​ , documento que apresenta um panorama abrangente da evolução do sistema de pagamentos instantâneos nos últimos três anos e detalha...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21227/noticia"
+    },
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 14/08/2026",
+      "publishedAt": "2026-08-14T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/14082026"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -59,14 +75,6 @@
       "url": "https://www.bcb.gov.br/detalhenoticia/21203/noticia"
     },
     {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 17/07/2026",
-      "publishedAt": "2026-07-17T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/17072026"
-    },
-    {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
       "title": "Ecossistema de duplicatas escriturais: títulos de crédito passarão a ser negociados em formato digital",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-06-23T17:12:15-03:00",
       "summary": "A Auditoria Interna (Audit) do Banco Central (BC) recebeu, em 23 de junho, a certificação internacional de qualidade ( Quality Assessment – QA), concedida pelo Instituto dos Auditores Internos do Brasil (IIA Brasil). O...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21176/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Mais eficiência nos pagamentos com o uso do Open Finance",
-      "publishedAt": "2026-06-22T08:30:42-03:00",
-      "summary": "Mais uma novidade para os usuários do Open Finance . A partir de hoje, o cliente poderá optar pelo compartilhamento dos dados de saldo e limite ao conectar sua conta no Pix por Aproximação em carteiras digitais ou ao...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21170/noticia"
     }
   ]
 }
