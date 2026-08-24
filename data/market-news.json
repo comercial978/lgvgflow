@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-08-24T14:31:24.446Z",
+  "updatedAt": "2026-08-24T17:21:42.854Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Banco Central recebe inscrições para três vagas no Programa de Estágio de Pós-Graduação em Pesquisa (PEPP) até 18 de setembro",
+      "publishedAt": "2026-08-24T12:19:33-03:00",
+      "summary": "​O Banco Central (BC) está oferecendo três vagas no Programa de Estágio de Pós-Graduação em Pesquisa (PEPP), do Departamento de Estudos e Pesquisas (Depep). Com duração inicial de seis meses e possibilidade de...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21237/noticia"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-07-01T09:45:15-03:00",
       "summary": "​O Banco Central (BC) anunciou, em 18 de junho, um novo passo no processo de modernização do mercado de câmbio brasileiro. A Resolução BCB 575 ampliou as possibilidades de abertura e movimentação de contas de depósito...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21191/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Auditoria Interna do BC obtém certificação internacional de excelência em auditoria",
-      "publishedAt": "2026-06-23T17:12:15-03:00",
-      "summary": "A Auditoria Interna (Audit) do Banco Central (BC) recebeu, em 23 de junho, a certificação internacional de qualidade ( Quality Assessment – QA), concedida pelo Instituto dos Auditores Internos do Brasil (IIA Brasil). O...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21176/noticia"
     }
   ]
 }
