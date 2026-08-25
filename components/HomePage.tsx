@@ -50,6 +50,16 @@ const ecosystemBrands = [
   { name: 'Genial Investimentos', src: '/assets/ecosystem/genial.webp', className: 'brand-genial' },
 ]
 
+const backtestAssets = [
+  { src: '/assets/backtest/2026-08-20-entradas.png', width: 1680, height: 1050 },
+  { src: '/assets/backtest/2026-08-20-resultados.png', width: 1680, height: 1050 },
+  { src: '/assets/backtest/2026-08-21-entradas.png', width: 1680, height: 1050 },
+  { src: '/assets/backtest/2026-08-24-entradas.png', width: 1680, height: 1050 },
+  { src: '/assets/backtest/2026-08-24-resultados.png', width: 1680, height: 1050 },
+  { src: '/assets/backtest/2026-08-25-entrada.png', width: 1680, height: 1050 },
+  { src: '/assets/backtest/2026-08-25-resultados.png', width: 1680, height: 1050 },
+]
+
 export function HomePage({ dictionary, locale }: Props) {
   const whatsapp = whatsappUrl(dictionary.cta.whatsappMessage)
   const manualFileName = getManualFileName(locale)
@@ -271,6 +281,96 @@ export function HomePage({ dictionary, locale }: Props) {
                   </article>
                 )
               })}
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-alt backtest-section" id="backtest" aria-labelledby="backtest-title">
+          <div className="container">
+            <SectionTitle
+              label={dictionary.backtest.label}
+              title={dictionary.backtest.title}
+              description={dictionary.backtest.description}
+              id="backtest-title"
+            />
+
+            <div className="backtest-context fade-up">
+              <span><Activity aria-hidden="true" size={17} />{dictionary.backtest.environment}</span>
+              <span>{dictionary.backtest.period}</span>
+            </div>
+
+            <dl className="backtest-metrics">
+              {dictionary.backtest.metrics.map((metric) => (
+                <div className="backtest-metric fade-up" key={metric.label}>
+                  <dt>{metric.value}</dt>
+                  <dd>{metric.label}</dd>
+                </div>
+              ))}
+            </dl>
+
+            <div className="backtest-feature">
+              <figure className="backtest-video fade-up">
+                <video
+                  controls
+                  playsInline
+                  preload="none"
+                  poster="/assets/backtest/2026-08-25-entrada.png"
+                  aria-label={dictionary.backtest.videoAria}
+                >
+                  <source src="/assets/backtest/2026-08-25-sessao.mp4" type="video/mp4" />
+                  {dictionary.backtest.videoFallback}
+                </video>
+                <figcaption>
+                  <strong>{dictionary.backtest.videoTitle}</strong>
+                  <span>{dictionary.backtest.videoText}</span>
+                </figcaption>
+              </figure>
+
+              <aside className="backtest-method fade-up">
+                <p className="eyebrow">{dictionary.backtest.methodLabel}</p>
+                <h3>{dictionary.backtest.methodTitle}</h3>
+                <p>{dictionary.backtest.methodText}</p>
+                <ul>
+                  {dictionary.backtest.methodItems.map((item) => (
+                    <li key={item}><Check aria-hidden="true" size={17} />{item}</li>
+                  ))}
+                </ul>
+              </aside>
+            </div>
+
+            <div className="backtest-gallery-heading fade-up">
+              <div>
+                <p className="eyebrow">{dictionary.backtest.galleryLabel}</p>
+                <h3>{dictionary.backtest.galleryTitle}</h3>
+              </div>
+              <p>{dictionary.backtest.galleryText}</p>
+            </div>
+
+            <div className="backtest-gallery">
+              {backtestAssets.map((asset, index) => {
+                const item = dictionary.backtest.gallery[index]
+                return (
+                  <figure className="backtest-shot fade-up" key={asset.src}>
+                    <a href={asset.src} target="_blank" rel="noopener noreferrer" aria-label={`${dictionary.backtest.openImage}: ${item.title}`}>
+                      <img
+                        src={asset.src}
+                        alt={item.alt}
+                        width={asset.width}
+                        height={asset.height}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span>{dictionary.backtest.openImage}<ArrowRight aria-hidden="true" size={15} /></span>
+                    </a>
+                    <figcaption><strong>{item.title}</strong><span>{item.date}</span></figcaption>
+                  </figure>
+                )
+              })}
+            </div>
+
+            <div className="notice-box backtest-disclaimer fade-up">
+              <AlertTriangle aria-hidden="true" size={20} />
+              <div><strong>{dictionary.backtest.disclaimerTitle}</strong><p>{dictionary.backtest.disclaimer}</p></div>
             </div>
           </div>
         </section>

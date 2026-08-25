@@ -260,6 +260,47 @@
       }
     }
   },
+  "backtest": {
+    "label": "Validación operativa",
+    "title": { "prefix": "Backtest LGVG Flow — ", "highlight": "Resultados", "suffix": "" },
+    "description": "Registros de entradas y resultados observados durante pruebas del indicador en el entorno simulado de Profit.",
+    "environment": "Cuenta simulada en Profit Pro",
+    "period": "Muestra acumulada del 20 al 25 de agosto de 2026",
+    "metrics": [
+      { "value": "7", "label": "operaciones registradas" },
+      { "value": "5", "label": "operaciones ganadoras" },
+      { "value": "71,43%", "label": "tasa de acierto de la muestra" },
+      { "value": "R$ 204,00", "label": "resultado total mostrado" }
+    ],
+    "videoTitle": "Sesión de prueba registrada el 25 de agosto de 2026",
+    "videoText": "Grabación completa del gráfico, las señales y la lectura operativa en el simulador.",
+    "videoAria": "Video de una sesión de prueba de LGVG Flow en Profit",
+    "videoFallback": "Tu navegador no puede reproducir este video.",
+    "methodLabel": "Lectura responsable",
+    "methodTitle": "Cómo interpretar esta muestra",
+    "methodText": "Los registros permiten observar cómo se comportó el indicador en las condiciones mostradas, pero no representan una promesa de rendimiento futuro.",
+    "methodItems": [
+      "Operaciones ejecutadas en una cuenta simulada",
+      "Período corto y muestra limitada",
+      "Resultado acumulado mostrado por Profit",
+      "Costos, slippage y condiciones reales pueden cambiar el resultado"
+    ],
+    "galleryLabel": "Evidencias de la plataforma",
+    "galleryTitle": "Entradas e informes de la muestra",
+    "galleryText": "Selecciona una imagen para ver sus detalles en tamaño completo.",
+    "openImage": "Ampliar imagen",
+    "gallery": [
+      { "title": "Señales y entradas en el gráfico", "date": "20/08/2026", "alt": "Gráfico del Mini Índice en Profit con señales y regiones de LGVG Flow el 20 de agosto de 2026" },
+      { "title": "Informe de resultados", "date": "20/08/2026", "alt": "Informe del simulador Profit con cuatro operaciones registradas hasta el 20 de agosto de 2026" },
+      { "title": "Lectura de flujo y entrada", "date": "21/08/2026", "alt": "Gráfico del Mini Índice con lectura de flujo y señal de LGVG Flow el 21 de agosto de 2026" },
+      { "title": "Señal en el contexto del mercado", "date": "24/08/2026", "alt": "Gráfico y libro de órdenes de Profit durante una prueba de LGVG Flow el 24 de agosto de 2026" },
+      { "title": "Evolución acumulada", "date": "24/08/2026", "alt": "Informe acumulado del simulador Profit hasta el 24 de agosto de 2026" },
+      { "title": "Entrada registrada en video", "date": "25/08/2026", "alt": "Gráfico y libro de órdenes durante una entrada simulada con LGVG Flow el 25 de agosto de 2026" },
+      { "title": "Resultado final de la muestra", "date": "25/08/2026", "alt": "Informe final del simulador Profit con siete operaciones registradas hasta el 25 de agosto de 2026" }
+    ],
+    "disclaimerTitle": "Los resultados pasados no garantizan resultados futuros.",
+    "disclaimer": "Esta es una muestra histórica limitada realizada en un entorno simulado. El day trading implica un alto riesgo de pérdida. El rendimiento en simulador puede diferir de la ejecución real y este contenido no constituye asesoramiento de inversión."
+  },
   "pricing": {
     "label": "Inversión", "title": { "prefix": "Elige cómo quieres ", "highlight": "comenzar", "suffix": "" }, "description": "Prueba el indicador o comienza con el paquete completo de mentoría.",
     "indicator": { "title": "Solo el Indicador", "subtitle": "Prueba de 60 días", "price": "Consultar", "note": "Archivo oficial para Profit Pro y Ultra", "features": ["LGVG Flow", "Manual completo", "Prueba de 60 días"], "button": "Probar el indicador" },
