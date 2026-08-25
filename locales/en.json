@@ -16,7 +16,11 @@
     "continue": "Continue in Portuguese",
     "never": "Never ask again"
   },
-  "nav": { "news": "Market News", "guides": "Guides", "test": "Test the Indicator", "access": "Request Access", "menu": "Main navigation" },
+  "nav": {
+    "news": "Market News", "guides": "Guides", "test": "Test the Indicator", "access": "Request Access", "menu": "Main navigation",
+    "sections": "Website sections", "openSections": "Open sections menu", "closeSections": "Close sections menu",
+    "home": "Home", "demo": "Demonstration", "solution": "How it works", "backtest": "Backtest and results", "pricing": "Plans", "downloads": "Trial and downloads", "ecosystem": "LGVG Flow ecosystem", "developer": "Who is behind it"
+  },
   "hero": {
     "eyebrow": "Proprietary indicator for the B3 mini index",
     "title": "LGVG Flow",

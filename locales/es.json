@@ -10,7 +10,11 @@
     "selector": "Seleccionar idioma", "current": "Idioma actual", "names": { "pt": "Português (Brasil)", "en": "English", "es": "Español" },
     "detected": "Detectamos que tu idioma es {language}.", "question": "¿Deseas utilizar esta versión?", "yes": "Sí, cambiar idioma", "continue": "Continuar en portugués", "never": "No volver a preguntar"
   },
-  "nav": { "news": "Noticias", "guides": "Guías", "test": "Probar el Indicador", "access": "Solicitar Acceso", "menu": "Navegación principal" },
+  "nav": {
+    "news": "Noticias", "guides": "Guías", "test": "Probar el Indicador", "access": "Solicitar Acceso", "menu": "Navegación principal",
+    "sections": "Secciones del sitio", "openSections": "Abrir menú de secciones", "closeSections": "Cerrar menú de secciones",
+    "home": "Inicio", "demo": "Demostración", "solution": "Cómo funciona", "backtest": "Backtest y resultados", "pricing": "Planes", "downloads": "Prueba y descargas", "ecosystem": "Ecosistema LGVG Flow", "developer": "Quién está detrás"
+  },
   "hero": {
     "eyebrow": "Indicador propietario para el mini índice B3", "title": "LGVG Flow",
     "headline": { "prefix": "Observa el mercado como los ", "highlight": "grandes participantes", "suffix": "." },

@@ -16,7 +16,11 @@
     "continue": "Continuar em Português",
     "never": "Nunca perguntar novamente"
   },
-  "nav": { "news": "Notícias", "guides": "Guias", "test": "Teste o Indicador", "access": "Solicitar Acesso", "menu": "Navegação principal" },
+  "nav": {
+    "news": "Notícias", "guides": "Guias", "test": "Teste o Indicador", "access": "Solicitar Acesso", "menu": "Navegação principal",
+    "sections": "Seções do site", "openSections": "Abrir menu de seções", "closeSections": "Fechar menu de seções",
+    "home": "Início", "demo": "Demonstração", "solution": "Como funciona", "backtest": "Backtest e resultados", "pricing": "Planos", "downloads": "Teste e downloads", "ecosystem": "Ecossistema LGVG Flow", "developer": "Quem está por trás"
+  },
   "hero": {
     "eyebrow": "Indicador proprietário para mini índice B3",
     "title": "LGVG Flow",

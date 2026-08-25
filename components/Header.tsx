@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react'
 
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import { MobileSectionMenu } from '@/components/MobileSectionMenu'
 import { localeConfig, supportedLocales, type Dictionary, type Locale } from '@/lib/i18n'
 
 type Props = {
@@ -32,6 +33,7 @@ export function Header({ locale, dictionary }: Props) {
             names={dictionary.language.names}
             flags={flags}
           />
+          <MobileSectionMenu locale={locale} labels={dictionary.nav} />
           <a className="button button-small button-primary header-cta" href={`/${locale}/#final-cta`}>
             {dictionary.nav.access}<ArrowUpRight aria-hidden="true" size={16} />
           </a>
