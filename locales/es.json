@@ -12,7 +12,7 @@
   },
   "nav": {
     "news": "Noticias", "guides": "Guías", "test": "Probar el Indicador", "access": "Solicitar Acceso", "menu": "Navegación principal",
-    "sections": "Secciones del sitio", "openSections": "Abrir menú de secciones", "closeSections": "Cerrar menú de secciones",
+    "sections": "Secciones del sitio", "more": "Más", "openSections": "Abrir menú de secciones", "closeSections": "Cerrar menú de secciones",
     "home": "Inicio", "demo": "Demostración", "solution": "Cómo funciona", "backtest": "Backtest y resultados", "pricing": "Planes", "downloads": "Prueba y descargas", "ecosystem": "Ecosistema LGVG Flow", "developer": "Quién está detrás"
   },
   "hero": {

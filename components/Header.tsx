@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react'
 
+import { DesktopMoreMenu } from '@/components/DesktopMoreMenu'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import { MobileSectionMenu } from '@/components/MobileSectionMenu'
 import { localeConfig, supportedLocales, type Dictionary, type Locale } from '@/lib/i18n'
@@ -25,6 +26,7 @@ export function Header({ locale, dictionary }: Props) {
           <a href={`/${locale}/guides/`}>{dictionary.nav.guides}</a>
           <a href={`/${locale}/#news`}>{dictionary.nav.news}</a>
           <a href={`/${locale}/#downloads`}>{dictionary.nav.test}</a>
+          <DesktopMoreMenu locale={locale} labels={dictionary.nav} />
         </nav>
         <div className="header-actions">
           <LanguageSwitcher
