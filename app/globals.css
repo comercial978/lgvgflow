@@ -1713,6 +1713,102 @@ h3 {
   margin-top: 26px;
 }
 
+.backtest-preview-gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.backtest-preview-action {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.backtest-preview-action > span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  max-width: 330px;
+}
+
+.results-overview {
+  margin-bottom: 64px;
+}
+
+.results-method {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.55fr) minmax(0, 1fr);
+  margin-top: 28px;
+}
+
+.results-method .eyebrow,
+.results-method h2 {
+  grid-column: 1;
+}
+
+.results-method > p:not(.eyebrow),
+.results-method ul {
+  grid-column: 2;
+}
+
+.results-method > p:not(.eyebrow) {
+  margin-bottom: 20px;
+}
+
+.results-method ul {
+  margin-top: 0;
+}
+
+.results-archive {
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+.results-timeline {
+  border-top: 1px solid var(--border);
+}
+
+.results-session {
+  padding-block: 52px;
+  scroll-margin-top: 90px;
+}
+
+.results-session + .results-session {
+  border-top: 1px solid var(--border);
+}
+
+.results-session-header {
+  margin-bottom: 24px;
+  max-width: 760px;
+}
+
+.results-session-header time {
+  color: var(--gold);
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.results-session-header h3 {
+  font-size: 1.45rem;
+  margin-bottom: 8px;
+}
+
+.results-session-header p {
+  color: var(--muted-strong);
+  font-size: 0.86rem;
+}
+
+.results-video {
+  margin-bottom: 16px;
+}
+
+.results-session-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .pricing-card {
   min-height: 530px;
   padding: 34px;
@@ -2675,6 +2771,36 @@ h3 {
 
   .backtest-method {
     padding: 24px;
+  }
+
+  .results-method {
+    display: block;
+  }
+
+  .results-method ul {
+    margin-top: 22px;
+  }
+
+  .backtest-preview-action {
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .backtest-preview-action .button {
+    width: 100%;
+  }
+
+  .backtest-preview-action > span {
+    margin-inline: auto;
+  }
+
+  .results-session {
+    padding-block: 40px;
+  }
+
+  .results-session-header h3 {
+    font-size: 1.25rem;
   }
 
   .backtest-shot a > span {

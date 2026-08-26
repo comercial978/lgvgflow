@@ -46,7 +46,7 @@ export function DesktopMoreMenu({ labels, locale }: Props) {
 
   const sections = [
     { label: labels.solution, href: `/${locale}/#solution` },
-    { label: labels.backtest, href: `/${locale}/#backtest` },
+    { label: labels.backtest, href: `/${locale}/results/` },
     { label: labels.pricing, href: `/${locale}/#pricing` },
     { label: labels.downloads, href: `/${locale}/#downloads` },
     { label: labels.ecosystem, href: `/${locale}/#ecosystem` },

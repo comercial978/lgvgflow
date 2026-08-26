@@ -7,7 +7,6 @@ import {
   Camera,
   Check,
   ChevronRight,
-  Crosshair,
   Download,
   EyeOff,
   FileDown,
@@ -30,6 +29,7 @@ import { NewsGrid } from '@/components/NewsGrid'
 import { SectionTitle } from '@/components/SectionTitle'
 import { StructuredData } from '@/components/StructuredData'
 import { VideoFacade } from '@/components/VideoFacade'
+import { backtestAssets, backtestHomeAssetIndexes } from '@/lib/backtest'
 import { guideIds, guidePath } from '@/lib/guides'
 import type { Dictionary, Locale } from '@/lib/i18n'
 import { marketNews } from '@/lib/news'
@@ -48,16 +48,6 @@ const ecosystemBrands = [
   { name: 'Nelogica', src: '/assets/ecosystem/nelogica-symbol.webp', className: 'brand-nelogica' },
   { name: 'Profit', src: '/assets/ecosystem/profit.webp', className: 'brand-profit' },
   { name: 'Genial Investimentos', src: '/assets/ecosystem/genial.webp', className: 'brand-genial' },
-]
-
-const backtestAssets = [
-  { src: '/assets/backtest/2026-08-20-entradas.png', width: 1680, height: 1050 },
-  { src: '/assets/backtest/2026-08-20-resultados.png', width: 1680, height: 1050 },
-  { src: '/assets/backtest/2026-08-21-entradas.png', width: 1680, height: 1050 },
-  { src: '/assets/backtest/2026-08-24-entradas.png', width: 1680, height: 1050 },
-  { src: '/assets/backtest/2026-08-24-resultados.png', width: 1680, height: 1050 },
-  { src: '/assets/backtest/2026-08-25-entrada.png', width: 1680, height: 1050 },
-  { src: '/assets/backtest/2026-08-25-resultados.png', width: 1680, height: 1050 },
 ]
 
 export function HomePage({ dictionary, locale }: Props) {
@@ -299,55 +289,17 @@ export function HomePage({ dictionary, locale }: Props) {
               <span>{dictionary.backtest.period}</span>
             </div>
 
-            <dl className="backtest-metrics">
-              {dictionary.backtest.metrics.map((metric) => (
-                <div className="backtest-metric fade-up" key={metric.label}>
-                  <dt>{metric.value}</dt>
-                  <dd>{metric.label}</dd>
-                </div>
-              ))}
-            </dl>
-
-            <div className="backtest-feature">
-              <figure className="backtest-video fade-up">
-                <video
-                  controls
-                  playsInline
-                  preload="none"
-                  poster="/assets/backtest/2026-08-25-entrada.png"
-                  aria-label={dictionary.backtest.videoAria}
-                >
-                  <source src="/assets/backtest/2026-08-25-sessao.mp4" type="video/mp4" />
-                  {dictionary.backtest.videoFallback}
-                </video>
-                <figcaption>
-                  <strong>{dictionary.backtest.videoTitle}</strong>
-                  <span>{dictionary.backtest.videoText}</span>
-                </figcaption>
-              </figure>
-
-              <aside className="backtest-method fade-up">
-                <p className="eyebrow">{dictionary.backtest.methodLabel}</p>
-                <h3>{dictionary.backtest.methodTitle}</h3>
-                <p>{dictionary.backtest.methodText}</p>
-                <ul>
-                  {dictionary.backtest.methodItems.map((item) => (
-                    <li key={item}><Check aria-hidden="true" size={17} />{item}</li>
-                  ))}
-                </ul>
-              </aside>
-            </div>
-
             <div className="backtest-gallery-heading fade-up">
               <div>
-                <p className="eyebrow">{dictionary.backtest.galleryLabel}</p>
-                <h3>{dictionary.backtest.galleryTitle}</h3>
+                <p className="eyebrow">{dictionary.backtest.previewLabel}</p>
+                <h3>{dictionary.backtest.previewTitle}</h3>
               </div>
-              <p>{dictionary.backtest.galleryText}</p>
+              <p>{dictionary.backtest.previewText}</p>
             </div>
 
-            <div className="backtest-gallery">
-              {backtestAssets.map((asset, index) => {
+            <div className="backtest-gallery backtest-preview-gallery">
+              {backtestHomeAssetIndexes.map((index) => {
+                const asset = backtestAssets[index]
                 const item = dictionary.backtest.gallery[index]
                 return (
                   <figure className="backtest-shot fade-up" key={asset.src}>
@@ -366,6 +318,13 @@ export function HomePage({ dictionary, locale }: Props) {
                   </figure>
                 )
               })}
+            </div>
+
+            <div className="backtest-preview-action fade-up">
+              <a className="button button-primary" href={`/${locale}/results/`}>
+                {dictionary.backtest.viewAll}<ArrowRight aria-hidden="true" size={18} />
+              </a>
+              <span>{dictionary.backtest.viewAllNote}</span>
             </div>
 
             <div className="notice-box backtest-disclaimer fade-up">

@@ -327,16 +327,20 @@
   "backtest": {
     "label": "Operational validation",
     "title": { "prefix": "LGVG Flow backtest — ", "highlight": "Results", "suffix": "" },
-    "description": "Entry and performance records observed while testing the indicator in Profit's simulated trading environment.",
+    "description": "A preview of the entry and performance records observed while testing the indicator in Profit's simulated trading environment.",
+    "metaTitle": "LGVG Flow Backtest Results | Profit Pro",
+    "metaDescription": "Review the LGVG Flow testing history in Profit Pro's simulator, with videos, entries and performance reports organized by date.",
+    "pageTitle": "LGVG Flow backtests and results",
+    "pageIntro": "A chronological archive of sessions, signals and reports recorded in Profit Pro's simulator to document how LGVG Flow behaved under the displayed conditions.",
+    "overviewTitle": "Cumulative sample overview",
     "environment": "Simulated account in Profit Pro",
-    "period": "Cumulative sample from August 20 to 25, 2026",
+    "period": "Cumulative sample from August 20 to 26, 2026",
     "metrics": [
-      { "value": "7", "label": "recorded trades" },
-      { "value": "5", "label": "winning trades" },
-      { "value": "71.43%", "label": "sample win rate" },
-      { "value": "BRL 204.00", "label": "displayed total result" }
+      { "value": "11", "label": "recorded trades" },
+      { "value": "6", "label": "winning trades" },
+      { "value": "54.55%", "label": "sample win rate" },
+      { "value": "BRL 251.00", "label": "displayed total result" }
     ],
-    "videoTitle": "Test session recorded on August 25, 2026",
     "videoText": "Full recording of the chart, signals and operational reading in the simulator.",
     "videoAria": "Video of an LGVG Flow test session in Profit",
     "videoFallback": "Your browser cannot play this video.",
@@ -349,18 +353,32 @@
       "Cumulative result displayed by Profit",
       "Costs, slippage and live conditions may change the result"
     ],
-    "galleryLabel": "Platform evidence",
-    "galleryTitle": "Sample entries and reports",
-    "galleryText": "Select an image to inspect the details at full size.",
+    "previewLabel": "Recent records",
+    "previewTitle": "A preview of the archive",
+    "previewText": "The home page stays focused. The complete archive brings together videos, entries and reports separated by trading day.",
+    "viewAll": "View complete history",
+    "viewAllNote": "Access every session and piece of evidence organized by date.",
+    "archiveLabel": "Trading archive",
+    "archiveTitle": "Sessions organized by date",
+    "archiveText": "The latest records appear first. Select an image to inspect its details at full size.",
     "openImage": "Enlarge image",
     "gallery": [
-      { "title": "Chart signals and entries", "date": "Aug 20, 2026", "alt": "Profit Mini Index chart with LGVG Flow signals and regions on August 20, 2026" },
-      { "title": "Performance report", "date": "Aug 20, 2026", "alt": "Profit simulator report with four trades recorded through August 20, 2026" },
-      { "title": "Order flow reading and entry", "date": "Aug 21, 2026", "alt": "Mini Index chart with an LGVG Flow order flow reading and signal on August 21, 2026" },
+      { "title": "Signals and operational reading", "date": "Aug 26, 2026", "alt": "Mini Index chart, order book and LGVG Flow signals during a test on August 26, 2026" },
+      { "title": "Updated cumulative report", "date": "Aug 26, 2026", "alt": "Profit simulator report with eleven trades and cumulative performance through August 26, 2026" },
+      { "title": "Entry recorded on video", "date": "Aug 25, 2026", "alt": "Chart and order book during a simulated LGVG Flow entry on August 25, 2026" },
+      { "title": "Cumulative session result", "date": "Aug 25, 2026", "alt": "Profit simulator report with seven trades recorded through August 25, 2026" },
       { "title": "Signal in market context", "date": "Aug 24, 2026", "alt": "Profit chart and order book during an LGVG Flow test on August 24, 2026" },
       { "title": "Cumulative progress", "date": "Aug 24, 2026", "alt": "Cumulative Profit simulator report through August 24, 2026" },
-      { "title": "Entry recorded on video", "date": "Aug 25, 2026", "alt": "Chart and order book during a simulated LGVG Flow entry on August 25, 2026" },
-      { "title": "Final sample result", "date": "Aug 25, 2026", "alt": "Final Profit simulator report with seven trades recorded through August 25, 2026" }
+      { "title": "Order flow reading and entry", "date": "Aug 21, 2026", "alt": "Mini Index chart with an LGVG Flow order flow reading and signal on August 21, 2026" },
+      { "title": "Chart signals and entries", "date": "Aug 20, 2026", "alt": "Profit Mini Index chart with LGVG Flow signals and regions on August 20, 2026" },
+      { "title": "Initial performance report", "date": "Aug 20, 2026", "alt": "Profit simulator report with four trades recorded through August 20, 2026" }
+    ],
+    "sessions": [
+      { "date": "August 26, 2026", "title": "Order flow reading and updated result", "summary": "A session featuring chart signals, the order book and the cumulative report updated after the day's trades.", "videoTitle": "Session recorded on August 26, 2026" },
+      { "date": "August 25, 2026", "title": "Recorded entry and cumulative progress", "summary": "An operational reading video accompanied by the entry record and the sample performance report.", "videoTitle": "Session recorded on August 25, 2026" },
+      { "date": "August 24, 2026", "title": "Signal in market context", "summary": "Chart, order book and cumulative performance evidence from the simulated account.", "videoTitle": "Session from August 24, 2026" },
+      { "date": "August 21, 2026", "title": "Order flow reading and entry", "summary": "A record of the signal displayed by LGVG Flow on the Mini Index chart.", "videoTitle": "Session from August 21, 2026" },
+      { "date": "August 20, 2026", "title": "Beginning of the documented sample", "summary": "The first entry records and trading report in this testing series.", "videoTitle": "Session from August 20, 2026" }
     ],
     "disclaimerTitle": "Past results do not guarantee future results.",
     "disclaimer": "This is a limited historical sample produced in a simulated environment. Day trading involves a high risk of loss. Simulator performance may differ from live execution, and this content is not investment advice."

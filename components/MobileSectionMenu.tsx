@@ -45,7 +45,7 @@ export function MobileSectionMenu({ labels, locale }: Props) {
     { label: labels.home, href: `/${locale}/#home` },
     { label: labels.demo, href: `/${locale}/#demo` },
     { label: labels.solution, href: `/${locale}/#solution` },
-    { label: labels.backtest, href: `/${locale}/#backtest` },
+    { label: labels.backtest, href: `/${locale}/results/` },
     { label: labels.guides, href: `/${locale}/guides/` },
     { label: labels.pricing, href: `/${locale}/#pricing` },
     { label: labels.downloads, href: `/${locale}/#downloads` },

@@ -10,12 +10,14 @@ const guideRouteData = JSON.parse(await readFile(path.join(root, 'data', 'guide-
 const marketNews = JSON.parse(await readFile(path.join(root, 'data', 'market-news.json'), 'utf8'))
 const newsModifiedAt = marketNews.updatedAt.slice(0, 10)
 const guideModifiedAt = guideRouteData.modifiedAt
-const homeModifiedAt = '2026-08-25'
-const sitemapModifiedAt = [newsModifiedAt, guideModifiedAt, homeModifiedAt].sort().at(-1)
+const homeModifiedAt = '2026-08-26'
+const resultsModifiedAt = '2026-08-26'
+const sitemapModifiedAt = [newsModifiedAt, guideModifiedAt, homeModifiedAt, resultsModifiedAt].sort().at(-1)
 
 const staticPages = [
   { path: '', changefreq: 'weekly', priority: '1.0', lastmod: homeModifiedAt },
   { path: 'guides', changefreq: 'monthly', priority: '0.8', lastmod: guideModifiedAt },
+  { path: 'results', changefreq: 'weekly', priority: '0.8', lastmod: resultsModifiedAt },
   { path: 'news', changefreq: 'daily', priority: '0.7', lastmod: newsModifiedAt },
   { path: 'manual', changefreq: 'monthly', priority: '0.6' },
   { path: 'privacy', changefreq: 'yearly', priority: '0.3' },
