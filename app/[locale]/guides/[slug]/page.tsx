@@ -67,7 +67,7 @@ export default async function GuidePage({ params }: Props) {
       url: pageUrl,
       mainEntityOfPage: pageUrl,
       inLanguage: localeConfig[locale].htmlLang,
-      datePublished: guidePublishedAt,
+      datePublished: guidePublishedAt(guideId),
       dateModified: guideModifiedAt,
       image: `${siteConfig.url}/assets/video/lgvg-flow-demo.webp`,
       author: {

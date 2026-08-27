@@ -2562,7 +2562,7 @@ h3 {
     grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   }
 
-  .guide-card:last-child {
+  .guide-card:last-child:nth-child(odd) {
     grid-column: 1 / -1;
   }
 
@@ -2808,7 +2808,7 @@ h3 {
     transform: none;
   }
 
-  .guide-card:last-child {
+  .guide-card:last-child:nth-child(odd) {
     grid-column: auto;
   }
 

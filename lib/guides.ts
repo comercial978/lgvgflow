@@ -1,18 +1,18 @@
 import guideRouteData from '@/data/guide-routes.json'
 import type { Locale } from '@/lib/i18n-config'
 
-export const guideIds = ['orderFlow', 'miniIndex', 'profitNelogica'] as const
+export const guideIds = ['orderFlow', 'miniIndex', 'miniDollar', 'profitNelogica'] as const
 export type GuideId = (typeof guideIds)[number]
 
 type GuideRouteData = {
-  publishedAt: string
+  publishedAt: Record<GuideId, string>
   modifiedAt: string
   guides: Record<GuideId, Record<Locale, string>>
 }
 
 const routeData = guideRouteData as GuideRouteData
 
-export const guidePublishedAt = routeData.publishedAt
+export const guidePublishedAt = (guideId: GuideId) => routeData.publishedAt[guideId]
 export const guideModifiedAt = routeData.modifiedAt
 
 export const guideSlug = (locale: Locale, guideId: GuideId) =>

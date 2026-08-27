@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Order Flow Indicator for the B3 Mini Index | LGVG Flow",
-    "description": "Order flow indicator for the B3 Mini Index (WIN) on Nelogica Profit. View aggression, absorption and liquidity. Start a free 60-day trial.",
-    "keywords": ["order flow indicator", "mini index indicator", "Profit indicator", "Nelogica", "WIN", "B3", "day trading"],
+    "title": "Order Flow Indicator for B3 Mini Index and Mini Dollar | LGVG Flow",
+    "description": "Order flow indicator for the B3 Mini Index (WIN) and Mini Dollar (WDO) on Nelogica Profit. View aggression, absorption and liquidity. Free 60-day trial.",
+    "keywords": ["order flow indicator", "mini index indicator", "mini dollar indicator", "WDO indicator", "Profit indicator", "Nelogica", "WIN", "WDO", "B3", "day trading"],
     "ogTitle": "LGVG Flow | Read order flow with greater clarity",
-    "ogDescription": "Advanced institutional order flow reading for mini index traders."
+    "ogDescription": "Advanced institutional order flow reading for B3 Mini Index and Mini Dollar traders."
   },
   "language": {
     "selector": "Select language",
@@ -22,7 +22,7 @@
     "home": "Home", "demo": "Demonstration", "solution": "How it works", "backtest": "Backtest and results", "pricing": "Plans", "downloads": "Trial and downloads", "ecosystem": "LGVG Flow ecosystem", "developer": "Who is behind it"
   },
   "hero": {
-    "eyebrow": "Proprietary indicator for the B3 mini index",
+    "eyebrow": "Indicator for the B3 Mini Index and Mini Dollar",
     "title": "LGVG Flow",
     "headline": { "prefix": "See the market through the eyes of ", "highlight": "institutional players", "suffix": "." },
     "description": "An order flow indicator designed to reveal institutional activity before it becomes clear in price action.",
@@ -30,7 +30,7 @@
     "secondary": "View Installation Manual",
     "trialDetails": "✓ No credit card • Compatible with Profit Pro and Ultra • 60-day trial license",
     "mobileNotice": "📱 Viewing on your phone? Save this page or send the link to your WhatsApp so you can install the indicator later on your computer.",
-    "stats": [{ "value": "WIN", "label": "B3 mini index" }, { "value": "Flow", "label": "Real-time reading" }, { "value": "Profit", "label": "Pro and Ultra" }]
+    "stats": [{ "value": "WIN/WDO", "label": "B3 futures" }, { "value": "Flow", "label": "Real-time reading" }, { "value": "Profit", "label": "Pro and Ultra" }]
   },
   "video": {
     "label": "Demonstration",
@@ -59,7 +59,7 @@
   },
   "problem": {
     "label": "The Problem",
-    "title": { "prefix": "Why do so many traders ", "highlight": "lose money", "suffix": " on WIN?" },
+    "title": { "prefix": "Why do so many traders ", "highlight": "lose money", "suffix": " in day trading?" },
     "description": "Late entries and price-only indicators hide what is actually moving the market.",
     "cards": [
       { "title": "Late entries", "text": "The chart shows the move after it happens. You enter when institutional players may already be leaving." },
@@ -73,7 +73,7 @@
   "solution": {
     "label": "The Solution",
     "title": { "prefix": "What ", "highlight": "LGVG Flow", "suffix": " delivers" },
-    "description": "Built for the B3 mini index after extensive operational testing and validation.",
+    "description": "Built to support order flow reading in the B3 Mini Index WIN and Mini Dollar WDO.",
     "cards": [
       { "title": "Aggression Reading", "text": "Analyzes executed buying and selling pressure in real time." },
       { "title": "Absorption Detection", "text": "Helps identify when large participants absorb aggressive orders to build positions." },
@@ -84,10 +84,10 @@
   "technical": {
     "label": "Technical Development",
     "title": { "prefix": "Built by someone who ", "highlight": "trades the market", "suffix": "" },
-    "paragraphs": ["LGVG Flow was developed inside Profit using the order flow data provided by the platform.", "Its logic was calibrated for the mini index with an emphasis on visual clarity and decision support."],
-    "features": ["Real-time aggression reading", "Liquidity region mapping", "Visual buy and sell signals", "Calibrated for WIN dynamics"],
+    "paragraphs": ["LGVG Flow was developed inside Profit using the order flow data provided by the platform.", "Its logic was updated for the Mini Index WIN and Mini Dollar WDO with an emphasis on visual clarity and decision support."],
+    "features": ["Real-time aggression reading", "Liquidity region mapping", "Visual buy and sell signals", "Compatible with WIN and WDO"],
     "specsTitle": "LGVG Flow — Specifications",
-    "specs": [{ "label": "Instrument", "value": "Mini index (WIN)" }, { "label": "Platform", "value": "Profit Pro / Ultra" }, { "label": "Data", "value": "Order flow" }, { "label": "File", "value": "LGVGFLOWATUAL.psf" }]
+    "specs": [{ "label": "Instruments", "value": "Mini Index (WIN) and Mini Dollar (WDO)" }, { "label": "Platform", "value": "Profit Pro / Ultra" }, { "label": "Data", "value": "Order flow" }, { "label": "File", "value": "LGVGFLOWATUAL.psf" }]
   },
   "authority": {
     "label": "Technology education",
@@ -118,15 +118,15 @@
   "audience": {
     "label": "Ideal Profile",
     "title": { "prefix": "Was LGVG Flow built ", "highlight": "for you?", "suffix": "" },
-    "description": "Designed for mini index traders who are developing their market reading.",
-    "items": ["B3 mini index (WIN) traders", "Day traders and scalpers", "Price action and order flow users", "Profit Pro or Ultra users", "Traders studying institutional activity", "Traders looking to refine entries and exits"]
+    "description": "Designed for Mini Index and Mini Dollar traders who are developing their market reading.",
+    "items": ["B3 Mini Index (WIN) and Mini Dollar (WDO) traders", "Day traders and scalpers", "Price action and order flow users", "Profit Pro or Ultra users", "Traders studying institutional activity", "Traders looking to refine entries and exits"]
   },
   "faq": {
     "label": "Frequently Asked Questions",
     "title": { "prefix": "What to know before ", "highlight": "you trade", "suffix": "" },
     "items": [
       { "question": "Does LGVG Flow work with every Profit version?", "answer": "No. It was developed for Profit Pro and Profit Ultra, which provide the required flow data." },
-      { "question": "Which instrument is the indicator focused on?", "answer": "It focuses on the WIN mini index traded on B3." },
+      { "question": "Which instruments does the indicator support?", "answer": "LGVG Flow supports the B3 Mini Index WIN and Mini Dollar WDO." },
       { "question": "Is LGVG Flow a Nelogica indicator?", "answer": "No. LGVG Flow is an independent indicator built to use the flow data available in Nelogica's Profit Pro and Profit Ultra platforms. There is no official affiliation or endorsement." },
       { "question": "How is order flow different from price-based indicators?", "answer": "Order flow looks at executed trades, aggression, absorption and liquidity. Moving averages, RSI and MACD are calculated mainly from historical prices. The approaches can complement each other." },
       { "question": "Does the indicator guarantee day-trading results?", "answer": "No. It supports market reading, but trading involves risk and requires risk management." }
@@ -134,19 +134,19 @@
   },
   "guides": {
     "label": "Educational content",
-    "homeTitle": { "prefix": "Guides to ", "highlight": "order flow and the B3 Mini Index", "suffix": "" },
-    "homeDescription": "Original content on order flow, choosing a WIN indicator and using LGVG Flow on Profit with greater context.",
-    "metaTitle": "Order Flow and B3 Mini Index Guides | LGVG Flow",
-    "metaDescription": "Learn about order flow indicators, the B3 Mini Index and compatibility with Nelogica Profit Pro and Profit Ultra.",
-    "indexTitle": "Guides to order flow, the B3 Mini Index and Profit",
+    "homeTitle": { "prefix": "Guides to ", "highlight": "order flow, WIN and WDO", "suffix": "" },
+    "homeDescription": "Original content on order flow, choosing indicators for WIN and WDO, and using LGVG Flow on Profit with greater context.",
+    "metaTitle": "Order Flow Guides for B3 Mini Index and Mini Dollar | LGVG Flow",
+    "metaDescription": "Learn about order flow in the B3 Mini Index WIN and Mini Dollar WDO and compatibility with Nelogica Profit Pro and Profit Ultra.",
+    "indexTitle": "Guides to order flow, the B3 Mini Index, Mini Dollar and Profit",
     "indexIntro": "Practical content to understand the data behind price, evaluate indicators and use the Profit platform responsibly.",
     "read": "Read the complete guide",
     "contents": "In this guide",
     "byline": "By Gustavo Guimarães",
-    "reviewed": "Reviewed August 11, 2026",
+    "reviewed": "Reviewed August 27, 2026",
     "faqTitle": "Frequently asked questions",
     "riskTitle": "Risk notice",
-    "riskText": "Day trading and B3 Mini Index futures involve a high risk of loss. This content is educational, is not investment advice and does not guarantee results.",
+    "riskText": "Day trading the B3 Mini Index and Mini Dollar involves a high risk of loss. This content is educational, is not investment advice and does not guarantee results.",
     "ctaTitle": "See order flow on the chart",
     "ctaText": "Test LGVG Flow for 60 days on Profit Pro or Profit Ultra and read the manual before using the indicator.",
     "ctaButton": "Test the indicator",
@@ -155,10 +155,10 @@
       "orderFlow": {
         "cardTitle": "Order flow indicators: aggression, absorption and liquidity",
         "cardText": "Understand what an order flow indicator observes and how this reading differs from indicators calculated only from price.",
-        "metaTitle": "Order Flow Guide for the B3 Mini Index | LGVG Flow",
-        "metaDescription": "Learn how an order flow indicator reads aggression, absorption and liquidity in the B3 Mini Index and how LGVG Flow organizes this data.",
+        "metaTitle": "Order Flow Indicator for B3 Mini Index and Mini Dollar | LGVG Flow",
+        "metaDescription": "Learn how an order flow indicator reads aggression, absorption and liquidity in the B3 Mini Index WIN and Mini Dollar WDO.",
         "eyebrow": "Market reading",
-        "title": "Order flow indicators: reading aggression, absorption and liquidity in the B3 Mini Index",
+        "title": "Order flow indicators: aggression, absorption and liquidity in WIN and WDO",
         "intro": "An order flow indicator helps reveal activity taking place behind a candle. This guide explains which data is observed, what it may indicate and the limits of this type of reading.",
         "sections": [
           {
@@ -170,8 +170,8 @@
             "items": []
           },
           {
-            "title": "What to observe in the B3 Mini Index",
-            "paragraphs": ["The speed and volatility of WIN can make manual reading demanding. The goal is not to react to every color change, but to look for agreement between flow, price region and the session context."],
+            "title": "What to observe in the B3 Mini Index WIN and Mini Dollar WDO",
+            "paragraphs": ["The speed and volatility of WIN and WDO can make manual reading demanding. The goal is not to react to every color change, but to look for agreement between flow, price region and the context of each instrument."],
             "items": [
               "Executed buying and selling aggression",
               "Possible absorption when high volume produces limited price progress",
@@ -190,7 +190,7 @@
           {
             "title": "How LGVG Flow organizes the reading",
             "paragraphs": [
-              "LGVG Flow was developed for the B3 Mini Index and uses flow data supplied by Profit. It displays visual signals and colored liquidity regions so traders can compare price behavior with executed pressure.",
+              "LGVG Flow supports the B3 Mini Index WIN and Mini Dollar WDO and uses flow data supplied by Profit. It displays visual signals and colored liquidity regions so traders can compare price behavior with executed pressure.",
               "A signal is not an automatic order. Traders still need to check whether a region has already been mitigated, assess the day's context and define risk, stop and position size before entering."
             ],
             "items": ["Real-time aggression reading", "Liquidity-region mapping", "Visual buy and sell signals", "Educational use supported by an installation and interpretation manual"]
@@ -201,7 +201,7 @@
               "Because it depends on actual flow data, LGVG Flow requires Profit Pro or Profit Ultra. Lower versions do not supply all the information needed for correct operation.",
               "The 60-day trial lets traders observe the indicator in simulation and decide whether its reading fits their process. No indicator removes noise, slippage, changing volatility or financial risk."
             ],
-            "items": ["Compatible platforms: Profit Pro and Profit Ultra", "Primary instrument: B3 Mini Index WIN", "Import file: LGVGFLOWATUAL.psf", "The indicator does not place orders automatically"]
+            "items": ["Compatible platforms: Profit Pro and Profit Ultra", "Supported instruments: B3 Mini Index WIN and Mini Dollar WDO", "Import file: LGVGFLOWATUAL.psf", "The indicator does not place orders automatically"]
           }
         ],
         "faq": [
@@ -260,16 +260,88 @@
         ],
         "faq": [
           { "question": "What is the best indicator for the B3 Mini Index?", "answer": "There is no universally best indicator. The choice depends on the data, the trader's method, clarity and responsible testing in simulation." },
-          { "question": "Does LGVG Flow also work with the B3 Mini Dollar?", "answer": "The product and its calibration were developed specifically for the B3 Mini Index WIN." },
+          { "question": "Does LGVG Flow also work with the B3 Mini Dollar?", "answer": "Yes. The current version supports both the B3 Mini Index WIN and Mini Dollar WDO on Profit Pro or Profit Ultra." },
           { "question": "Can a beginner study order flow?", "answer": "Yes, preferably in simulation and alongside fundamentals about the market, platform and risk management." },
           { "question": "Does the indicator trade automatically?", "answer": "No. LGVG Flow displays information on the chart but does not place orders." }
+        ]
+      },
+      "miniDollar": {
+        "cardTitle": "B3 Mini Dollar WDO indicator: flow, liquidity and context",
+        "cardText": "Learn how LGVG Flow supports aggression, absorption and liquidity-region reading in the B3 Mini Dollar.",
+        "metaTitle": "B3 Mini Dollar WDO Indicator for Profit | LGVG Flow",
+        "metaDescription": "Explore LGVG Flow for the B3 Mini Dollar WDO, with aggression, absorption and liquidity reading on Profit Pro and Profit Ultra.",
+        "eyebrow": "B3 Mini Dollar WDO",
+        "title": "B3 Mini Dollar WDO indicator: reading order flow and liquidity on Profit",
+        "intro": "The B3 Mini Dollar has its own dynamics and can react quickly to order flow and macroeconomic context. The current LGVG Flow version is prepared to organize this reading on WDO as well.",
+        "sections": [
+          {
+            "title": "What is the B3 Mini Dollar WDO?",
+            "paragraphs": [
+              "WDO is the smaller-sized US dollar futures contract traded on B3. Traders use it to follow currency movements during the session, and it can experience rapid changes in volatility and liquidity.",
+              "Because it is different from the B3 Mini Index, WDO requires dedicated study of movement, financial value, trading hours and risk management. A numeric rule used on WIN should not be transferred automatically to the Mini Dollar."
+            ],
+            "items": []
+          },
+          {
+            "title": "How order flow can help interpret WDO",
+            "paragraphs": [
+              "Order flow reading observes executed trades, buying and selling aggression, potential absorption and regions where liquidity interest may be present.",
+              "In the Mini Dollar, this information can complement price structure and the context of the day. It does not predict the market with certainty and must be interpreted alongside predefined risk."
+            ],
+            "items": [
+              "Real-time buying and selling aggression",
+              "Potential absorption regions",
+              "Liquidity lines that have not yet been mitigated",
+              "Visual signals placed in chart context"
+            ]
+          },
+          {
+            "title": "Using LGVG Flow on the Mini Dollar",
+            "paragraphs": [
+              "The current LGVG Flow version supports both the B3 Mini Index WIN and Mini Dollar WDO. Import the same LGVGFLOWATUAL.psf file into Profit and add it to the chart you want to study.",
+              "Because the indicator uses actual flow data, Profit Pro or Profit Ultra is required. LGVG Flow does not place orders or replace the trader's decision."
+            ],
+            "items": [
+              "Compatible with WDO and WIN",
+              "Profit Pro or Profit Ultra",
+              "Official LGVGFLOWATUAL.psf file",
+              "Initial use recommended in simulation"
+            ]
+          },
+          {
+            "title": "How to test the indicator on WDO",
+            "paragraphs": [
+              "After importing the file, open a Mini Dollar chart, add LGVG Flow and observe different periods of the session in simulation. Record the context, signal, liquidity region and subsequent price behavior.",
+              "The free 60-day trial lets you learn the reading without a credit card. Avoid drawing performance conclusions from only a few trades or one market condition."
+            ],
+            "items": [
+              "Confirm that the open chart is WDO",
+              "Validate signals in simulation first",
+              "Record entries, stops and results",
+              "Observe days with different volatility levels"
+            ]
+          },
+          {
+            "title": "Risk management specific to the Mini Dollar",
+            "paragraphs": [
+              "Stops, targets and contract quantity must consider WDO dynamics and financial value. The educational 250-point examples presented for the B3 Mini Index are not automatic parameters for the Mini Dollar.",
+              "Define risk before entry, respect a daily loss limit and stop trading when conditions are unclear. No indicator guarantees profitability."
+            ],
+            "items": []
+          }
+        ],
+        "faq": [
+          { "question": "Does LGVG Flow work on the B3 Mini Dollar WDO?", "answer": "Yes. The current version supports WDO and WIN when used on Profit Pro or Profit Ultra." },
+          { "question": "Do I need another file for WDO?", "answer": "No. The official LGVGFLOWATUAL.psf file supports both instruments and should be added to the chart being analyzed." },
+          { "question": "Can I use the same 250-point WIN stop on WDO?", "answer": "Not as an automatic rule. The Mini Dollar has its own dynamics and financial value, so stops and targets must be defined specifically for the instrument and trading plan." },
+          { "question": "Does the indicator submit Mini Dollar orders?", "answer": "No. LGVG Flow provides visual signals and context, but every decision and order remains the user's responsibility." }
         ]
       },
       "profitNelogica": {
         "cardTitle": "Indicator for Nelogica Profit: compatibility and installation",
         "cardText": "Understand which Profit versions provide the required data, how to import the PSF file and what independent compatibility means.",
         "metaTitle": "Indicator for Nelogica Profit Pro and Ultra | LGVG Flow",
-        "metaDescription": "Meet LGVG Flow, an independent indicator for Nelogica Profit Pro and Profit Ultra with order flow reading for the B3 Mini Index WIN.",
+        "metaDescription": "Meet LGVG Flow, an independent indicator for Nelogica Profit Pro and Profit Ultra with order flow reading for the B3 Mini Index WIN and Mini Dollar WDO.",
         "eyebrow": "Profit Pro and Profit Ultra",
         "title": "Indicator for Nelogica Profit: compatibility, installation and order flow",
         "intro": "LGVG Flow is an independent indicator developed for Profit Pro and Profit Ultra. Learn why the platform version matters and how to complete a safe installation.",
@@ -277,7 +349,7 @@
           {
             "title": "LGVG Flow and the Profit platform",
             "paragraphs": [
-              "Profit is a trading platform developed by Nelogica. LGVG Flow uses the platform's import features and the flow data available in compatible versions to display its B3 Mini Index reading on the chart.",
+              "Profit is a trading platform developed by Nelogica. LGVG Flow uses the platform's import features and the flow data available in compatible versions to display its reading on B3 Mini Index and Mini Dollar charts.",
               "LGVG Flow is not developed, sold or endorsed by Nelogica. The trademarks are mentioned only to explain technical compatibility."
             ],
             "items": []
@@ -293,10 +365,10 @@
           {
             "title": "How to import the indicator into Profit",
             "paragraphs": [
-              "The official file is named LGVGFLOWATUAL.psf. Import it through Profit's strategy manager, then add the indicator to a WIN chart.",
+              "The official file is named LGVGFLOWATUAL.psf. Import it through Profit's strategy manager, then add the indicator to a WIN or WDO chart.",
               "Read the manual before use because it covers both installation and the meaning of the signals and colored liquidity lines."
             ],
-            "items": ["Download only from the official LGVG Flow website", "Import LGVGFLOWATUAL.psf into Profit", "Open a B3 Mini Index WIN chart", "Add the indicator and validate it in simulation"]
+            "items": ["Download only from the official LGVG Flow website", "Import LGVGFLOWATUAL.psf into Profit", "Open a B3 Mini Index WIN or Mini Dollar WDO chart", "Add the indicator and validate it in simulation"]
           },
           {
             "title": "What the reading displays",
@@ -318,7 +390,7 @@
         "faq": [
           { "question": "Is LGVG Flow an official Nelogica indicator?", "answer": "No. It is an independent indicator compatible with Profit Pro and Profit Ultra, with no official partnership, endorsement or affiliation." },
           { "question": "Why does it not work in every Profit version?", "answer": "Its logic depends on aggression and flow data available from Profit Pro upward." },
-          { "question": "Do I need to replace my Profit layout?", "answer": "The indicator is added to a WIN chart. The manual explains the import and configuration steps." },
+          { "question": "Do I need to replace my Profit layout?", "answer": "The indicator is added to a WIN or WDO chart. The manual explains the import and configuration steps." },
           { "question": "Can I download the PSF file on a phone?", "answer": "Yes, but it must later be imported on a computer with Profit Pro or Profit Ultra installed." }
         ]
       }
@@ -416,7 +488,7 @@
       "Founder of UAI Software and consultant to Grupo Cybersul, he has experience developing management software, web platforms, corporate dashboards and vehicle tracking systems.",
       "He specializes in Telecommunications Engineering and Information Technology, has complementary studies in Law and a specialization in Web 3.0 (Blockchain, Smart Contracts and the Metaverse) from Brazil's Ministry of Science, Technology and Innovation (MCTI).",
       "He is also the author of a technical work on GSM approved by the Instituto Superior de Engenharia de Lisboa (ISEL), in partnership with the University of Franca.",
-      "This experience in technology, systems analysis and software development was applied to the creation of LGVG Flow, an indicator designed to help traders read order flow, liquidity and operational context in B3 Mini Index trading."
+      "This experience in technology, systems analysis and software development was applied to the creation of LGVG Flow, an indicator designed to help traders read order flow, liquidity and operational context in B3 Mini Index and Mini Dollar trading."
     ],
     "credentials": [
       "Founder of UAI Software",
@@ -449,8 +521,8 @@
   "manual": {
     "metaTitle": "LGVG Flow User Manual", "metaDescription": "Installation and usage guide for LGVG Flow on Profit Pro and Profit Ultra.", "label": "User guide", "title": "LGVG Flow Manual", "intro": "Learn how to import, configure and interpret the indicator safely.",
     "requirementsTitle": "Before you begin", "requirements": ["Profit Pro or Profit Ultra installed", "LGVGFLOWATUAL.psf file", "Account with access to order flow data"],
-    "stepsTitle": "Installation", "steps": [{ "title": "Download the file", "text": "Save the official indicator file in an easy-to-find folder." }, { "title": "Import into Profit", "text": "Open the strategy manager and import LGVGFLOWATUAL.psf." }, { "title": "Add it to the chart", "text": "Open a WIN chart and add LGVG Flow to the indicators." }, { "title": "Start in simulation", "text": "Validate your reading and risk management before trading a live account." }],
-    "riskTitle": "Risk management", "riskText": "For one contract, the educational example uses a target and stop of up to 250 points, always subject to the trader's risk profile. Results are not guaranteed.", "pdf": "Download the complete PDF manual", "indicator": "Download indicator", "back": "Back to website"
+    "stepsTitle": "Installation", "steps": [{ "title": "Download the file", "text": "Save the official indicator file in an easy-to-find folder." }, { "title": "Import into Profit", "text": "Open the strategy manager and import LGVGFLOWATUAL.psf." }, { "title": "Add it to the chart", "text": "Open a WIN or WDO chart and add LGVG Flow to the indicators." }, { "title": "Start in simulation", "text": "Validate your reading and risk management before trading a live account." }],
+    "riskTitle": "Risk management", "riskText": "On WIN, the educational example uses a target and stop of up to 250 points for one contract. On WDO, define parameters according to the instrument's own dynamics and financial value. Results are not guaranteed.", "pdf": "Download the complete PDF manual", "indicator": "Download indicator", "back": "Back to website"
   },
   "privacy": {
     "metaTitle": "Privacy Policy | LGVG Flow", "metaDescription": "Learn how LGVG Flow handles data and browsing preferences.", "title": "Privacy Policy", "updated": "Last updated: July 21, 2026",

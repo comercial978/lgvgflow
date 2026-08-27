@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Indicador de Fluxo de Ordens para Mini Índice | LGVG Flow",
-    "description": "Indicador de fluxo de ordens para Mini Índice (WIN) na plataforma Profit da Nelogica. Visualize agressão, absorção e liquidez. Teste grátis por 60 dias.",
-    "keywords": ["indicador de fluxo de ordens", "indicador mini índice", "indicador Profit", "Nelogica", "WIN", "B3", "day trade"],
+    "title": "Indicador de Fluxo para Mini Índice e Mini Dólar | LGVG Flow",
+    "description": "Indicador de fluxo de ordens para Mini Índice (WIN) e Mini Dólar (WDO) no Profit da Nelogica. Visualize agressão, absorção e liquidez. Teste grátis por 60 dias.",
+    "keywords": ["indicador de fluxo de ordens", "indicador mini índice", "indicador mini dólar", "indicador WDO", "indicador Profit", "Nelogica", "WIN", "WDO", "B3", "day trade"],
     "ogTitle": "LGVG Flow | Leia o fluxo com mais clareza",
-    "ogDescription": "Leitura avançada do fluxo institucional para traders de mini índice."
+    "ogDescription": "Leitura avançada do fluxo institucional para traders de Mini Índice e Mini Dólar."
   },
   "language": {
     "selector": "Selecionar idioma",
@@ -22,7 +22,7 @@
     "home": "Início", "demo": "Demonstração", "solution": "Como funciona", "backtest": "Backtest e resultados", "pricing": "Planos", "downloads": "Teste e downloads", "ecosystem": "Ecossistema LGVG Flow", "developer": "Quem está por trás"
   },
   "hero": {
-    "eyebrow": "Indicador proprietário para mini índice B3",
+    "eyebrow": "Indicador para Mini Índice e Mini Dólar B3",
     "title": "LGVG Flow",
     "headline": { "prefix": "Enxergue o mercado como os ", "highlight": "tubarões", "suffix": "." },
     "description": "Indicador de fluxo de ordens desenvolvido para revelar a atuação institucional antes que ela fique evidente no preço.",
@@ -31,7 +31,7 @@
     "trialDetails": "✓ Sem cartão de crédito • Compatível com Profit Pro e Ultra • Licença de teste por 60 dias",
     "mobileNotice": "📱 Está acessando pelo celular? Salve esta página ou envie o link para seu WhatsApp para instalar o indicador depois no computador.",
     "stats": [
-      { "value": "WIN", "label": "Mini índice B3" },
+      { "value": "WIN/WDO", "label": "Futuros B3" },
       { "value": "Fluxo", "label": "Leitura em tempo real" },
       { "value": "Profit", "label": "Pro e Ultra" }
     ]
@@ -63,7 +63,7 @@
   },
   "problem": {
     "label": "O Problema",
-    "title": { "prefix": "Por que tantos traders ", "highlight": "perdem dinheiro", "suffix": " no WIN?" },
+    "title": { "prefix": "Por que tantos traders ", "highlight": "perdem dinheiro", "suffix": " no day trade?" },
     "description": "Entradas atrasadas e indicadores baseados apenas no preço escondem o que realmente movimenta o mercado.",
     "cards": [
       { "title": "Entradas atrasadas", "text": "O gráfico mostra o movimento depois que ele aconteceu. Você entra quando os institucionais já saíram." },
@@ -77,7 +77,7 @@
   "solution": {
     "label": "A Solução",
     "title": { "prefix": "O que o ", "highlight": "LGVG Flow", "suffix": " entrega" },
-    "description": "Desenvolvido para o mini índice B3 após testes e validações operacionais.",
+    "description": "Desenvolvido para apoiar a leitura de fluxo no Mini Índice WIN e no Mini Dólar WDO da B3.",
     "cards": [
       { "title": "Leitura da Agressão", "text": "Analisa a pressão de compra e venda executada em tempo real." },
       { "title": "Identificação de Absorção", "text": "Ajuda a detectar quando grandes participantes absorvem agressões para construir posição." },
@@ -90,12 +90,12 @@
     "title": { "prefix": "Construído por quem ", "highlight": "opera o mercado", "suffix": "" },
     "paragraphs": [
       "O LGVG Flow foi desenvolvido no ambiente Profit utilizando dados de fluxo disponíveis na plataforma.",
-      "A lógica foi calibrada para o comportamento do mini índice, com foco em clareza visual e apoio à decisão."
+      "A lógica foi atualizada para o Mini Índice WIN e o Mini Dólar WDO, com foco em clareza visual e apoio à decisão."
     ],
-    "features": ["Leitura de agressão em tempo real", "Mapeamento de regiões de liquidez", "Sinais visuais de compra e venda", "Calibrado para a dinâmica do WIN"],
+    "features": ["Leitura de agressão em tempo real", "Mapeamento de regiões de liquidez", "Sinais visuais de compra e venda", "Compatível com WIN e WDO"],
     "specsTitle": "LGVG Flow — Especificações",
     "specs": [
-      { "label": "Ativo", "value": "Mini índice (WIN)" },
+      { "label": "Ativos", "value": "Mini Índice (WIN) e Mini Dólar (WDO)" },
       { "label": "Plataforma", "value": "Profit Pro / Ultra" },
       { "label": "Dados", "value": "Fluxo de ordens" },
       { "label": "Arquivo", "value": "LGVGFLOWATUAL.psf" }
@@ -133,15 +133,15 @@
   "audience": {
     "label": "Perfil Ideal",
     "title": { "prefix": "O LGVG Flow foi criado ", "highlight": "para você?", "suffix": "" },
-    "description": "Indicado para quem opera mini índice e está desenvolvendo sua leitura de mercado.",
-    "items": ["Traders de mini índice (WIN)", "Day traders e scalpers", "Usuários de price action e fluxo", "Usuários de Profit Pro ou Ultra", "Quem busca compreender a atuação institucional", "Traders que desejam aprimorar entradas e saídas"]
+    "description": "Indicado para quem opera Mini Índice ou Mini Dólar e está desenvolvendo sua leitura de mercado.",
+    "items": ["Traders de Mini Índice (WIN) e Mini Dólar (WDO)", "Day traders e scalpers", "Usuários de price action e fluxo", "Usuários de Profit Pro ou Ultra", "Quem busca compreender a atuação institucional", "Traders que desejam aprimorar entradas e saídas"]
   },
   "faq": {
     "label": "Dúvidas frequentes",
     "title": { "prefix": "Informações antes de ", "highlight": "operar", "suffix": "" },
     "items": [
       { "question": "O LGVG Flow funciona em qualquer versão do Profit?", "answer": "Não. Ele foi desenvolvido para Profit Pro e Profit Ultra, que disponibilizam os dados de fluxo necessários." },
-      { "question": "Qual ativo é o foco do indicador?", "answer": "O foco é o mini índice WIN negociado na B3." },
+      { "question": "Em quais ativos o indicador funciona?", "answer": "O LGVG Flow funciona no Mini Índice WIN e no Mini Dólar WDO negociados na B3." },
       { "question": "O LGVG Flow é um indicador da Nelogica?", "answer": "Não. O LGVG Flow é um indicador independente, desenvolvido para funcionar com os dados de fluxo disponíveis no Profit Pro e Profit Ultra, plataformas da Nelogica. Não existe afiliação ou endosso oficial." },
       { "question": "Qual é a diferença entre fluxo de ordens e indicadores baseados apenas no preço?", "answer": "A leitura de fluxo observa ordens executadas, agressão, absorção e liquidez. Indicadores como médias, RSI e MACD são calculados principalmente a partir do histórico de preços. As abordagens podem ser complementares." },
       { "question": "O indicador garante resultados em day trade?", "answer": "Não. O indicador apoia a leitura, mas o mercado envolve riscos e exige gestão de risco." }
@@ -149,19 +149,19 @@
   },
   "guides": {
     "label": "Conteúdo educacional",
-    "homeTitle": { "prefix": "Guias sobre ", "highlight": "fluxo de ordens e mini índice", "suffix": "" },
-    "homeDescription": "Conteúdo autoral para entender leitura de fluxo, escolher um indicador para WIN e usar o LGVG Flow no Profit com mais contexto.",
-    "metaTitle": "Guias de Fluxo de Ordens e Mini Índice | LGVG Flow",
-    "metaDescription": "Aprenda sobre indicador de fluxo de ordens, Mini Índice WIN e compatibilidade com Profit Pro e Profit Ultra da Nelogica.",
-    "indexTitle": "Guias de fluxo de ordens, Mini Índice e Profit",
+    "homeTitle": { "prefix": "Guias sobre ", "highlight": "fluxo de ordens, WIN e WDO", "suffix": "" },
+    "homeDescription": "Conteúdo autoral para entender leitura de fluxo, escolher indicadores para WIN e WDO e usar o LGVG Flow no Profit com mais contexto.",
+    "metaTitle": "Guias de Fluxo para Mini Índice e Mini Dólar | LGVG Flow",
+    "metaDescription": "Aprenda sobre fluxo de ordens no Mini Índice WIN e Mini Dólar WDO e a compatibilidade com Profit Pro e Profit Ultra da Nelogica.",
+    "indexTitle": "Guias de fluxo de ordens, Mini Índice, Mini Dólar e Profit",
     "indexIntro": "Conteúdo prático para compreender os dados por trás do preço, avaliar indicadores e utilizar a plataforma Profit com responsabilidade.",
     "read": "Ler guia completo",
     "contents": "Neste guia",
     "byline": "Por Gustavo Guimarães",
-    "reviewed": "Revisado em 11 de agosto de 2026",
+    "reviewed": "Revisado em 27 de agosto de 2026",
     "faqTitle": "Perguntas frequentes",
     "riskTitle": "Aviso de risco",
-    "riskText": "Operações de day trade e Mini Índice envolvem risco elevado de perda. Este conteúdo é educacional, não constitui recomendação de investimento e não oferece garantia de resultado.",
+    "riskText": "Operações de day trade em Mini Índice e Mini Dólar envolvem risco elevado de perda. Este conteúdo é educacional, não constitui recomendação de investimento e não oferece garantia de resultado.",
     "ctaTitle": "Veja o fluxo funcionando no gráfico",
     "ctaText": "Teste o LGVG Flow por 60 dias no Profit Pro ou Profit Ultra e consulte o manual antes de utilizar o indicador.",
     "ctaButton": "Testar o indicador",
@@ -170,10 +170,10 @@
       "orderFlow": {
         "cardTitle": "Indicador de fluxo de ordens: agressão, absorção e liquidez",
         "cardText": "Entenda quais dados um indicador de fluxo observa e como essa leitura se diferencia dos indicadores calculados apenas pelo preço.",
-        "metaTitle": "Indicador de Fluxo de Ordens no Mini Índice | LGVG Flow",
-        "metaDescription": "Entenda como um indicador de fluxo de ordens lê agressão, absorção e liquidez no Mini Índice WIN e como o LGVG Flow organiza esses dados.",
+        "metaTitle": "Indicador de Fluxo para Mini Índice e Mini Dólar | LGVG Flow",
+        "metaDescription": "Entenda como um indicador de fluxo lê agressão, absorção e liquidez no Mini Índice WIN e Mini Dólar WDO e como o LGVG Flow organiza esses dados.",
         "eyebrow": "Leitura de mercado",
-        "title": "Indicador de fluxo de ordens: como ler agressão, absorção e liquidez no Mini Índice",
+        "title": "Indicador de fluxo de ordens: agressão, absorção e liquidez no WIN e WDO",
         "intro": "Um indicador de fluxo de ordens ajuda a observar a atividade que acontece por trás do candle. Neste guia, você entenderá quais informações são analisadas, o que elas podem indicar e quais são os limites dessa leitura.",
         "sections": [
           {
@@ -185,9 +185,9 @@
             "items": []
           },
           {
-            "title": "O que observar no Mini Índice WIN",
+            "title": "O que observar no Mini Índice WIN e no Mini Dólar WDO",
             "paragraphs": [
-              "No Mini Índice, velocidade e volatilidade podem tornar a leitura manual mais exigente. O objetivo não é reagir a cada mudança de cor, mas procurar coerência entre fluxo, região de preço e contexto do pregão."
+              "No Mini Índice e no Mini Dólar, velocidade e volatilidade podem tornar a leitura manual mais exigente. O objetivo não é reagir a cada mudança de cor, mas procurar coerência entre fluxo, região de preço e contexto do pregão de cada ativo."
             ],
             "items": [
               "Agressão compradora e vendedora executada em tempo real",
@@ -207,7 +207,7 @@
           {
             "title": "Como o LGVG Flow organiza a leitura",
             "paragraphs": [
-              "O LGVG Flow foi desenvolvido para o Mini Índice e utiliza os dados de fluxo fornecidos pelo Profit. O indicador apresenta sinais visuais e regiões coloridas de liquidez para que o trader avalie o comportamento do preço junto da pressão executada.",
+              "O LGVG Flow funciona no Mini Índice WIN e no Mini Dólar WDO e utiliza os dados de fluxo fornecidos pelo Profit. O indicador apresenta sinais visuais e regiões coloridas de liquidez para que o trader avalie o comportamento do preço junto da pressão executada.",
               "O sinal não deve ser tratado como ordem automática. Antes de qualquer operação, é necessário observar se a região já foi mitigada, avaliar o contexto do dia e definir previamente risco, stop e quantidade de contratos."
             ],
             "items": [
@@ -225,7 +225,7 @@
             ],
             "items": [
               "Plataformas compatíveis: Profit Pro e Profit Ultra",
-              "Ativo principal: Mini Índice WIN da B3",
+              "Ativos compatíveis: Mini Índice WIN e Mini Dólar WDO da B3",
               "Arquivo de importação: LGVGFLOWATUAL.psf",
               "O indicador não envia ordens automaticamente"
             ]
@@ -300,16 +300,88 @@
         ],
         "faq": [
           { "question": "Qual é o melhor indicador para Mini Índice?", "answer": "Não existe um indicador universalmente melhor. A escolha depende dos dados analisados, do método do trader, da clareza da ferramenta e de uma avaliação responsável em simulador." },
-          { "question": "O LGVG Flow também funciona no Mini Dólar?", "answer": "O produto e sua calibração foram desenvolvidos com foco no Mini Índice WIN." },
+          { "question": "O LGVG Flow também funciona no Mini Dólar?", "answer": "Sim. A versão atual funciona no Mini Índice WIN e no Mini Dólar WDO, desde que seja utilizada no Profit Pro ou Profit Ultra." },
           { "question": "Day trader iniciante pode utilizar fluxo de ordens?", "answer": "Pode estudar a leitura, preferencialmente em simulador e junto de fundamentos sobre mercado, plataforma e gestão de risco." },
           { "question": "O indicador opera sozinho?", "answer": "Não. O LGVG Flow apresenta informações no gráfico, mas não envia ordens automaticamente." }
+        ]
+      },
+      "miniDollar": {
+        "cardTitle": "Indicador para Mini Dólar WDO: fluxo, liquidez e contexto",
+        "cardText": "Entenda como o LGVG Flow apoia a leitura de agressão, absorção e regiões de liquidez no Mini Dólar da B3.",
+        "metaTitle": "Indicador para Mini Dólar WDO no Profit | LGVG Flow",
+        "metaDescription": "Conheça o indicador LGVG Flow para Mini Dólar WDO, com leitura de agressão, absorção e liquidez no Profit Pro e Profit Ultra.",
+        "eyebrow": "Mini Dólar WDO",
+        "title": "Indicador para Mini Dólar WDO: como ler fluxo e liquidez no Profit",
+        "intro": "O Mini Dólar possui dinâmica própria e pode reagir rapidamente ao fluxo e ao contexto macroeconômico. A versão atual do LGVG Flow foi preparada para organizar essa leitura também no WDO.",
+        "sections": [
+          {
+            "title": "O que é o Mini Dólar WDO",
+            "paragraphs": [
+              "O WDO é o contrato futuro de dólar de tamanho reduzido negociado na B3. Ele é utilizado por traders para acompanhar as oscilações da moeda durante o pregão e pode apresentar mudanças rápidas de volatilidade e liquidez.",
+              "Por ser um instrumento diferente do Mini Índice, o WDO exige estudo específico de movimentação, valor financeiro, horários e gestão de risco. Uma regra numérica usada no WIN não deve ser transferida automaticamente para o Mini Dólar."
+            ],
+            "items": []
+          },
+          {
+            "title": "Como o fluxo ajuda a interpretar o WDO",
+            "paragraphs": [
+              "A leitura de fluxo procura observar as negociações executadas, a agressão compradora e vendedora, possíveis absorções e regiões onde existe interesse de liquidez.",
+              "No Mini Dólar, essas informações podem complementar a estrutura do preço e o contexto do dia. Elas não antecipam o mercado com certeza e precisam ser interpretadas junto do risco previamente definido."
+            ],
+            "items": [
+              "Agressão compradora e vendedora em tempo real",
+              "Possíveis regiões de absorção",
+              "Linhas de liquidez ainda não mitigadas",
+              "Sinais visuais contextualizados no gráfico"
+            ]
+          },
+          {
+            "title": "LGVG Flow no Mini Dólar",
+            "paragraphs": [
+              "A versão atual do LGVG Flow funciona nos gráficos do Mini Índice WIN e do Mini Dólar WDO. O mesmo arquivo LGVGFLOWATUAL.psf é importado no Profit e pode ser adicionado ao ativo que será estudado.",
+              "Como o indicador utiliza dados reais de fluxo, é necessário usar Profit Pro ou Profit Ultra. O LGVG Flow não envia ordens e não substitui a decisão do trader."
+            ],
+            "items": [
+              "Compatível com WDO e WIN",
+              "Profit Pro ou Profit Ultra",
+              "Arquivo oficial LGVGFLOWATUAL.psf",
+              "Uso inicial recomendado em conta simulada"
+            ]
+          },
+          {
+            "title": "Como testar o indicador no WDO",
+            "paragraphs": [
+              "Depois de importar o arquivo, abra um gráfico do Mini Dólar, adicione o LGVG Flow e acompanhe diferentes períodos do pregão no simulador. Registre o contexto, o sinal, a região de liquidez e o comportamento posterior do preço.",
+              "O teste gratuito de 60 dias permite conhecer a leitura sem cartão de crédito. Evite concluir sobre desempenho a partir de poucas operações ou de um único tipo de mercado."
+            ],
+            "items": [
+              "Confirme que o gráfico aberto é do WDO",
+              "Valide os sinais primeiro no simulador",
+              "Registre entradas, stops e resultados",
+              "Observe dias com diferentes níveis de volatilidade"
+            ]
+          },
+          {
+            "title": "Gestão de risco específica para o Mini Dólar",
+            "paragraphs": [
+              "Stops, alvos e quantidade de contratos precisam considerar a dinâmica e o valor financeiro do WDO. Os exemplos educacionais de 250 pontos apresentados para o Mini Índice não são parâmetros automáticos para o Mini Dólar.",
+              "Defina o risco antes da entrada, respeite o limite de perda diária e interrompa a operação quando as condições não estiverem claras. Nenhum indicador garante rentabilidade."
+            ],
+            "items": []
+          }
+        ],
+        "faq": [
+          { "question": "O LGVG Flow funciona no Mini Dólar WDO?", "answer": "Sim. A versão atual funciona no WDO e no WIN quando utilizada no Profit Pro ou Profit Ultra." },
+          { "question": "É necessário baixar outro arquivo para o WDO?", "answer": "Não. O arquivo oficial LGVGFLOWATUAL.psf atende aos dois ativos e deve ser adicionado ao gráfico que será analisado." },
+          { "question": "Posso usar no WDO o mesmo stop de 250 pontos do WIN?", "answer": "Não como regra automática. O Mini Dólar possui dinâmica e valor financeiro próprios; stops e alvos devem ser definidos especificamente para o ativo e para o plano do trader." },
+          { "question": "O indicador envia ordens no Mini Dólar?", "answer": "Não. O LGVG Flow apresenta sinais e contexto visual, mas todas as decisões e ordens permanecem sob responsabilidade do usuário." }
         ]
       },
       "profitNelogica": {
         "cardTitle": "Indicador para Profit da Nelogica: compatibilidade e instalação",
         "cardText": "Entenda quais versões do Profit fornecem os dados necessários, como importar o arquivo PSF e o que significa compatibilidade independente.",
         "metaTitle": "Indicador para Profit da Nelogica | LGVG Flow",
-        "metaDescription": "Conheça o LGVG Flow, indicador independente para Profit Pro e Profit Ultra da Nelogica, com leitura de fluxo de ordens no Mini Índice WIN.",
+        "metaDescription": "Conheça o LGVG Flow, indicador independente para Profit Pro e Profit Ultra da Nelogica, com leitura de fluxo no Mini Índice WIN e Mini Dólar WDO.",
         "eyebrow": "Profit Pro e Profit Ultra",
         "title": "Indicador para Profit da Nelogica: compatibilidade, instalação e leitura de fluxo",
         "intro": "O LGVG Flow é um indicador independente desenvolvido para funcionar no Profit Pro e Profit Ultra. Veja por que a versão da plataforma importa e como realizar uma instalação segura.",
@@ -317,7 +389,7 @@
           {
             "title": "LGVG Flow e a plataforma Profit",
             "paragraphs": [
-              "O Profit é uma plataforma de negociação desenvolvida pela Nelogica. O LGVG Flow utiliza os recursos de importação da plataforma e os dados de fluxo disponibilizados nas versões compatíveis para apresentar sua leitura no gráfico do Mini Índice.",
+              "O Profit é uma plataforma de negociação desenvolvida pela Nelogica. O LGVG Flow utiliza os recursos de importação da plataforma e os dados de fluxo disponibilizados nas versões compatíveis para apresentar sua leitura nos gráficos do Mini Índice e do Mini Dólar.",
               "LGVG Flow não é um produto desenvolvido, vendido ou endossado pela Nelogica. A menção às marcas serve exclusivamente para informar compatibilidade técnica."
             ],
             "items": []
@@ -338,13 +410,13 @@
           {
             "title": "Como importar o indicador no Profit",
             "paragraphs": [
-              "O arquivo oficial chama-se LGVGFLOWATUAL.psf. Depois do download, a importação é realizada pelo gerenciador de estratégias do Profit. Em seguida, o indicador pode ser adicionado ao gráfico do WIN.",
+              "O arquivo oficial chama-se LGVGFLOWATUAL.psf. Depois do download, a importação é realizada pelo gerenciador de estratégias do Profit. Em seguida, o indicador pode ser adicionado ao gráfico do WIN ou do WDO.",
               "O manual deve ser consultado antes do uso porque explica não apenas a instalação, mas também o significado dos sinais e das linhas coloridas de liquidez."
             ],
             "items": [
               "Baixe o arquivo apenas pelo site oficial do LGVG Flow",
               "Importe LGVGFLOWATUAL.psf no gerenciador do Profit",
-              "Abra o gráfico do Mini Índice WIN",
+              "Abra o gráfico do Mini Índice WIN ou do Mini Dólar WDO",
               "Adicione o indicador e valide primeiro no simulador"
             ]
           },
@@ -373,7 +445,7 @@
         "faq": [
           { "question": "LGVG Flow é um indicador oficial da Nelogica?", "answer": "Não. É um indicador independente compatível com Profit Pro e Profit Ultra, sem parceria, endosso ou afiliação oficial com a Nelogica." },
           { "question": "Por que o indicador não funciona em todas as versões do Profit?", "answer": "Porque sua lógica depende de dados de fluxo e agressão disponíveis a partir do Profit Pro." },
-          { "question": "Preciso alterar meu layout do Profit?", "answer": "O indicador é adicionado ao gráfico do WIN. O manual apresenta as etapas de importação e configuração." },
+          { "question": "Preciso alterar meu layout do Profit?", "answer": "O indicador é adicionado ao gráfico do WIN ou do WDO. O manual apresenta as etapas de importação e configuração." },
           { "question": "O arquivo PSF pode ser baixado pelo celular?", "answer": "Pode, mas a importação precisa ser realizada posteriormente em um computador com Profit Pro ou Profit Ultra instalado." }
         ]
       }
@@ -471,7 +543,7 @@
       "Fundador da UAI Software e consultor do Grupo Cybersul, possui experiência em desenvolvimento de softwares de gestão, plataformas web, dashboards corporativos e sistemas de rastreamento veicular.",
       "É especialista em Engenharia de Telecomunicações e Informática, possui formação complementar em Direito e especialização em Web 3.0 (Blockchain, Smart Contracts e Metaverso) pelo Ministério da Ciência, Tecnologia e Inovação (MCTI).",
       "Também é autor de uma obra técnica sobre GSM aprovada pelo Instituto Superior de Engenharia de Lisboa (ISEL), em parceria com a Universidade de Franca.",
-      "Toda essa experiência em tecnologia, análise de sistemas e desenvolvimento de software foi aplicada na criação do LGVG Flow, um indicador desenvolvido para auxiliar traders na leitura de fluxo, liquidez e contexto operacional no Mini Índice da B3."
+      "Toda essa experiência em tecnologia, análise de sistemas e desenvolvimento de software foi aplicada na criação do LGVG Flow, um indicador desenvolvido para auxiliar traders na leitura de fluxo, liquidez e contexto operacional no Mini Índice e no Mini Dólar da B3."
     ],
     "credentials": [
       "Fundador da UAI Software",
@@ -525,11 +597,11 @@
     "steps": [
       { "title": "Baixe o arquivo", "text": "Salve o arquivo oficial do indicador em uma pasta de fácil acesso." },
       { "title": "Importe no Profit", "text": "No Profit, abra o gerenciador de estratégias e importe LGVGFLOWATUAL.psf." },
-      { "title": "Adicione ao gráfico", "text": "Abra o gráfico do WIN e adicione o LGVG Flow aos indicadores." },
+      { "title": "Adicione ao gráfico", "text": "Abra o gráfico do WIN ou do WDO e adicione o LGVG Flow aos indicadores." },
       { "title": "Comece no simulador", "text": "Valide a leitura e sua gestão de risco antes de operar em conta real." }
     ],
     "riskTitle": "Gestão de risco",
-    "riskText": "Para um contrato, o exemplo educacional utiliza alvo e stop de até 250 pontos, sempre respeitando o perfil do trader. Resultados não são garantidos.",
+    "riskText": "No WIN, o exemplo educacional utiliza alvo e stop de até 250 pontos para um contrato. No WDO, defina parâmetros próprios para a dinâmica e o valor financeiro do ativo. Resultados não são garantidos.",
     "pdf": "Baixar manual completo em PDF",
     "indicator": "Baixar indicador",
     "back": "Voltar ao site"
