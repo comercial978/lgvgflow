@@ -461,12 +461,12 @@
     "pageIntro": "Histórico cronológico de sessões, sinais e relatórios registrados no simulador do Profit Pro para documentar o comportamento do LGVG Flow nas condições apresentadas.",
     "overviewTitle": "Resumo da amostra acumulada",
     "environment": "Ambiente simulado no Profit Pro",
-    "period": "Amostra acumulada de 20 a 26 de agosto de 2026",
+    "period": "Amostra documentada de 20 de agosto a 4 de setembro de 2026",
     "metrics": [
-      { "value": "11", "label": "operações registradas" },
-      { "value": "6", "label": "operações vencedoras" },
-      { "value": "54,55%", "label": "taxa de acerto na amostra" },
-      { "value": "R$ 251,00", "label": "resultado total exibido" }
+      { "value": "12", "label": "operações registradas" },
+      { "value": "7", "label": "operações vencedoras" },
+      { "value": "58,33%", "label": "taxa de acerto na amostra" },
+      { "value": "R$ 381,00", "label": "resultado total exibido" }
     ],
     "videoText": "Gravação completa do gráfico, dos sinais e da leitura operacional no simulador.",
     "videoAria": "Vídeo de uma sessão de teste do LGVG Flow no Profit",
@@ -475,7 +475,7 @@
     "methodTitle": "Como interpretar esta amostra",
     "methodText": "Os registros permitem observar como o indicador se comportou nas condições apresentadas, mas não representam promessa de desempenho futuro.",
     "methodItems": [
-      "Operações executadas em conta simulador",
+      "Operações executadas em conta simulada",
       "Período curto e amostra limitada",
       "Resultado acumulado exibido pelo próprio Profit",
       "Custos, slippage e condições reais podem alterar o resultado"
@@ -490,6 +490,8 @@
     "archiveText": "Os registros mais recentes aparecem primeiro. Selecione uma imagem para visualizar os detalhes em tamanho completo.",
     "openImage": "Ampliar imagem",
     "gallery": [
+      { "title": "Entrada vendida no Mini Índice", "date": "04/09/2026", "alt": "Gráfico do Mini Índice WIN no Profit Pro com sinal de agressão vendedora e operação simulada do LGVG Flow em 4 de setembro de 2026" },
+      { "title": "Resultado da operação simulada", "date": "04/09/2026", "alt": "Relatório do simulador Profit Pro mostrando uma operação vencedora de 650 pontos e resultado de R$ 130,00 em 4 de setembro de 2026" },
       { "title": "Sinais e leitura operacional", "date": "26/08/2026", "alt": "Gráfico do Mini Índice, livro de ofertas e sinais do LGVG Flow durante teste em 26 de agosto de 2026" },
       { "title": "Relatório acumulado atualizado", "date": "26/08/2026", "alt": "Relatório do simulador Profit com onze operações e resultado acumulado até 26 de agosto de 2026" },
       { "title": "Entrada registrada em vídeo", "date": "25/08/2026", "alt": "Gráfico e livro de ofertas durante entrada simulada com LGVG Flow em 25 de agosto de 2026" },
@@ -501,6 +503,7 @@
       { "title": "Relatório inicial de resultados", "date": "20/08/2026", "alt": "Relatório do simulador Profit com quatro operações registradas até 20 de agosto de 2026" }
     ],
     "sessions": [
+      { "date": "4 de setembro de 2026", "title": "Entrada vendida e resultado de 650 pontos", "summary": "Registro de uma operação vendida no Mini Índice WIN, encerrada no simulador com 650 pontos e resultado de R$ 130,00.", "videoTitle": "Sessão de 4 de setembro de 2026" },
       { "date": "26 de agosto de 2026", "title": "Leitura do fluxo e atualização do resultado", "summary": "Sessão com sinais no gráfico, livro de ofertas e relatório acumulado atualizado após as operações do dia.", "videoTitle": "Sessão registrada em 26 de agosto de 2026" },
       { "date": "25 de agosto de 2026", "title": "Entrada registrada e evolução acumulada", "summary": "Vídeo da leitura operacional acompanhado pelos registros de entrada e pelo relatório da amostra.", "videoTitle": "Sessão registrada em 25 de agosto de 2026" },
       { "date": "24 de agosto de 2026", "title": "Sinal no contexto do mercado", "summary": "Evidências do gráfico, do livro de ofertas e da evolução acumulada no simulador.", "videoTitle": "Sessão de 24 de agosto de 2026" },

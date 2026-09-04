@@ -406,12 +406,12 @@
     "pageIntro": "A chronological archive of sessions, signals and reports recorded in Profit Pro's simulator to document how LGVG Flow behaved under the displayed conditions.",
     "overviewTitle": "Cumulative sample overview",
     "environment": "Simulated account in Profit Pro",
-    "period": "Cumulative sample from August 20 to 26, 2026",
+    "period": "Documented sample from August 20 to September 4, 2026",
     "metrics": [
-      { "value": "11", "label": "recorded trades" },
-      { "value": "6", "label": "winning trades" },
-      { "value": "54.55%", "label": "sample win rate" },
-      { "value": "BRL 251.00", "label": "displayed total result" }
+      { "value": "12", "label": "recorded trades" },
+      { "value": "7", "label": "winning trades" },
+      { "value": "58.33%", "label": "sample win rate" },
+      { "value": "BRL 381.00", "label": "displayed total result" }
     ],
     "videoText": "Full recording of the chart, signals and operational reading in the simulator.",
     "videoAria": "Video of an LGVG Flow test session in Profit",
@@ -435,6 +435,8 @@
     "archiveText": "The latest records appear first. Select an image to inspect its details at full size.",
     "openImage": "Enlarge image",
     "gallery": [
+      { "title": "Mini Index sell entry", "date": "Sep 4, 2026", "alt": "B3 Mini Index WIN chart in Profit Pro showing a sell-aggression signal and simulated LGVG Flow trade on September 4, 2026" },
+      { "title": "Simulated trade result", "date": "Sep 4, 2026", "alt": "Profit Pro simulator report showing one winning trade, 650 points and a BRL 130.00 result on September 4, 2026" },
       { "title": "Signals and operational reading", "date": "Aug 26, 2026", "alt": "Mini Index chart, order book and LGVG Flow signals during a test on August 26, 2026" },
       { "title": "Updated cumulative report", "date": "Aug 26, 2026", "alt": "Profit simulator report with eleven trades and cumulative performance through August 26, 2026" },
       { "title": "Entry recorded on video", "date": "Aug 25, 2026", "alt": "Chart and order book during a simulated LGVG Flow entry on August 25, 2026" },
@@ -446,6 +448,7 @@
       { "title": "Initial performance report", "date": "Aug 20, 2026", "alt": "Profit simulator report with four trades recorded through August 20, 2026" }
     ],
     "sessions": [
+      { "date": "September 4, 2026", "title": "Sell entry and 650-point result", "summary": "Record of a B3 Mini Index WIN sell trade closed in the simulator with 650 points and a BRL 130.00 result.", "videoTitle": "Session from September 4, 2026" },
       { "date": "August 26, 2026", "title": "Order flow reading and updated result", "summary": "A session featuring chart signals, the order book and the cumulative report updated after the day's trades.", "videoTitle": "Session recorded on August 26, 2026" },
       { "date": "August 25, 2026", "title": "Recorded entry and cumulative progress", "summary": "An operational reading video accompanied by the entry record and the sample performance report.", "videoTitle": "Session recorded on August 25, 2026" },
       { "date": "August 24, 2026", "title": "Signal in market context", "summary": "Chart, order book and cumulative performance evidence from the simulated account.", "videoTitle": "Session from August 24, 2026" },

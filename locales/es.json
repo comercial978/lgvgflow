@@ -331,12 +331,12 @@
     "pageIntro": "Archivo cronológico de sesiones, señales e informes registrados en el simulador de Profit Pro para documentar el comportamiento de LGVG Flow en las condiciones mostradas.",
     "overviewTitle": "Resumen de la muestra acumulada",
     "environment": "Cuenta simulada en Profit Pro",
-    "period": "Muestra acumulada del 20 al 26 de agosto de 2026",
+    "period": "Muestra documentada del 20 de agosto al 4 de septiembre de 2026",
     "metrics": [
-      { "value": "11", "label": "operaciones registradas" },
-      { "value": "6", "label": "operaciones ganadoras" },
-      { "value": "54,55%", "label": "tasa de acierto de la muestra" },
-      { "value": "R$ 251,00", "label": "resultado total mostrado" }
+      { "value": "12", "label": "operaciones registradas" },
+      { "value": "7", "label": "operaciones ganadoras" },
+      { "value": "58,33%", "label": "tasa de acierto de la muestra" },
+      { "value": "R$ 381,00", "label": "resultado total mostrado" }
     ],
     "videoText": "Grabación completa del gráfico, las señales y la lectura operativa en el simulador.",
     "videoAria": "Video de una sesión de prueba de LGVG Flow en Profit",
@@ -360,6 +360,8 @@
     "archiveText": "Los registros más recientes aparecen primero. Selecciona una imagen para ver sus detalles en tamaño completo.",
     "openImage": "Ampliar imagen",
     "gallery": [
+      { "title": "Entrada de venta en el Mini Índice", "date": "04/09/2026", "alt": "Gráfico del Mini Índice WIN en Profit Pro con señal de agresión vendedora y operación simulada de LGVG Flow el 4 de septiembre de 2026" },
+      { "title": "Resultado de la operación simulada", "date": "04/09/2026", "alt": "Informe del simulador Profit Pro con una operación ganadora de 650 puntos y resultado de R$ 130,00 el 4 de septiembre de 2026" },
       { "title": "Señales y lectura operativa", "date": "26/08/2026", "alt": "Gráfico del Mini Índice, libro de órdenes y señales de LGVG Flow durante una prueba el 26 de agosto de 2026" },
       { "title": "Informe acumulado actualizado", "date": "26/08/2026", "alt": "Informe del simulador Profit con once operaciones y resultado acumulado hasta el 26 de agosto de 2026" },
       { "title": "Entrada registrada en video", "date": "25/08/2026", "alt": "Gráfico y libro de órdenes durante una entrada simulada con LGVG Flow el 25 de agosto de 2026" },
@@ -371,6 +373,7 @@
       { "title": "Informe inicial de resultados", "date": "20/08/2026", "alt": "Informe del simulador Profit con cuatro operaciones registradas hasta el 20 de agosto de 2026" }
     ],
     "sessions": [
+      { "date": "4 de septiembre de 2026", "title": "Entrada de venta y resultado de 650 puntos", "summary": "Registro de una operación de venta en el Mini Índice WIN, cerrada en el simulador con 650 puntos y resultado de R$ 130,00.", "videoTitle": "Sesión del 4 de septiembre de 2026" },
       { "date": "26 de agosto de 2026", "title": "Lectura del flujo y resultado actualizado", "summary": "Sesión con señales en el gráfico, libro de órdenes e informe acumulado actualizado después de las operaciones del día.", "videoTitle": "Sesión registrada el 26 de agosto de 2026" },
       { "date": "25 de agosto de 2026", "title": "Entrada registrada y evolución acumulada", "summary": "Video de la lectura operativa acompañado por el registro de entrada y el informe de la muestra.", "videoTitle": "Sesión registrada el 25 de agosto de 2026" },
       { "date": "24 de agosto de 2026", "title": "Señal en el contexto del mercado", "summary": "Evidencias del gráfico, del libro de órdenes y de la evolución acumulada en el simulador.", "videoTitle": "Sesión del 24 de agosto de 2026" },

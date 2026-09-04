@@ -11,7 +11,7 @@ const marketNews = JSON.parse(await readFile(path.join(root, 'data', 'market-new
 const newsModifiedAt = marketNews.updatedAt.slice(0, 10)
 const guideModifiedAt = guideRouteData.modifiedAt
 const homeModifiedAt = '2026-08-26'
-const resultsModifiedAt = '2026-08-26'
+const resultsModifiedAt = '2026-09-04'
 const sitemapModifiedAt = [newsModifiedAt, guideModifiedAt, homeModifiedAt, resultsModifiedAt].sort().at(-1)
 
 const staticPages = [
