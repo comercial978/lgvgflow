@@ -23,6 +23,7 @@ import {
 import { FadeObserver } from '@/components/FadeObserver'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { BacktestImageButton, BacktestPresentation } from '@/components/BacktestPresentation'
 import { CredentialModal } from '@/components/CredentialModal'
 import { LocaleSuggestion } from '@/components/LocaleSuggestion'
 import { NewsGrid } from '@/components/NewsGrid'
@@ -54,6 +55,10 @@ export function HomePage({ dictionary, locale }: Props) {
   const whatsapp = whatsappUrl(dictionary.cta.whatsappMessage)
   const manualFileName = getManualFileName(locale)
   const manualUrl = getManualUrl(locale)
+  const homePresentationItems = backtestHomeAssetIndexes.map((assetIndex) => ({
+    ...backtestAssets[assetIndex],
+    ...dictionary.backtest.gallery[assetIndex],
+  }))
 
   return (
     <>
@@ -287,6 +292,8 @@ export function HomePage({ dictionary, locale }: Props) {
             <div className="backtest-context fade-up">
               <span><Activity aria-hidden="true" size={17} />{dictionary.backtest.environment}</span>
               <span>{dictionary.backtest.period}</span>
+              <span>{dictionary.backtest.contractNotice}</span>
+              <span className="backtest-signal-legend"><i aria-hidden="true" />{dictionary.backtest.signalLegend}</span>
             </div>
 
             <div className="backtest-gallery-heading fade-up">
@@ -298,27 +305,34 @@ export function HomePage({ dictionary, locale }: Props) {
             </div>
 
             <div className="backtest-gallery backtest-preview-gallery">
-              {backtestHomeAssetIndexes.map((index) => {
+              {backtestHomeAssetIndexes.map((index, presentationIndex) => {
                 const asset = backtestAssets[index]
                 const item = dictionary.backtest.gallery[index]
                 return (
                   <figure className="backtest-shot fade-up" key={asset.src}>
-                    <a href={asset.src} target="_blank" rel="noopener noreferrer" aria-label={`${dictionary.backtest.openImage}: ${item.title}`}>
-                      <img
-                        src={asset.src}
-                        alt={item.alt}
-                        width={asset.width}
-                        height={asset.height}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <span>{dictionary.backtest.openImage}<ArrowRight aria-hidden="true" size={15} /></span>
-                    </a>
+                    <BacktestImageButton
+                      asset={asset}
+                      galleryId="backtest-home"
+                      index={presentationIndex}
+                      item={item}
+                      openLabel={dictionary.backtest.openImage}
+                    />
                     <figcaption><strong>{item.title}</strong><span>{item.date}</span></figcaption>
                   </figure>
                 )
               })}
             </div>
+
+            <BacktestPresentation
+              galleryId="backtest-home"
+              items={homePresentationItems}
+              labels={{
+                close: dictionary.backtest.closeImage,
+                previous: dictionary.backtest.previousImage,
+                next: dictionary.backtest.nextImage,
+                of: dictionary.backtest.imageOf,
+              }}
+            />
 
             <div className="backtest-preview-action fade-up">
               <a className="button button-primary" href={`/${locale}/results/`}>

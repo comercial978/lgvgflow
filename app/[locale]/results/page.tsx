@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
-import { Activity, AlertTriangle, ArrowRight, Check } from 'lucide-react'
+import { Activity, AlertTriangle, Check } from 'lucide-react'
 import { notFound } from 'next/navigation'
 
+import { BacktestImageButton, BacktestPresentation } from '@/components/BacktestPresentation'
 import { FadeObserver } from '@/components/FadeObserver'
 import { InteriorLayout } from '@/components/InteriorLayout'
 import { StructuredData } from '@/components/StructuredData'
@@ -31,6 +32,10 @@ export default async function ResultsPage({ params }: Props) {
   if (!isLocale(locale)) notFound()
   const dictionary = await getDictionary(locale)
   const pageUrl = `${siteConfig.url}/${locale}/results/`
+  const presentationItems = backtestAssets.map((asset, index) => ({
+    ...asset,
+    ...dictionary.backtest.gallery[index],
+  }))
   const schemas = [
     breadcrumbSchema(locale, [
       { name: siteConfig.name, path: '' },
@@ -72,6 +77,8 @@ export default async function ResultsPage({ params }: Props) {
           <div className="backtest-context">
             <span><Activity aria-hidden="true" size={17} />{dictionary.backtest.environment}</span>
             <span>{dictionary.backtest.period}</span>
+            <span>{dictionary.backtest.contractNotice}</span>
+            <span className="backtest-signal-legend"><i aria-hidden="true" />{dictionary.backtest.signalLegend}</span>
           </div>
 
           <dl className="backtest-metrics">
@@ -140,17 +147,13 @@ export default async function ResultsPage({ params }: Props) {
                       const item = dictionary.backtest.gallery[assetIndex]
                       return (
                         <figure className="backtest-shot fade-up" key={asset.src}>
-                          <a href={asset.src} target="_blank" rel="noopener noreferrer" aria-label={`${dictionary.backtest.openImage}: ${item.title}`}>
-                            <img
-                              src={asset.src}
-                              alt={item.alt}
-                              width={asset.width}
-                              height={asset.height}
-                              loading="lazy"
-                              decoding="async"
-                            />
-                            <span>{dictionary.backtest.openImage}<ArrowRight aria-hidden="true" size={15} /></span>
-                          </a>
+                          <BacktestImageButton
+                            asset={asset}
+                            galleryId="results-archive"
+                            index={assetIndex}
+                            item={item}
+                            openLabel={dictionary.backtest.openImage}
+                          />
                           <figcaption><strong>{item.title}</strong><span>{item.date}</span></figcaption>
                         </figure>
                       )
@@ -160,6 +163,17 @@ export default async function ResultsPage({ params }: Props) {
               )
             })}
           </div>
+
+          <BacktestPresentation
+            galleryId="results-archive"
+            items={presentationItems}
+            labels={{
+              close: dictionary.backtest.closeImage,
+              previous: dictionary.backtest.previousImage,
+              next: dictionary.backtest.nextImage,
+              of: dictionary.backtest.imageOf,
+            }}
+          />
         </section>
 
         <div className="notice-box backtest-disclaimer fade-up">

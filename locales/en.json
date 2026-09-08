@@ -406,7 +406,9 @@
     "pageIntro": "A chronological archive of sessions, signals and reports recorded in Profit Pro's simulator to document how LGVG Flow behaved under the displayed conditions.",
     "overviewTitle": "Cumulative sample overview",
     "environment": "Simulated account in Profit Pro",
-    "period": "Documented sample from August 20 to September 4, 2026",
+    "period": "Documented sample from August 20 to September 8, 2026",
+    "contractNotice": "Every test shown uses only 1 B3 Mini Index WIN contract.",
+    "signalLegend": "The yellow candle identifies the LGVG Flow signal.",
     "metrics": [
       { "value": "12", "label": "recorded trades" },
       { "value": "7", "label": "winning trades" },
@@ -433,8 +435,13 @@
     "archiveLabel": "Trading archive",
     "archiveTitle": "Sessions organized by date",
     "archiveText": "The latest records appear first. Select an image to inspect its details at full size.",
-    "openImage": "Enlarge image",
+    "openImage": "Open presentation",
+    "closeImage": "Close presentation",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "imageOf": "of",
     "gallery": [
+      { "title": "Buy signal highlighted by the yellow candle", "date": "Sep 8, 2026", "alt": "B3 Mini Index WIN chart in Profit Pro during a simulated test with only one contract; the yellow candle highlights the LGVG Flow buy signal on September 8, 2026" },
       { "title": "Mini Index sell entry", "date": "Sep 4, 2026", "alt": "B3 Mini Index WIN chart in Profit Pro showing a sell-aggression signal and simulated LGVG Flow trade on September 4, 2026" },
       { "title": "Simulated trade result", "date": "Sep 4, 2026", "alt": "Profit Pro simulator report showing one winning trade, 650 points and a BRL 130.00 result on September 4, 2026" },
       { "title": "Signals and operational reading", "date": "Aug 26, 2026", "alt": "Mini Index chart, order book and LGVG Flow signals during a test on August 26, 2026" },
@@ -448,6 +455,7 @@
       { "title": "Initial performance report", "date": "Aug 20, 2026", "alt": "Profit simulator report with four trades recorded through August 20, 2026" }
     ],
     "sessions": [
+      { "date": "September 8, 2026", "title": "Buy signal highlighted by the yellow candle", "summary": "A simulator test using only 1 B3 Mini Index WIN contract. The yellow candle identifies the signal issued by LGVG Flow.", "videoTitle": "Session from September 8, 2026" },
       { "date": "September 4, 2026", "title": "Sell entry and 650-point result", "summary": "Record of a B3 Mini Index WIN sell trade closed in the simulator with 650 points and a BRL 130.00 result.", "videoTitle": "Session from September 4, 2026" },
       { "date": "August 26, 2026", "title": "Order flow reading and updated result", "summary": "A session featuring chart signals, the order book and the cumulative report updated after the day's trades.", "videoTitle": "Session recorded on August 26, 2026" },
       { "date": "August 25, 2026", "title": "Recorded entry and cumulative progress", "summary": "An operational reading video accompanied by the entry record and the sample performance report.", "videoTitle": "Session recorded on August 25, 2026" },
