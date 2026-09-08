@@ -1,7 +1,23 @@
 {
-  "updatedAt": "2026-09-07T20:15:56.654Z",
+  "updatedAt": "2026-09-08T14:48:58.684Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Ajustes pontuais organizam regras operacionais do Pix Automático",
+      "publishedAt": "2026-09-08T11:03:02-03:00",
+      "summary": "O Banco Central (BC) publicou, em 19/8, a Instrução Normativa BCB 769, que divulga a versão 2.10.0 do Manual de Padrões para Iniciação do Pix (MPI). O documento, que integra o Regulamento do Pix, detalha as...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21252/noticia"
+    },
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 04/09/2026",
+      "publishedAt": "2026-09-04T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/04092026"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -51,14 +67,6 @@
       "url": "https://www.bcb.gov.br/detalhenoticia/21224/noticia"
     },
     {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 07/08/2026",
-      "publishedAt": "2026-08-07T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/07082026"
-    },
-    {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
       "title": "FMI e Banco Mundial reconhecem avanços do sistema financeiro e apontam agenda para fortalecer supervisão",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-07-03T10:54:54-03:00",
       "summary": "O Banco Central (BC) lançou nesta terça-feira (30/6) o ecossistema de duplicatas escriturais, marco relevante para a modernização do mercado de crédito no país. O início da negociação desses ativos em formato digital,...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21194/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "BC amplia acesso a contas em moeda estrangeira e moderniza a regulação cambial no país",
-      "publishedAt": "2026-07-01T09:45:15-03:00",
-      "summary": "​O Banco Central (BC) anunciou, em 18 de junho, um novo passo no processo de modernização do mercado de câmbio brasileiro. A Resolução BCB 575 ampliou as possibilidades de abertura e movimentação de contas de depósito...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21191/noticia"
     }
   ]
 }
