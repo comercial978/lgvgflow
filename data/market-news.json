@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-09-10T19:19:47.038Z",
+  "updatedAt": "2026-09-10T22:02:59.761Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Novas regras ampliam transparência sobre riscos sociais, ambientais e climáticos no Sistema Financeiro Nacional",
+      "publishedAt": "2026-09-10T18:31:39-03:00",
+      "summary": "O Banco Central (BC) aprovou um novo padrão para a divulgação de informações pelas instituições reguladas por meio do Relatório de Riscos e Oportunidades Sociais, Ambientais e Climáticas (Relatório GRSAC). A iniciativa...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21257/noticia"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-07-22T17:33:35-03:00",
       "summary": "O painel Descobrimento , de Candido Portinari, pertencente ao acervo artístico do Banco Central do Brasil (BCB), ​foi cedido para integrar a exposição O Brasil de Portinari , que está em cartaz no Museu Nacional da...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21203/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Ecossistema de duplicatas escriturais: títulos de crédito passarão a ser negociados em formato digital",
-      "publishedAt": "2026-07-03T10:54:54-03:00",
-      "summary": "O Banco Central (BC) lançou nesta terça-feira (30/6) o ecossistema de duplicatas escriturais, marco relevante para a modernização do mercado de crédito no país. O início da negociação desses ativos em formato digital,...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21194/noticia"
     }
   ]
 }
