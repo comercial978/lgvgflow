@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-09-21T20:41:16.192Z",
+  "updatedAt": "2026-09-22T15:13:59.518Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Banco Central propõe atualização de regras contábeis para reforçar convergência aos padrões internacionais",
+      "publishedAt": "2026-09-22T08:19:52-03:00",
+      "summary": "O Banco Central (BC) colocou em consulta pública proposta de atualização da regulamentação contábil aplicável às instituições financeiras e demais instituições autorizadas a funcionar pela Autarquia. A iniciativa...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21264/noticia"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-07-23T08:50:37-03:00",
       "summary": "Pesquisa da Organização para a Cooperação e Desenvolvimento Econômico (OCDE) avalia o letramento, a inclusão e o bem-estar financeiro. Os resultados do levantamento, iniciado em 29 de junho e com término previsto para 7...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21204/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Painel Descobrimento é cedido para exposição no Museu Nacional da China",
-      "publishedAt": "2026-07-22T17:33:35-03:00",
-      "summary": "O painel Descobrimento , de Candido Portinari, pertencente ao acervo artístico do Banco Central do Brasil (BCB), ​foi cedido para integrar a exposição O Brasil de Portinari , que está em cartaz no Museu Nacional da...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21203/noticia"
     }
   ]
 }
