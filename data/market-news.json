@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-09-29T00:02:26.497Z",
+  "updatedAt": "2026-09-29T16:41:04.085Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Pix e TIPS: parceria entre Brasil e Europa abre caminho para pagamentos globais instantâneos",
+      "publishedAt": "2026-09-29T08:47:21-03:00",
+      "summary": "O Banco Central do Brasil (BC) e o Banco Central Europeu (BCE) deram um passo importante na evolução dos pagamentos instantâneos ao iniciar a fase de avaliação da viabilidade de interligação entre o Pix e o TARGET...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21276/noticia"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-07-24T16:10:25-03:00",
       "summary": "O Fundo Monetário Internacional (FMI) divulgou, nesta semana, o Financial System Stability Assessment (FSSA), relatório elaborado no âmbito do Programa de Avaliação do Setor Financeiro (Financial Sector Assessment...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21208/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Pesquisa da OCDE avalia conhecimentos e hábitos financeiros dos brasileiros",
-      "publishedAt": "2026-07-23T08:50:37-03:00",
-      "summary": "Pesquisa da Organização para a Cooperação e Desenvolvimento Econômico (OCDE) avalia o letramento, a inclusão e o bem-estar financeiro. Os resultados do levantamento, iniciado em 29 de junho e com término previsto para 7...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21204/noticia"
     }
   ]
 }
