@@ -1,7 +1,31 @@
 {
-  "updatedAt": "2026-10-02T21:05:02.217Z",
+  "updatedAt": "2026-10-05T19:31:11.733Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "BC moderniza apresentação de dados sobre intervenções cambiais",
+      "publishedAt": "2026-10-05T08:30:53-03:00",
+      "summary": "Com o objetivo de ampliar a transparência na divulgação de dados de intervenção cambial, o Banco Central (BC) passará a apresentar, na página de Política Cambial do seu site, o histórico de estoque e o cronograma de...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21279/noticia"
+    },
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Pix amplia funcionalidades e reforça segurança com nova rodada de aperfeiçoamentos regulatórios",
+      "publishedAt": "2026-10-05T08:30:44-03:00",
+      "summary": "O Banco Central aprovou uma nova rodada de atualizações no Regulamento do Pix com o objetivo de aperfeiçoar funcionalidades, fortalecer mecanismos de segurança e ajustar procedimentos operacionais à evolução do...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21278/noticia"
+    },
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 02/10/2026",
+      "publishedAt": "2026-10-02T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/02102026"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -59,14 +83,6 @@
       "url": "https://www.bcb.gov.br/detalhenoticia/21252/noticia"
     },
     {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 04/09/2026",
-      "publishedAt": "2026-09-04T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/04092026"
-    },
-    {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
       "title": "Banco Central recebe inscrições para três vagas no Programa de Estágio de Pós-Graduação em Pesquisa (PEPP) até 18 de setembro",
@@ -81,22 +97,6 @@
       "publishedAt": "2026-08-17T09:46:52-03:00",
       "summary": "​O Banco Central (BC) divulgou, em 10 de agosto, o Relatório de Gestão do Pix 2023-2025​ , documento que apresenta um panorama abrangente da evolução do sistema de pagamentos instantâneos nos últimos três anos e detalha...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21227/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "BC reforça combate a fraudes com novas regras para transferências de ativos virtuais",
-      "publishedAt": "2026-08-13T12:42:03-03:00",
-      "summary": "O Banco Central (BC) aprovou um novo conjunto de medidas para fortalecer a prevenção de fraudes em operações com ativos virtuais no Brasil. A Resolução BCB 584 , publicada em 7 de agosto, amplia o alcance da Resolução...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21224/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "FMI e Banco Mundial reconhecem avanços do sistema financeiro e apontam agenda para fortalecer supervisão",
-      "publishedAt": "2026-07-24T16:10:25-03:00",
-      "summary": "O Fundo Monetário Internacional (FMI) divulgou, nesta semana, o Financial System Stability Assessment (FSSA), relatório elaborado no âmbito do Programa de Avaliação do Setor Financeiro (Financial Sector Assessment...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21208/noticia"
     }
   ]
 }
