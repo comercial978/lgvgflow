@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-10-06T01:01:36.888Z",
+  "updatedAt": "2026-10-06T16:58:49.067Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "BC passa a divulgar mensalmente indicadores de reajustes salariais negociados",
+      "publishedAt": "2026-10-06T07:34:47-03:00",
+      "summary": "Os reajustes salariais negociados por meio das convenções coletivas de trabalho passaram a contar com um novo conjunto de indicadores divulgados mensalmente pelo Banco Central (BC). Construídas a partir das informações...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21280/noticia"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-08-24T12:19:33-03:00",
       "summary": "​O Banco Central (BC) está oferecendo três vagas no Programa de Estágio de Pós-Graduação em Pesquisa (PEPP), do Departamento de Estudos e Pesquisas (Depep). Com duração inicial de seis meses e possibilidade de...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21237/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Pix consolida liderança nos pagamentos digitais e projeta novas evoluções até 2030",
-      "publishedAt": "2026-08-17T09:46:52-03:00",
-      "summary": "​O Banco Central (BC) divulgou, em 10 de agosto, o Relatório de Gestão do Pix 2023-2025​ , documento que apresenta um panorama abrangente da evolução do sistema de pagamentos instantâneos nos últimos três anos e detalha...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21227/noticia"
     }
   ]
 }
