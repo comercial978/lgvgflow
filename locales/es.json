@@ -394,7 +394,7 @@
   "pricing": {
     "label": "Inversión", "title": { "prefix": "Elige cómo quieres ", "highlight": "comenzar", "suffix": "" }, "description": "Prueba el indicador o comienza con el paquete completo de mentoría.",
     "indicator": { "title": "Solo el Indicador", "subtitle": "Prueba de 60 días", "price": "Consultar", "note": "Archivo oficial para Profit Pro y Ultra", "features": ["LGVG Flow", "Manual completo", "Prueba de 60 días"], "button": "Probar el indicador" },
-    "mentoring": { "badge": "Paquete completo", "title": "Mentoría + Indicador", "subtitle": "Paquete completo", "price": "R$ 1.000", "note": "Pago único · Indicador por 12 meses", "features": ["Mentoría individual", "LGVG Flow", "Acompañamiento operativo"], "button": "Comprar ahora" },
+    "mentoring": { "badge": "Paquete completo", "title": "Mentoría + Indicador", "subtitle": "Paquete completo", "price": "R$ 1.700", "note": "Pago único · Indicador por 12 meses", "features": ["Mentoría individual", "LGVG Flow", "Acompañamiento operativo"], "button": "Comprar ahora" },
     "quote": "La mentoría entrega el mapa. El indicador entrega la brújula.", "quoteHighlight": "Sin mapa, la brújula no basta."
   },
   "downloads": {
@@ -407,7 +407,7 @@
     "credentials": ["Fundador de UAI Software", "Consultor del Grupo Cybersul", "Científico de la Computación", "Especialista en Ingeniería de Telecomunicaciones", "Especialista en Web 3.0 (MCTI)", "Autor de obra técnica aprobada por ISEL (Portugal)"]
   },
   "cta": {
-    "label": "Siguiente Paso", "title": { "prefix": "¿Listo para ", "highlight": "ver el flujo", "suffix": "?" }, "description": "Comienza a observar el mercado con mayor contexto y estructura.", "info": "Solicitar información", "whatsapp": "Hablar por WhatsApp", "buy": "Comprar ahora — R$ 1.000", "whatsappMessage": "Hola, me gustaría saber más sobre la mentoría y el indicador LGVG Flow."
+    "label": "Siguiente Paso", "title": { "prefix": "¿Listo para ", "highlight": "ver el flujo", "suffix": "?" }, "description": "Comienza a observar el mercado con mayor contexto y estructura.", "info": "Solicitar información", "whatsapp": "Hablar por WhatsApp", "buy": "Comprar ahora — R$ 1.700", "whatsappMessage": "Hola, me gustaría saber más sobre la mentoría y el indicador LGVG Flow."
   },
   "ecosystem": {
     "label": "Entorno Profesional", "title": { "prefix": "Ecosistema de ", "highlight": "LGVG Flow", "suffix": "" }, "lead": "LGVG Flow forma parte del ecosistema tecnológico utilizado diariamente por traders profesionales.", "text": "Diseñado para trabajar con tecnologías clave del mercado financiero brasileño.", "disclaimer": "LGVG Flow es un indicador independiente compatible con la plataforma Profit. B3, Nelogica, Profit y Genial pertenecen a sus respectivos propietarios y se mencionan únicamente para indicar compatibilidad, sin implicar asociación, respaldo o afiliación oficial."

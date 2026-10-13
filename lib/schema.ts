@@ -82,7 +82,7 @@ export function homeSchemas(locale: Locale, dictionary: Dictionary) {
       offers: {
         '@type': 'Offer',
         name: dictionary.schema.offerName,
-        price: '1000.00',
+        price: '1700.00',
         priceCurrency: 'BRL',
         availability: 'https://schema.org/InStock',
         url: siteConfig.checkoutUrl,

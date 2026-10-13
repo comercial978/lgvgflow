@@ -526,7 +526,7 @@
     "title": { "prefix": "Escolha como você quer ", "highlight": "começar", "suffix": "" },
     "description": "Teste o indicador ou entre direto na mentoria completa.",
     "indicator": { "title": "Apenas o Indicador", "subtitle": "Teste por 60 dias", "price": "Consulte", "note": "Arquivo oficial para Profit Pro e Ultra", "features": ["LGVG Flow", "Manual completo", "Teste por 60 dias"], "button": "Testar o indicador" },
-    "mentoring": { "badge": "Mais completo", "title": "Mentoria + Indicador", "subtitle": "Pacote completo", "price": "R$ 1.000", "note": "Pagamento único · Indicador por 12 meses", "features": ["Mentoria individual", "LGVG Flow", "Acompanhamento operacional"], "button": "Comprar agora" },
+    "mentoring": { "badge": "Mais completo", "title": "Mentoria + Indicador", "subtitle": "Pacote completo", "price": "R$ 1.700", "note": "Pagamento único · Indicador por 12 meses", "features": ["Mentoria individual", "LGVG Flow", "Acompanhamento operacional"], "button": "Comprar agora" },
     "quote": "A mentoria entrega o mapa. O indicador entrega a bússola.",
     "quoteHighlight": "Sem mapa, a bússola não adianta."
   },
@@ -571,7 +571,7 @@
     "description": "Comece a observar o mercado com mais contexto e estrutura.",
     "info": "Solicitar informações",
     "whatsapp": "Falar no WhatsApp",
-    "buy": "Comprar agora — R$ 1.000",
+    "buy": "Comprar agora — R$ 1.700",
     "whatsappMessage": "Olá, quero saber mais sobre a mentoria e o indicador LGVG Flow."
   },
   "ecosystem": {

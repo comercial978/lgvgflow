@@ -471,7 +471,7 @@
     "title": { "prefix": "Choose how you want to ", "highlight": "get started", "suffix": "" },
     "description": "Test the indicator or start with the complete mentoring package.",
     "indicator": { "title": "Indicator Only", "subtitle": "60-day trial", "price": "Contact us", "note": "Official file for Profit Pro and Ultra", "features": ["LGVG Flow", "Complete manual", "60-day trial"], "button": "Test the indicator" },
-    "mentoring": { "badge": "Complete package", "title": "Mentoring + Indicator", "subtitle": "Full package", "price": "BRL 1,000", "note": "One-time payment · Indicator for 12 months", "features": ["Individual mentoring", "LGVG Flow", "Operational support"], "button": "Buy now" },
+    "mentoring": { "badge": "Complete package", "title": "Mentoring + Indicator", "subtitle": "Full package", "price": "BRL 1,700", "note": "One-time payment · Indicator for 12 months", "features": ["Individual mentoring", "LGVG Flow", "Operational support"], "button": "Buy now" },
     "quote": "Mentoring provides the map. The indicator provides the compass.",
     "quoteHighlight": "A compass is not enough without a map."
   },
@@ -516,7 +516,7 @@
     "description": "Start looking at the market with more context and structure.",
     "info": "Request information",
     "whatsapp": "Talk on WhatsApp",
-    "buy": "Buy now — BRL 1,000",
+    "buy": "Buy now — BRL 1,700",
     "whatsappMessage": "Hello, I would like to learn more about LGVG Flow mentoring and the indicator."
   },
   "ecosystem": {
