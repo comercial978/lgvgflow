@@ -2447,6 +2447,16 @@ h3 {
   font-size: 0.68rem;
 }
 
+.footer-support-phone {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-decoration: none;
+}
+
+.footer-support-phone:hover {
+  color: var(--gold);
+}
+
 .footer-legal-links {
   align-items: center;
   display: flex;
@@ -2632,7 +2642,7 @@ h3 {
 .contact-grid {
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .contact-grid a {
@@ -2660,6 +2670,11 @@ h3 {
 
 .contact-grid svg {
   color: var(--gold);
+}
+
+.contact-grid small {
+  color: var(--gold-light);
+  font-size: 0.8rem;
 }
 
 .gateway {

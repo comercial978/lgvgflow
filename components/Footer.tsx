@@ -37,6 +37,9 @@ export function Footer({ locale, dictionary }: Props) {
           <strong>{dictionary.footer.developedBy}</strong>
           <span>{dictionary.footer.registration}</span>
           <span>{dictionary.footer.location}</span>
+          <a className="footer-support-phone" href={`tel:${siteConfig.supportPhoneNumber}`}>
+            {dictionary.footer.supportPhone}: {siteConfig.supportPhoneDisplay}
+          </a>
         </div>
         <nav className="footer-legal-links" aria-label={dictionary.nav.menu}>
           <a href={`/${locale}/contact/`}>{dictionary.footer.contact}</a>

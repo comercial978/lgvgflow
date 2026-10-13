@@ -594,7 +594,8 @@
     "manual": "Manual",
     "developedBy": "Desenvolvido por UAI SOFTWARE LTDA",
     "registration": "CNPJ: 06.152.914/0001-54",
-    "location": "Uberaba – MG – Brasil"
+    "location": "Uberaba – MG – Brasil",
+    "supportPhone": "Telefone de Suporte ao Cliente - TI"
   },
   "manual": {
     "metaTitle": "Manual do LGVG Flow",
@@ -648,6 +649,7 @@
     "metaDescription": "Fale com a equipe do LGVG Flow.",
     "title": "Fale com o LGVG Flow",
     "intro": "Escolha o canal mais conveniente para tirar dúvidas sobre o indicador e a mentoria.",
+    "supportPhone": "Telefone de Suporte ao Cliente - TI",
     "whatsapp": "Falar pelo WhatsApp",
     "instagram": "Acompanhar no Instagram",
     "form": "Solicitar informações pelo formulário",

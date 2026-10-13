@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Camera, FileText, MessageCircle } from 'lucide-react'
+import { Camera, FileText, MessageCircle, PhoneCall } from 'lucide-react'
 import { notFound } from 'next/navigation'
 
 import { InteriorLayout } from '@/components/InteriorLayout'
@@ -28,6 +28,11 @@ export default async function ContactPage({ params }: Props) {
       <StructuredData data={breadcrumbSchema(locale, [{ name: siteConfig.name, path: '' }, { name: dictionary.contact.title, path: 'contact' }])} />
       <InteriorLayout dictionary={dictionary} locale={locale} title={dictionary.contact.title} intro={dictionary.contact.intro}>
         <div className="contact-grid">
+          <a href={`tel:${siteConfig.supportPhoneNumber}`}>
+            <PhoneCall aria-hidden="true" />
+            <span>{dictionary.contact.supportPhone}</span>
+            <small>{siteConfig.supportPhoneDisplay}</small>
+          </a>
           <a href={whatsappUrl(dictionary.cta.whatsappMessage)} target="_blank" rel="noopener noreferrer" data-ga-event="clique_whatsapp" data-ga-file-name="not_applicable"><MessageCircle aria-hidden="true" /><span>{dictionary.contact.whatsapp}</span></a>
           <a href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer"><Camera aria-hidden="true" /><span>{dictionary.contact.instagram}</span></a>
           <a href={siteConfig.formUrl} target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" /><span>{dictionary.contact.form}</span></a>

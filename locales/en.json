@@ -527,7 +527,7 @@
     "disclaimer": "LGVG Flow is an independent indicator compatible with the Profit platform. B3, Nelogica, Profit and Genial are the property of their respective owners and are mentioned solely to indicate compatibility, without implying partnership, endorsement or official affiliation."
   },
   "footer": {
-    "rights": "All rights reserved", "tagline": "Trade with structure. Trade professionally.", "socialTitle": "Follow content and updates", "instagram": "Gustavo Guimarães on Instagram", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "guides": "Guides", "news": "Market News", "manual": "Manual", "developedBy": "Developed by UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brazil"
+    "rights": "All rights reserved", "tagline": "Trade with structure. Trade professionally.", "socialTitle": "Follow content and updates", "instagram": "Gustavo Guimarães on Instagram", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "guides": "Guides", "news": "Market News", "manual": "Manual", "developedBy": "Developed by UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brazil", "supportPhone": "Customer Support Phone - IT"
   },
   "manual": {
     "metaTitle": "LGVG Flow User Manual", "metaDescription": "Installation and usage guide for LGVG Flow on Profit Pro and Profit Ultra.", "label": "User guide", "title": "LGVG Flow Manual", "intro": "Learn how to import, configure and interpret the indicator safely.",
@@ -544,7 +544,7 @@
     "sections": [{ "title": "Nature of the tool", "text": "LGVG Flow supports order flow reading and does not place orders automatically." }, { "title": "Risk", "text": "Financial markets involve risk of loss. Content is not advice or a promise of results." }, { "title": "Compatibility", "text": "Operation requires Profit Pro or Profit Ultra and access to order flow data." }, { "title": "Intellectual property", "text": "The LGVG Flow brand, indicator, manual and materials may not be redistributed without authorization." }], "back": "Back to website"
   },
   "contact": {
-    "metaTitle": "Contact | LGVG Flow", "metaDescription": "Contact the LGVG Flow team.", "title": "Contact LGVG Flow", "intro": "Choose the most convenient channel for questions about the indicator and mentoring.", "whatsapp": "Talk on WhatsApp", "instagram": "Follow on Instagram", "form": "Request information through the form", "back": "Back to website"
+    "metaTitle": "Contact | LGVG Flow", "metaDescription": "Contact the LGVG Flow team.", "title": "Contact LGVG Flow", "intro": "Choose the most convenient channel for questions about the indicator and mentoring.", "supportPhone": "Customer Support Phone - IT", "whatsapp": "Talk on WhatsApp", "instagram": "Follow on Instagram", "form": "Request information through the form", "back": "Back to website"
   },
   "errors": { "notFoundTitle": "Page not found", "notFoundText": "The requested page does not exist or has moved.", "back": "Back to home", "generic": "We could not complete the action. Please try again." },
   "schema": { "applicationCategory": "Financial application", "operatingSystem": "Profit Pro and Profit Ultra", "offerName": "LGVG Flow mentoring with indicator" }

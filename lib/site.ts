@@ -12,6 +12,8 @@ export const siteConfig = {
   url: 'https://lgvgflow.uaisoftware.com.br',
   instagramUrl: 'https://www.instagram.com/lgustavovguimaraes/',
   instagramHandle: '@lgustavovguimaraes',
+  supportPhoneNumber: '+553430739343',
+  supportPhoneDisplay: '+55 (34) 3073-9343',
   whatsappNumber: '5534988977879',
   formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfdH3nec0sdMpS15OdDpwI27jw399riITLsoplia8DA0DghBg/viewform',
   checkoutUrl: 'https://chk.eduzz.com/D0RAN6E29Y',
