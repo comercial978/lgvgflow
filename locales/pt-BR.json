@@ -17,7 +17,7 @@
     "never": "Nunca perguntar novamente"
   },
   "nav": {
-    "news": "Notícias", "guides": "Guias", "test": "Teste o Indicador", "access": "Solicitar Acesso", "menu": "Navegação principal",
+    "news": "Notícias", "guides": "Academia", "test": "Teste o Indicador", "access": "Solicitar Acesso", "menu": "Navegação principal",
     "sections": "Seções do site", "more": "Mais", "openSections": "Abrir menu de seções", "closeSections": "Fechar menu de seções",
     "home": "Início", "demo": "Demonstração", "solution": "Como funciona", "backtest": "Backtest e resultados", "pricing": "Planos", "downloads": "Teste e downloads", "ecosystem": "Ecossistema LGVG Flow", "developer": "Quem está por trás"
   },
@@ -148,25 +148,335 @@
     ]
   },
   "guides": {
-    "label": "Conteúdo educacional",
-    "homeTitle": { "prefix": "Guias sobre ", "highlight": "fluxo de ordens, WIN e WDO", "suffix": "" },
-    "homeDescription": "Conteúdo autoral para entender leitura de fluxo, escolher indicadores para WIN e WDO e usar o LGVG Flow no Profit com mais contexto.",
-    "metaTitle": "Guias de Fluxo para Mini Índice e Mini Dólar | LGVG Flow",
-    "metaDescription": "Aprenda sobre fluxo de ordens no Mini Índice WIN e Mini Dólar WDO e a compatibilidade com Profit Pro e Profit Ultra da Nelogica.",
-    "indexTitle": "Guias de fluxo de ordens, Mini Índice, Mini Dólar e Profit",
-    "indexIntro": "Conteúdo prático para compreender os dados por trás do preço, avaliar indicadores e utilizar a plataforma Profit com responsabilidade.",
-    "read": "Ler guia completo",
+    "label": "Academia LGVG Flow",
+    "homeTitle": { "prefix": "Aprenda sobre ", "highlight": "indicadores, fluxo e leitura institucional", "suffix": "" },
+    "homeDescription": "Conteúdo técnico e didático para usar as ferramentas do Profit com mais contexto e compreender como o LGVG Flow complementa a leitura.",
+    "metaTitle": "Academia LGVG Flow | Indicadores e Fluxo no Profit",
+    "metaDescription": "Aprenda Saldo de Agressão, Volume Profile, Volume At Price e leitura de fluxo no Profit Pro e Ultra para Mini Índice WIN e Mini Dólar WDO.",
+    "indexTitle": "Academia LGVG Flow — Indicadores, Fluxo e Leitura Institucional",
+    "indexIntro": "Aprenda a interpretar ferramentas do Profit com explicações técnicas, limitações, exemplos no WIN e WDO e fontes oficiais para aprofundar seu estudo.",
+    "read": "Ler artigo completo",
+    "searchLabel": "Pesquisar na Academia",
+    "searchPlaceholder": "Busque por indicador, fluxo, WIN ou WDO",
+    "noResults": "Nenhum artigo encontrado para esta busca.",
+    "featuredLabel": "Novo na Academia",
+    "imageAltPrefix": "Ilustração educacional",
+    "categories": { "orderFlow": "Fluxo de ordens", "futures": "WIN, WDO e mercado futuro", "platform": "Profit e instalação" },
     "contents": "Neste guia",
     "byline": "Por Gustavo Guimarães",
-    "reviewed": "Revisado em 27 de agosto de 2026",
+    "reviewed": "Atualizado em",
     "faqTitle": "Perguntas frequentes",
     "riskTitle": "Aviso de risco",
     "riskText": "Operações de day trade em Mini Índice e Mini Dólar envolvem risco elevado de perda. Este conteúdo é educacional, não constitui recomendação de investimento e não oferece garantia de resultado.",
     "ctaTitle": "Veja o fluxo funcionando no gráfico",
     "ctaText": "Teste o LGVG Flow por 60 dias no Profit Pro ou Profit Ultra e consulte o manual antes de utilizar o indicador.",
     "ctaButton": "Testar o indicador",
+    "ctaSecondary": "Conhecer o indicador",
     "relatedTitle": "Continue aprendendo",
+    "sourcesTitle": "Fontes oficiais consultadas",
+    "sourcesIntro": "Procedimentos e disponibilidade foram conferidos na documentação dos respectivos fornecedores. Consulte as páginas oficiais para verificar alterações posteriores.",
     "items": {
+      "aggressionBalance": {
+        "cardTitle": "Saldo de Agressão no Profit: como interpretar e configurar",
+        "cardText": "Entenda o que o saldo mede, onde encontrá-lo no Profit e por que agressão positiva ou negativa não deve ser usada como sinal isolado.",
+        "metaTitle": "Saldo de Agressão no Profit: Guia para WIN e WDO | LGVG Flow",
+        "metaDescription": "Aprenda como funciona o Saldo de Agressão no Profit, as diferenças entre Medidores e TR, configurações e interpretação no Mini Índice WIN e Mini Dólar WDO.",
+        "eyebrow": "Fluxo de ordens",
+        "title": "Saldo de Agressão no Profit: funcionamento, interpretação e configurações",
+        "intro": "O Saldo de Agressão resume a diferença entre a pressão executada por compradores e vendedores. Ele ajuda a enxergar quem tomou a iniciativa nas negociações, mas precisa ser comparado com o deslocamento do preço, a região negociada e o período analisado.",
+        "sections": [
+          {
+            "title": "O que o Saldo de Agressão realmente mede",
+            "paragraphs": [
+              "Uma agressão ocorre quando uma ordem executa contra a liquidez disponível no lado oposto do livro. Quando compradores aceitam ofertas de venda, existe agressão compradora; quando vendedores aceitam ofertas de compra, existe agressão vendedora. O saldo compara esses volumes executados dentro do recorte escolhido.",
+              "Saldo positivo indica predominância de agressão compradora naquele recorte, e saldo negativo indica predominância vendedora. Isso descreve a execução já ocorrida, não uma garantia sobre o próximo movimento. O preço pode responder pouco, responder depois ou até caminhar no sentido contrário quando a contraparte absorve o volume agressor."
+            ],
+            "items": [
+              "Mede negócios executados, não ordens apenas posicionadas no livro",
+              "Depende do período, do tipo de volume e dos preços considerados",
+              "Precisa ser lido junto do preço e da localização no gráfico",
+              "Não representa recomendação automática de compra ou venda"
+            ]
+          },
+          {
+            "title": "Duas formas de acompanhar agressão no Profit",
+            "paragraphs": [
+              "A documentação da Nelogica apresenta recursos diferentes. A ferramenta Medidores de Agressão é aberta pelo menu Ferramentas e permite visualizar o saldo por período e o acumulado diário do ativo. A página oficial informa disponibilidade específica no Profit Pro.",
+              "Já o indicador TR - Acúmulo de Agressão - Saldo é inserido pelo caminho de indicadores pesquisando por “TR -”. Ele integra o conjunto Tape Reading, aparece de forma nativa no Profit Ultra e pode depender da contratação do plugin em outras versões. Por isso, o nome encontrado na plataforma e a licença disponível devem ser confirmados antes de seguir qualquer tutorial."
+            ],
+            "items": [
+              "Medidores de Agressão: janela independente acessada por Ferramentas",
+              "TR - Acúmulo de Agressão - Saldo: indicador exibido junto ao gráfico",
+              "Recursos e disponibilidade podem variar conforme versão e contratação",
+              "O LGVG Flow exige Profit Pro ou Profit Ultra, independentemente desses recursos adicionais"
+            ]
+          },
+          {
+            "title": "Configurações confirmadas na documentação oficial",
+            "paragraphs": [
+              "Nos Medidores de Agressão, as propriedades permitem ajustar período, cores, fonte, orientação da janela e preços considerados. Também é possível trabalhar com janela de tempo, período personalizado, médias de períodos adicionais e, na configuração avançada, restringir a leitura aos preços mais próximos do spread por quantidade de ticks.",
+              "No TR - Acúmulo de Agressão - Saldo, o padrão é a acumulação diária. As propriedades permitem escolher um período personalizado, alterar o tipo de volume considerado e ajustar a apresentação. Alterar o período muda a pergunta respondida pelo indicador: um saldo de poucos minutos não deve ser comparado diretamente com o acumulado de toda a sessão."
+            ],
+            "items": [
+              "Comece com um período coerente com seu tipo de operação",
+              "Mantenha o mesmo tipo de volume ao comparar momentos diferentes",
+              "Evite adicionar filtros sem entender o que eles retiram da amostra",
+              "Salve a configuração somente depois de validar a leitura no simulador"
+            ]
+          },
+          {
+            "title": "Como interpretar o saldo no WIN e no WDO",
+            "paragraphs": [
+              "No Mini Índice WIN, compare o saldo com o deslocamento em pontos e com a posição do preço em relação a regiões relevantes. Agressão compradora acompanhada de avanço e aceitação acima de uma faixa conta uma história diferente de agressão compradora intensa sem progresso.",
+              "No Mini Dólar WDO, aplique o mesmo raciocínio, respeitando a dinâmica própria do contrato. Se o saldo vendedor aumenta, mas o preço deixa de renovar mínimas, pode existir defesa compradora ou simples perda momentânea de continuidade. A hipótese só ganha valor quando outros elementos do contexto confirmam a leitura."
+            ],
+            "items": [
+              "Saldo e preço avançando juntos: pressão executada com resposta do mercado",
+              "Saldo forte e pouco deslocamento: possível absorção, ainda sem confirmação",
+              "Mudança rápida de saldo: possível disputa ou alteração de ritmo",
+              "Saldo em região neutra: informação menos útil sem referência de contexto"
+            ]
+          },
+          {
+            "title": "Erros comuns ao usar agressão como sinal",
+            "paragraphs": [
+              "O erro mais comum é comprar apenas porque o número ficou verde ou vender apenas porque ficou vermelho. Um participante passivo pode absorver sucessivas agressões, e o movimento de preço depende da relação entre execução, liquidez disponível e reposição de ordens.",
+              "Também é arriscado comparar valores absolutos de ativos, horários ou dias diferentes. A abertura, o meio do pregão e períodos de notícia podem apresentar ritmos incompatíveis. O valor deve ser interpretado dentro da sessão e do instrumento analisado, sem transformar um exemplo isolado em regra universal."
+            ],
+            "items": [
+              "Ignorar o período selecionado",
+              "Confundir agressão com intenção futura",
+              "Tratar divergência como reversão obrigatória",
+              "Aumentar contratos porque o saldo parece extremo",
+              "Desconsiderar liquidez, volatilidade e gestão de risco"
+            ]
+          },
+          {
+            "title": "Como o LGVG Flow complementa essa análise?",
+            "paragraphs": [
+              "O Saldo de Agressão concentra uma dimensão da leitura: a diferença entre execuções compradoras e vendedoras. O LGVG Flow procura organizar essa informação junto de possíveis regiões de absorção, níveis visuais de liquidez, sinais e comportamento do preço no gráfico do WIN ou do WDO.",
+              "A vantagem prática não está em substituir o estudo do saldo, mas em reduzir a fragmentação entre janelas. O trader continua responsável por conferir se a região já foi tocada, avaliar o contexto do dia e definir risco antes da entrada. O indicador não envia ordens nem garante que uma leitura resulte em operação vencedora."
+            ],
+            "items": [
+              "Agressão compradora e vendedora organizada visualmente",
+              "Possíveis regiões de absorção e liquidez no mesmo contexto",
+              "Sinais visuais que precisam de validação pelo usuário",
+              "Teste gratuito de 60 dias para avaliação em conta simulada"
+            ]
+          }
+        ],
+        "faq": [
+          { "question": "Saldo de Agressão positivo significa que o preço vai subir?", "answer": "Não. Significa que houve predominância de agressão compradora no recorte analisado. O preço pode não avançar se existir absorção, reposição de liquidez ou mudança de contexto." },
+          { "question": "Medidores de Agressão e TR - Acúmulo de Agressão são a mesma ferramenta?", "answer": "Não. Os Medidores são uma janela acessada pelo menu Ferramentas; o TR é um indicador do conjunto Tape Reading inserido no gráfico. A disponibilidade também varia conforme versão e licença." },
+          { "question": "Qual período devo usar no saldo?", "answer": "O período precisa corresponder à pergunta e ao horizonte da operação. Comece com uma configuração simples, mantenha o critério e valide em diferentes condições no simulador." },
+          { "question": "O LGVG Flow substitui o Saldo de Agressão?", "answer": "Não. Ele organiza múltiplas informações de fluxo e preço em uma leitura visual complementar, mas compreender agressão continua útil para interpretar o contexto." }
+        ]
+      },
+      "volumeProfile": {
+        "cardTitle": "Volume Profile no Profit: regiões de volume e POC",
+        "cardText": "Veja como o perfil distribui volume por preço, o que o POC representa, quais configurações existem e onde a leitura pode falhar.",
+        "metaTitle": "Volume Profile no Profit: POC, Configuração e Leitura | LGVG Flow",
+        "metaDescription": "Aprenda a configurar e interpretar Volume Profile e POC no Profit, com exemplos para Mini Índice WIN e Mini Dólar WDO, limitações e relação com fluxo.",
+        "eyebrow": "Volume por preço",
+        "title": "Volume Profile no Profit: como identificar regiões de concentração de negócios",
+        "intro": "O Volume Profile desloca a atenção do tempo para o preço: ele mostra em quais faixas houve maior ou menor volume negociado no intervalo analisado. Essa distribuição ajuda a localizar áreas de aceitação, rejeição e disputa, mas não determina sozinha suporte, resistência ou direção.",
+        "sections": [
+          {
+            "title": "Como o Volume Profile organiza os negócios",
+            "paragraphs": [
+              "Em um gráfico tradicional, o volume costuma aparecer associado a cada candle. No Volume Profile, o mesmo conjunto de negócios é agrupado pelos níveis de preço. Barras maiores indicam que mais volume foi negociado naquela faixa dentro do período escolhido; barras menores indicam passagem com menor concentração.",
+              "O perfil registra onde o mercado aceitou negociar, não por que negociou nem quem vencerá depois. Uma região de alto volume pode funcionar como referência, mas pode ser atravessada rapidamente quando o contexto muda. Uma faixa de baixo volume pode favorecer deslocamento, mas também pode deixar de ser relevante após novas negociações."
+            ],
+            "items": [
+              "Alto volume: maior concentração de negócios no intervalo",
+              "Baixo volume: menor permanência ou menor negociação naquela faixa",
+              "Formato do perfil: resultado do período e do ativo selecionados",
+              "Leitura: referência contextual, não previsão automática"
+            ]
+          },
+          {
+            "title": "O que é POC no Volume Profile",
+            "paragraphs": [
+              "POC significa Point of Control. No contexto do Volume Profile, corresponde ao nível ou faixa com maior volume negociado dentro do perfil calculado. A documentação da Nelogica relaciona o recurso à opção “Destacar Maior Barra de Volume”, exibida em destaque no indicador.",
+              "O POC pode servir como referência de aceitação e equilíbrio daquele intervalo. Contudo, seu significado depende da construção escolhida: um POC diário, um perfil personalizado de várias sessões e um perfil automático não respondem à mesma pergunta. Sempre identifique o período antes de interpretar a linha."
+            ],
+            "items": [
+              "POC não é necessariamente o último preço",
+              "O nível muda quando novos negócios alteram a maior concentração",
+              "Perfis diferentes podem produzir POCs diferentes no mesmo gráfico",
+              "O preço tocar o POC não obriga reação nem retorno"
+            ]
+          },
+          {
+            "title": "Como inserir e configurar no Profit",
+            "paragraphs": [
+              "Segundo a Central de Ajuda da Nelogica, o Volume Profile é localizado no menu Exibir, na área de indicadores. Depois de inseri-lo, as propriedades podem ser abertas pelo menu de contexto do próprio indicador.",
+              "Entre as opções documentadas estão exibir trades diretos e de leilão, separar barras por agressão, mostrar volume acumulado, destacar a maior barra e escrever o valor ao destacar. Cores, transparência e periodicidade também podem ser ajustadas. A disponibilidade exata deve ser conferida na licença atual do Profit."
+            ],
+            "items": [
+              "Defina primeiro se o perfil será automático ou personalizado",
+              "Escolha se trades diretos e de leilão fazem parte da análise",
+              "Use barras por agressão somente se souber interpretar os lados",
+              "Destaque o POC sem transformar a linha em gatilho isolado"
+            ]
+          },
+          {
+            "title": "Limites de período e impacto no desempenho",
+            "paragraphs": [
+              "A documentação informa limites de plotagem por ativo: até 8 dias para WIN, 30 dias para WDO, 180 dias para DOL e IND e 360 dias para ativos Bovespa. Se um valor acima do limite for solicitado, a plataforma ajusta para o máximo permitido.",
+              "O Volume Profile processa muitos dados e pode exigir mais tempo para carregar, especialmente no período máximo. Para uma análise operacional, aumentar o histórico nem sempre melhora a decisão. Um intervalo menor e bem definido costuma ser mais fácil de comparar e documentar."
+            ],
+            "items": [
+              "WIN: limite documentado de 8 dias",
+              "WDO: limite documentado de 30 dias",
+              "Períodos maiores aumentam processamento e podem misturar contextos",
+              "Ajuste a amostra ao objetivo da análise"
+            ]
+          },
+          {
+            "title": "Exemplo de leitura no WIN e no WDO",
+            "paragraphs": [
+              "No WIN, imagine um perfil diário com grande concentração abaixo do preço atual. Se o mercado rompe a faixa, retorna e encontra negociação consistente acima dela, a região pode ajudar a avaliar aceitação. Se o retorno atravessa o nível sem resposta, a referência perde força para aquela leitura.",
+              "No WDO, um POC próximo da abertura pode concentrar negociações durante parte da sessão. Em vez de presumir reversão a cada toque, observe se existe agressão, deslocamento e manutenção do preço. O perfil localiza a região; a execução mostra como os participantes estão reagindo naquele momento."
+            ],
+            "items": [
+              "Marque o período usado para construir o perfil",
+              "Observe chegada, reação e permanência na região",
+              "Compare volume concentrado com agressão e deslocamento",
+              "Reavalie quando novas negociações mudarem o perfil"
+            ]
+          },
+          {
+            "title": "Como o LGVG Flow complementa essa análise?",
+            "paragraphs": [
+              "O Volume Profile responde principalmente onde houve concentração de volume. O LGVG Flow adiciona uma leitura visual de agressão, possíveis absorções, regiões de liquidez do dia e sinais contextualizados no gráfico. Assim, uma zona de volume pode ser comparada com a forma como o mercado executa e reage ao chegar nela.",
+              "As ferramentas não são equivalentes. O perfil pode continuar útil para referências de volume, enquanto o LGVG Flow busca organizar várias informações do fluxo em uma camada operacional. Nenhuma delas elimina a necessidade de stop, tamanho de posição adequado e validação em simulador."
+            ],
+            "items": [
+              "Volume Profile: concentração histórica por preço no intervalo",
+              "LGVG Flow: fluxo, possíveis absorções e liquidez organizados no gráfico",
+              "Uso combinado: localização da região mais comportamento atual",
+              "Resultado: contexto adicional, sem promessa de acerto"
+            ]
+          }
+        ],
+        "faq": [
+          { "question": "POC é o melhor ponto para entrar em uma operação?", "answer": "Não existe essa garantia. O POC destaca a maior concentração de volume do perfil; a decisão exige contexto, comportamento atual do preço, risco e uma regra operacional definida." },
+          { "question": "Volume Profile e Volume At Price são a mesma coisa?", "answer": "Não. O Volume Profile é um indicador plotado no gráfico para distribuir volume por preço. O Volume At Price é uma ferramenta em janela própria, com abas e colunas detalhadas por nível de preço." },
+          { "question": "Por que o POC muda durante o pregão?", "answer": "Porque o volume continua sendo acumulado. Outro nível pode superar a concentração anterior conforme novos negócios são executados." },
+          { "question": "Posso usar o mesmo período no WIN e no WDO?", "answer": "Pode testar períodos equivalentes, mas os ativos possuem dinâmicas e limites diferentes. A documentação informa até 8 dias para WIN e 30 dias para WDO no Volume Profile." }
+        ]
+      },
+      "volumeAtPrice": {
+        "cardTitle": "Volume At Price no Profit: leitura por nível de preço",
+        "cardText": "Aprenda a usar as abas, tipos de volume e períodos da ferramenta para analisar negócios, agressores e possíveis faixas de defesa.",
+        "metaTitle": "Volume At Price no Profit: Como Configurar e Interpretar | LGVG Flow",
+        "metaDescription": "Guia do Volume At Price no Profit: abas, saldo de agressão, períodos, limites no WIN e WDO, erros comuns e comparação com o LGVG Flow.",
+        "eyebrow": "Ferramenta de fluxo",
+        "title": "Volume At Price no Profit: como interpretar o volume negociado por preço",
+        "intro": "O Volume At Price mostra o que foi negociado em cada nível de preço e permite examinar quantidade, negócios e agressões com mais detalhe. É uma ferramenta de leitura de fluxo, não um mapa infalível de suporte e resistência.",
+        "sections": [
+          {
+            "title": "O que é Volume At Price",
+            "paragraphs": [
+              "Enquanto o candle resume o movimento em um período, o Volume At Price organiza as negociações pelos preços onde ocorreram. A ferramenta ajuda a enxergar regiões com acúmulo de negócios, desequilíbrio entre agressores e possíveis áreas onde o mercado encontrou defesa ou rejeição.",
+              "Um volume elevado mostra participação, mas não revela sozinho a intenção dos participantes. O mesmo nível pode conter entrada, saída, rolagem, defesa ou execução de estratégias distintas. A interpretação precisa observar o que o preço faz antes, durante e depois da concentração."
+            ],
+            "items": [
+              "Preço: nível onde os negócios foram executados",
+              "Quantidade ou financeiro: dimensão do volume analisado",
+              "Número de negócios: frequência de execuções naquele preço",
+              "Agressão: lado que tomou a iniciativa na execução"
+            ]
+          },
+          {
+            "title": "Abas e visualizações disponíveis",
+            "paragraphs": [
+              "A ferramenta é adicionada pelo menu Ferramentas. Na visualização Gráfico, barras representam agressão de compra e venda por nível de preço. A aba Tabela apresenta valores detalhados; Agressores separa compra e venda; Agressores - Saldo mostra a diferença entre os lados; e Resumo reúne quantidade, agressões e saldo.",
+              "Nem todas as versões oferecem a mesma profundidade. A documentação informa que o Profit One possui uma versão reduzida, com abas Tabela e Gráfico. Antes de montar um layout, confirme quais colunas e abas estão liberadas no seu plano."
+            ],
+            "items": [
+              "Gráfico: leitura visual por barras",
+              "Tabela: valores e percentuais por nível",
+              "Agressores: separação entre compra e venda",
+              "Agressores - Saldo: diferença entre os lados",
+              "Resumo: consolidação das informações do nível"
+            ]
+          },
+          {
+            "title": "Configurações de volume, pintura e período",
+            "paragraphs": [
+              "Nas propriedades, a Nelogica documenta três tipos de volume: financeiro, quantidade e número de negócios. O tipo de pintura pode ser padrão, agressor ou saldo de agressão. O período pode variar entre janelas de 1 a 60 minutos, o dia atual ou o momento a partir da abertura da ferramenta.",
+              "Também é possível considerar tipos de trade, selecionar agentes monitorados, personalizar cores e colunas e criar alarmes diretamente no preço. Cada filtro altera o universo observado; portanto, registre a configuração usada quando comparar sessões ou realizar exercícios."
+            ],
+            "items": [
+              "Quantidade: contratos ou unidades negociadas",
+              "Financeiro: valor movimentado",
+              "Número de negócios: quantidade de execuções",
+              "Pintura por agressor ou saldo: leitura do lado predominante",
+              "Período: recorte temporal da amostra"
+            ]
+          },
+          {
+            "title": "Limites de histórico no WIN e no WDO",
+            "paragraphs": [
+              "A documentação oficial informa limites de 10 dias de negociação para WIN, 30 dias para WDO e 180 dias para DOL no Volume At Price; os demais ativos possuem limite de um ano. Esses valores pertencem à ferramenta Volume At Price e não devem ser confundidos com os limites do indicador Volume Profile.",
+              "Solicitar mais histórico aumenta a quantidade de dados e pode dificultar a leitura. Para day trade, o recorte “Hoje” ou um período intradiário pode responder perguntas mais específicas, enquanto uma amostra maior serve para outro tipo de comparação."
+            ],
+            "items": [
+              "WIN: até 10 dias de negociação",
+              "WDO: até 30 dias de negociação",
+              "DOL: até 180 dias de negociação",
+              "Escolha o período conforme a hipótese analisada"
+            ]
+          },
+          {
+            "title": "Como reconhecer absorção sem concluir cedo demais",
+            "paragraphs": [
+              "Uma possível absorção aparece quando um lado agride em volume relevante, mas o preço não se desloca de forma proporcional. No Volume At Price, isso pode surgir como concentração de agressão em uma faixa com pouca progressão. A leitura sugere que existiu contraparte passiva suficiente para receber as execuções.",
+              "Ainda assim, pouca progressão também pode ocorrer por pausa temporária, leilão, baixa liquidez ou mudança de ritmo. A confirmação exige observar a saída da região, a continuidade e a defesa em um eventual retorno. “Muito volume” não é sinônimo automático de reversão."
+            ],
+            "items": [
+              "Compare agressão com deslocamento do preço",
+              "Observe se a região segura em um novo teste",
+              "Diferencie pausa de mudança efetiva de controle",
+              "Evite antecipar reversão apenas pela cor da barra"
+            ]
+          },
+          {
+            "title": "Volume At Price x Volume Profile",
+            "paragraphs": [
+              "As duas ferramentas distribuem informações por preço, mas atendem usos diferentes. O Volume Profile produz uma estrutura visual integrada ao gráfico e destaca concentrações como o POC. O Volume At Price oferece uma janela detalhada com abas, colunas, agressores, saldo e filtros por período.",
+              "Na prática, o Profile facilita localizar áreas no gráfico; o At Price permite investigar a composição das negociações. Usar os dois sem uma pergunta definida pode apenas duplicar informação. Escolha a ferramenta conforme o nível de detalhe necessário."
+            ],
+            "items": [
+              "Volume Profile: visão espacial e resumida da distribuição",
+              "Volume At Price: investigação detalhada por nível",
+              "POC: maior concentração do perfil",
+              "Saldo no At Price: diferença entre agressores no preço"
+            ]
+          },
+          {
+            "title": "Como o LGVG Flow complementa essa análise?",
+            "paragraphs": [
+              "O Volume At Price oferece profundidade para investigar níveis, mas exige alternar a atenção entre a janela de fluxo e o gráfico. O LGVG Flow procura organizar agressão, possíveis absorções, regiões de liquidez e sinais visuais diretamente no gráfico do WIN e do WDO.",
+              "Isso não torna o Volume At Price desnecessário: ele pode ser usado para aprofundar uma região destacada. O LGVG Flow funciona como camada de organização e contexto, não como substituto da decisão do trader. O teste de 60 dias permite comparar as leituras no simulador antes de qualquer avaliação comercial."
+            ],
+            "items": [
+              "Volume At Price: detalhe bruto por nível",
+              "LGVG Flow: síntese visual de múltiplas informações",
+              "Uso combinado: localizar, investigar e validar contexto",
+              "Sempre definir risco antes de considerar uma entrada"
+            ]
+          }
+        ],
+        "faq": [
+          { "question": "Volume At Price está disponível em todas as versões do Profit?", "answer": "A ferramenta existe em diferentes versões, mas recursos e abas variam. A documentação informa visualização reduzida no Profit One. Confirme a licença atual antes de configurar seu layout." },
+          { "question": "Saldo de agressão no Volume At Price é igual ao saldo diário?", "answer": "Não necessariamente. O saldo exibido depende do nível de preço, do período e dos filtros selecionados. Um acumulado diário responde a uma pergunta diferente." },
+          { "question": "Grande volume em um preço garante suporte ou resistência?", "answer": "Não. Indica concentração de negócios. A relevância operacional depende de reação, continuidade, contexto e comportamento em novos testes da região." },
+          { "question": "O LGVG Flow usa a mesma tela do Volume At Price?", "answer": "Não. O LGVG Flow é um indicador independente aplicado ao gráfico no Profit Pro ou Ultra. Ele organiza informações de fluxo visualmente, enquanto o Volume At Price permanece uma ferramenta detalhada em janela própria." }
+        ]
+      },
       "orderFlow": {
         "cardTitle": "Indicador de fluxo de ordens: agressão, absorção e liquidez",
         "cardText": "Entenda quais dados um indicador de fluxo observa e como essa leitura se diferencia dos indicadores calculados apenas pelo preço.",

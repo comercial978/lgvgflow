@@ -9,7 +9,7 @@ type MetadataInput = {
   path?: string
   title?: string
   description?: string
-  languagePaths?: Record<Locale, string>
+  languagePaths?: Partial<Record<Locale, string>>
 }
 
 export function buildMetadata({ locale, dictionary, path = '', title, description, languagePaths }: MetadataInput): Metadata {
@@ -17,12 +17,11 @@ export function buildMetadata({ locale, dictionary, path = '', title, descriptio
   const pageTitle = title ?? dictionary.meta.title
   const pageDescription = description ?? dictionary.meta.description
   const languages = languagePaths
-    ? {
-        'pt-BR': `/pt/${languagePaths.pt}/`,
-        en: `/en/${languagePaths.en}/`,
-        es: `/es/${languagePaths.es}/`,
-        'x-default': `/en/${languagePaths.en}/`,
-      }
+    ? Object.fromEntries([
+        ...(languagePaths.pt ? [['pt-BR', `/pt/${languagePaths.pt}/`]] : []),
+        ...(languagePaths.en ? [['en', `/en/${languagePaths.en}/`], ['x-default', `/en/${languagePaths.en}/`]] : []),
+        ...(languagePaths.es ? [['es', `/es/${languagePaths.es}/`]] : []),
+      ])
     : languageAlternates(path)
 
   return {

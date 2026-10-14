@@ -1,17 +1,18 @@
 import type { Metadata } from 'next'
-import { ArrowRight, BookOpen, Check, Download } from 'lucide-react'
+import { ArrowRight, BookOpen, Check, Download, ExternalLink } from 'lucide-react'
 import { notFound } from 'next/navigation'
 
 import { InteriorLayout } from '@/components/InteriorLayout'
 import { StructuredData } from '@/components/StructuredData'
 import {
   getGuideId,
-  guideIds,
+  guideIdsForLocale,
   guideLanguagePaths,
   guideMetadataPath,
   guideModifiedAt,
   guidePath,
   guidePublishedAt,
+  guideSources,
   guideSlug,
 } from '@/lib/guides'
 import { getDictionary, isLocale, localeConfig, supportedLocales } from '@/lib/i18n'
@@ -23,7 +24,7 @@ type Props = { params: Promise<{ locale: string; slug: string }> }
 
 export function generateStaticParams() {
   return supportedLocales.flatMap((locale) =>
-    guideIds.map((guideId) => ({ locale, slug: guideSlug(locale, guideId) })),
+    guideIdsForLocale(locale).map((guideId) => ({ locale, slug: guideSlug(locale, guideId) })),
   )
 }
 
@@ -53,6 +54,8 @@ export default async function GuidePage({ params }: Props) {
   const guide = dictionary.guides.items[guideId]
   const pagePath = guidePath(locale, guideId)
   const pageUrl = `${siteConfig.url}${pagePath}`
+  const modifiedAt = guideModifiedAt(guideId)
+  const sources = guideSources[guideId] ?? []
   const schemas = [
     breadcrumbSchema(locale, [
       { name: siteConfig.name, path: '' },
@@ -68,8 +71,10 @@ export default async function GuidePage({ params }: Props) {
       mainEntityOfPage: pageUrl,
       inLanguage: localeConfig[locale].htmlLang,
       datePublished: guidePublishedAt(guideId),
-      dateModified: guideModifiedAt,
+      dateModified: modifiedAt,
       image: `${siteConfig.url}/assets/video/lgvg-flow-demo.webp`,
+      articleSection: guide.eyebrow,
+      citation: sources.map((source) => source.url),
       author: {
         '@type': 'Person',
         name: dictionary.authority.name,
@@ -92,7 +97,13 @@ export default async function GuidePage({ params }: Props) {
       })),
     },
   ]
-  const relatedGuides = guideIds.filter((item) => item !== guideId)
+  const relatedGuides = guideIdsForLocale(locale).filter((item) => item !== guideId).slice(0, 4)
+  const formattedDate = new Intl.DateTimeFormat(localeConfig[locale].htmlLang, {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(`${modifiedAt}T12:00:00Z`))
 
   return (
     <>
@@ -108,7 +119,7 @@ export default async function GuidePage({ params }: Props) {
           <p className="guide-byline">
             <span>{dictionary.guides.byline}</span>
             <span aria-hidden="true">·</span>
-            <time dateTime={guideModifiedAt}>{dictionary.guides.reviewed}</time>
+            <time dateTime={modifiedAt}>{dictionary.guides.reviewed} {formattedDate}</time>
           </p>
           <nav className="guide-toc" aria-label={dictionary.guides.contents}>
             <strong><BookOpen aria-hidden="true" size={18} />{dictionary.guides.contents}</strong>
@@ -143,15 +154,36 @@ export default async function GuidePage({ params }: Props) {
             <p>{dictionary.guides.riskText}</p>
           </aside>
 
+          {sources.length ? (
+            <section className="guide-sources" aria-labelledby="guide-sources-title">
+              <h2 id="guide-sources-title">{dictionary.guides.sourcesTitle}</h2>
+              <p>{dictionary.guides.sourcesIntro}</p>
+              <ul>
+                {sources.map((source) => (
+                  <li key={source.url}>
+                    <a href={source.url} target="_blank" rel="noopener noreferrer">
+                      {source.label}<ExternalLink aria-hidden="true" size={15} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
           <section className="guide-cta" aria-labelledby="guide-cta-title">
             <div>
               <p className="eyebrow">LGVG Flow</p>
               <h2 id="guide-cta-title">{dictionary.guides.ctaTitle}</h2>
               <p>{dictionary.guides.ctaText}</p>
             </div>
-            <a className="button button-primary" href={`/${locale}/#downloads`}>
-              <Download aria-hidden="true" size={18} />{dictionary.guides.ctaButton}
-            </a>
+            <div className="guide-cta-actions">
+              <a className="button button-primary" href={`/${locale}/#downloads`} data-ga-event="clique_teste_gratis" data-ga-file-name="LGVGFLOWATUAL.psf">
+                <Download aria-hidden="true" size={18} />{dictionary.guides.ctaButton}
+              </a>
+              <a className="button button-secondary" href={`/${locale}/#solution`} data-ga-event="clique_conhecer_indicador" data-ga-file-name="not_applicable">
+                {dictionary.guides.ctaSecondary}<ArrowRight aria-hidden="true" size={17} />
+              </a>
+            </div>
           </section>
 
           <section className="guide-related" aria-labelledby="guide-related-title">

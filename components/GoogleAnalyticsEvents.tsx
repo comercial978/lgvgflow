@@ -3,12 +3,18 @@
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 
-type AnalyticsEvent = 'download_indicador' | 'download_manual' | 'clique_whatsapp'
+type AnalyticsEvent =
+  | 'download_indicador'
+  | 'download_manual'
+  | 'clique_whatsapp'
+  | 'clique_teste_gratis'
+  | 'clique_conhecer_indicador'
 
 declare global {
   interface Window {
     dataLayer: unknown[]
     gtag?: (...args: unknown[]) => void
+    lgvgLastArticleView?: string
     lgvgLastPageView?: string
   }
 }
@@ -55,6 +61,17 @@ export function GoogleAnalyticsEvents() {
       page_path: `${window.location.pathname}${window.location.search}`,
       page_title: document.title,
     })
+
+    const articleMatch = window.location.pathname.match(/^\/(pt|en|es)\/guides\/([^/]+)\/?$/)
+    if (articleMatch && window.lgvgLastArticleView !== pageLocation) {
+      window.lgvgLastArticleView = pageLocation
+      window.gtag?.('event', 'visualizacao_artigo', {
+        article_slug: articleMatch[2],
+        content_language: articleMatch[1],
+        page_location: pageLocation,
+        page_title: document.title,
+      })
+    }
   }, [pathname])
 
   return null

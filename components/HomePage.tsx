@@ -31,7 +31,7 @@ import { SectionTitle } from '@/components/SectionTitle'
 import { StructuredData } from '@/components/StructuredData'
 import { VideoFacade } from '@/components/VideoFacade'
 import { backtestAssets, backtestHomeAssetIndexes } from '@/lib/backtest'
-import { guideIds, guidePath } from '@/lib/guides'
+import { guideIdsForLocale, guidePath } from '@/lib/guides'
 import type { Dictionary, Locale } from '@/lib/i18n'
 import { marketNews } from '@/lib/news'
 import { homeSchemas } from '@/lib/schema'
@@ -263,7 +263,7 @@ export function HomePage({ dictionary, locale }: Props) {
               description={dictionary.guides.homeDescription}
             />
             <div className="guide-card-grid">
-              {guideIds.map((guideId) => {
+              {guideIdsForLocale(locale).slice(0, 3).map((guideId) => {
                 const guide = dictionary.guides.items[guideId]
                 return (
                   <article className="guide-card fade-up" key={guideId}>

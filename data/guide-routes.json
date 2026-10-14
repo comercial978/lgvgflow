@@ -3,9 +3,20 @@
     "orderFlow": "2026-08-11",
     "miniIndex": "2026-08-11",
     "miniDollar": "2026-08-27",
-    "profitNelogica": "2026-08-11"
+    "profitNelogica": "2026-08-11",
+    "aggressionBalance": "2026-10-14",
+    "volumeProfile": "2026-10-14",
+    "volumeAtPrice": "2026-10-14"
   },
-  "modifiedAt": "2026-08-27",
+  "modifiedAt": {
+    "orderFlow": "2026-08-27",
+    "miniIndex": "2026-08-27",
+    "miniDollar": "2026-08-27",
+    "profitNelogica": "2026-08-27",
+    "aggressionBalance": "2026-10-14",
+    "volumeProfile": "2026-10-14",
+    "volumeAtPrice": "2026-10-14"
+  },
   "guides": {
     "orderFlow": {
       "pt": "indicador-fluxo-ordens",
@@ -26,6 +37,15 @@
       "pt": "indicador-profit-nelogica",
       "en": "profit-nelogica-indicator",
       "es": "indicador-profit-nelogica"
+    },
+    "aggressionBalance": {
+      "pt": "saldo-agressao-profit"
+    },
+    "volumeProfile": {
+      "pt": "volume-profile-profit"
+    },
+    "volumeAtPrice": {
+      "pt": "volume-at-price-profit"
     }
   }
 }

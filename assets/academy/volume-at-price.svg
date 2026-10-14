@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Representacao visual do Volume At Price</title>
+  <desc id="desc">Escada de precos com volumes compradores e vendedores distribuídos em cada nivel.</desc>
+  <rect width="960" height="540" fill="#090c12"/>
+  <g stroke="#26303d" stroke-width="1">
+    <path d="M70 82H900M70 132H900M70 182H900M70 232H900M70 282H900M70 332H900M70 382H900M70 432H900"/>
+    <path d="M230 58V458M480 58V458M730 58V458"/>
+  </g>
+  <rect x="70" y="250" width="830" height="64" fill="#f7c843" opacity=".08"/>
+  <g fill="#ee5d6c" opacity=".92">
+    <rect x="352" y="92" width="128" height="26" rx="3"/>
+    <rect x="286" y="142" width="194" height="26" rx="3"/>
+    <rect x="326" y="192" width="154" height="26" rx="3"/>
+    <rect x="236" y="242" width="244" height="26" rx="3"/>
+    <rect x="308" y="292" width="172" height="26" rx="3"/>
+    <rect x="350" y="342" width="130" height="26" rx="3"/>
+    <rect x="386" y="392" width="94" height="26" rx="3"/>
+  </g>
+  <g fill="#2ed187" opacity=".92">
+    <rect x="480" y="92" width="94" height="26" rx="3"/>
+    <rect x="480" y="142" width="146" height="26" rx="3"/>
+    <rect x="480" y="192" width="214" height="26" rx="3"/>
+    <rect x="480" y="242" width="310" height="26" rx="3"/>
+    <rect x="480" y="292" width="248" height="26" rx="3"/>
+    <rect x="480" y="342" width="182" height="26" rx="3"/>
+    <rect x="480" y="392" width="116" height="26" rx="3"/>
+  </g>
+  <path d="M480 66V448" stroke="#f7c843" stroke-width="4"/>
+  <circle cx="480" cy="280" r="11" fill="#f7c843"/>
+  <g fill="#8996a8">
+    <rect x="820" y="96" width="54" height="8" rx="4"/>
+    <rect x="820" y="146" width="32" height="8" rx="4"/>
+    <rect x="820" y="196" width="62" height="8" rx="4"/>
+    <rect x="820" y="246" width="70" height="8" rx="4"/>
+    <rect x="820" y="296" width="42" height="8" rx="4"/>
+    <rect x="820" y="346" width="58" height="8" rx="4"/>
+    <rect x="820" y="396" width="28" height="8" rx="4"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Representacao visual do Volume Profile</title>
+  <desc id="desc">Perfil horizontal de volume ao lado de um grafico de precos com regiao de maior negociacao destacada.</desc>
+  <rect width="960" height="540" fill="#090c12"/>
+  <g stroke="#26303d" stroke-width="1">
+    <path d="M80 88H894M80 156H894M80 224H894M80 292H894M80 360H894M80 428H894"/>
+    <path d="M170 64V460M310 64V460M450 64V460M590 64V460M730 64V460"/>
+  </g>
+  <rect x="80" y="250" width="814" height="72" fill="#f7c843" opacity=".08"/>
+  <g fill="#566273">
+    <rect x="80" y="82" width="92" height="22" rx="3"/>
+    <rect x="80" y="112" width="138" height="22" rx="3"/>
+    <rect x="80" y="142" width="186" height="22" rx="3"/>
+    <rect x="80" y="172" width="234" height="22" rx="3"/>
+    <rect x="80" y="202" width="292" height="22" rx="3"/>
+    <rect x="80" y="232" width="348" height="22" rx="3"/>
+    <rect x="80" y="262" width="420" height="22" rx="3" fill="#f7c843"/>
+    <rect x="80" y="292" width="382" height="22" rx="3" fill="#d8ad36"/>
+    <rect x="80" y="322" width="304" height="22" rx="3"/>
+    <rect x="80" y="352" width="252" height="22" rx="3"/>
+    <rect x="80" y="382" width="196" height="22" rx="3"/>
+    <rect x="80" y="412" width="126" height="22" rx="3"/>
+  </g>
+  <g stroke-width="4">
+    <path d="M526 372V318M526 332H566M566 332V282" stroke="#2ed187"/>
+    <rect x="518" y="330" width="16" height="30" fill="#2ed187" stroke="#2ed187"/>
+    <rect x="558" y="300" width="16" height="32" fill="#2ed187" stroke="#2ed187"/>
+    <path d="M606 310V246M606 262H646M646 262V198" stroke="#2ed187"/>
+    <rect x="598" y="268" width="16" height="30" fill="#2ed187" stroke="#2ed187"/>
+    <rect x="638" y="230" width="16" height="32" fill="#ee5d6c" stroke="#ee5d6c"/>
+    <path d="M686 224V160M686 178H726M726 178V222" stroke="#ee5d6c"/>
+    <rect x="678" y="180" width="16" height="32" fill="#ee5d6c" stroke="#ee5d6c"/>
+    <rect x="718" y="178" width="16" height="30" fill="#2ed187" stroke="#2ed187"/>
+    <path d="M766 198V140M766 154H806M806 154V112" stroke="#2ed187"/>
+    <rect x="758" y="160" width="16" height="28" fill="#2ed187" stroke="#2ed187"/>
+    <rect x="798" y="132" width="16" height="30" fill="#2ed187" stroke="#2ed187"/>
+  </g>
+  <path d="M80 286H894" stroke="#f7c843" stroke-width="4" stroke-dasharray="12 9"/>
+</svg>

@@ -26,7 +26,7 @@ export function Footer({ locale, dictionary }: Props) {
             <span>{siteConfig.instagramHandle}</span>
           </a>
         </div>
-        <nav className="footer-links" aria-label={dictionary.nav.menu}>
+        <nav className="footer-links" aria-label={`${dictionary.nav.menu}: ${dictionary.footer.guides}`}>
           <a href={`/${locale}/guides/`}>{dictionary.footer.guides}</a>
           <a href={`/${locale}/news/`}>{dictionary.footer.news}</a>
           <a href={`/${locale}/manual/`}>{dictionary.footer.manual}</a>
@@ -41,7 +41,7 @@ export function Footer({ locale, dictionary }: Props) {
             {dictionary.footer.supportPhone}: {siteConfig.supportPhoneDisplay}
           </a>
         </div>
-        <nav className="footer-legal-links" aria-label={dictionary.nav.menu}>
+        <nav className="footer-legal-links" aria-label={`${dictionary.nav.menu}: ${dictionary.footer.terms}`}>
           <a href={`/${locale}/contact/`}>{dictionary.footer.contact}</a>
           <span aria-hidden="true">|</span>
           <a href={`/${locale}/privacy/`}>{dictionary.footer.privacy}</a>

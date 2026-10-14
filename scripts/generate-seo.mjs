@@ -9,7 +9,7 @@ const locales = ['pt', 'en', 'es']
 const guideRouteData = JSON.parse(await readFile(path.join(root, 'data', 'guide-routes.json'), 'utf8'))
 const marketNews = JSON.parse(await readFile(path.join(root, 'data', 'market-news.json'), 'utf8'))
 const newsModifiedAt = marketNews.updatedAt.slice(0, 10)
-const guideModifiedAt = guideRouteData.modifiedAt
+const guideModifiedAt = Object.values(guideRouteData.modifiedAt).sort().at(-1)
 const homeModifiedAt = '2026-08-26'
 const resultsModifiedAt = '2026-09-04'
 const sitemapModifiedAt = [newsModifiedAt, guideModifiedAt, homeModifiedAt, resultsModifiedAt].sort().at(-1)
@@ -28,9 +28,9 @@ const staticPages = [
 const localizedUrl = (locale, page) =>
   `${siteUrl}/${locale}/${page ? `${page}/` : ''}`
 
-const alternateLinks = (paths) => locales
-  .map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale === 'pt' ? 'pt-BR' : locale}" href="${localizedUrl(locale, paths[locale])}" />`)
-  .concat(`    <xhtml:link rel="alternate" hreflang="x-default" href="${localizedUrl('en', paths.en)}" />`)
+const alternateLinks = (paths) => Object.entries(paths)
+  .map(([locale, pagePath]) => `    <xhtml:link rel="alternate" hreflang="${locale === 'pt' ? 'pt-BR' : locale}" href="${localizedUrl(locale, pagePath)}" />`)
+  .concat(paths.en ? `    <xhtml:link rel="alternate" hreflang="x-default" href="${localizedUrl('en', paths.en)}" />` : [])
   .join('\n')
 
 const renderUrl = ({ locale, path: pagePath, alternatePaths, lastmod, changefreq, priority }) => `  <url>
@@ -46,14 +46,18 @@ for (const locale of locales) {
     locale,
     alternatePaths: Object.fromEntries(locales.map((item) => [item, page.path])),
   }))
-  const guideUrls = Object.values(guideRouteData.guides).map((slugs) => renderUrl({
-    locale,
-    path: `guides/${slugs[locale]}`,
-    alternatePaths: Object.fromEntries(locales.map((item) => [item, `guides/${slugs[item]}`])),
-    lastmod: guideModifiedAt,
-    changefreq: 'monthly',
-    priority: '0.8',
-  }))
+  const guideUrls = Object.entries(guideRouteData.guides)
+    .filter(([, slugs]) => Boolean(slugs[locale]))
+    .map(([guideId, slugs]) => renderUrl({
+      locale,
+      path: `guides/${slugs[locale]}`,
+      alternatePaths: Object.fromEntries(
+        Object.entries(slugs).map(([item, slug]) => [item, `guides/${slug}`]),
+      ),
+      lastmod: guideRouteData.modifiedAt[guideId],
+      changefreq: 'monthly',
+      priority: '0.8',
+    }))
   const urls = [...staticUrls, ...guideUrls].join('\n')
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

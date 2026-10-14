@@ -1,10 +1,18 @@
 import type { Metadata } from 'next'
-import { ArrowRight, BookOpen } from 'lucide-react'
 import { notFound } from 'next/navigation'
 
+import { AcademyGuideGrid } from '@/components/AcademyGuideGrid'
 import { InteriorLayout } from '@/components/InteriorLayout'
 import { StructuredData } from '@/components/StructuredData'
-import { guideIds, guideModifiedAt, guidePath } from '@/lib/guides'
+import {
+  academyGuideIds,
+  guideCategory,
+  guideIdsForLocale,
+  guideImage,
+  guidePath,
+  guidesModifiedAt,
+  type GuideId,
+} from '@/lib/guides'
 import { getDictionary, isLocale, localeConfig } from '@/lib/i18n'
 import { buildMetadata } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -29,6 +37,8 @@ export default async function GuidesPage({ params }: Props) {
   const { locale } = await params
   if (!isLocale(locale)) notFound()
   const dictionary = await getDictionary(locale)
+  const availableGuideIds = guideIdsForLocale(locale)
+  const academyIds = new Set<GuideId>(academyGuideIds)
   const pageUrl = `${siteConfig.url}/${locale}/guides/`
   const schemas = [
     breadcrumbSchema(locale, [
@@ -42,10 +52,10 @@ export default async function GuidesPage({ params }: Props) {
       description: dictionary.guides.indexIntro,
       url: pageUrl,
       inLanguage: localeConfig[locale].htmlLang,
-      dateModified: guideModifiedAt,
+      dateModified: guidesModifiedAt,
       mainEntity: {
         '@type': 'ItemList',
-        itemListElement: guideIds.map((guideId, index) => ({
+        itemListElement: availableGuideIds.map((guideId, index) => ({
           '@type': 'ListItem',
           position: index + 1,
           name: dictionary.guides.items[guideId].cardTitle,
@@ -65,21 +75,30 @@ export default async function GuidesPage({ params }: Props) {
         title={dictionary.guides.indexTitle}
         intro={dictionary.guides.indexIntro}
       >
-        <div className="guide-card-grid">
-          {guideIds.map((guideId) => {
+        <AcademyGuideGrid
+          searchLabel={dictionary.guides.searchLabel}
+          searchPlaceholder={dictionary.guides.searchPlaceholder}
+          noResults={dictionary.guides.noResults}
+          featuredLabel={dictionary.guides.featuredLabel}
+          categories={[
+            { id: 'orderFlow', label: dictionary.guides.categories.orderFlow },
+            { id: 'futures', label: dictionary.guides.categories.futures },
+            { id: 'platform', label: dictionary.guides.categories.platform },
+          ]}
+          cards={availableGuideIds.map((guideId) => {
             const guide = dictionary.guides.items[guideId]
-            return (
-              <article className="guide-card" key={guideId}>
-                <BookOpen aria-hidden="true" size={24} />
-                <h2>{guide.cardTitle}</h2>
-                <p>{guide.cardText}</p>
-                <a className="text-link" href={guidePath(locale, guideId)}>
-                  {dictionary.guides.read}<ArrowRight aria-hidden="true" size={15} />
-                </a>
-              </article>
-            )
+            return {
+              category: guideCategory[guideId],
+              description: guide.cardText,
+              featured: academyIds.has(guideId),
+              href: guidePath(locale, guideId),
+              image: guideImage[guideId],
+              imageAlt: `${dictionary.guides.imageAltPrefix}: ${guide.cardTitle}`,
+              readLabel: dictionary.guides.read,
+              title: guide.cardTitle,
+            }
           })}
-        </div>
+        />
       </InteriorLayout>
     </>
   )
