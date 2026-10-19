@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-10-16T22:18:37.456Z",
+  "updatedAt": "2026-10-19T17:14:05.707Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 16/10/2026",
+      "publishedAt": "2026-10-16T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/16102026"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -65,14 +73,6 @@
       "publishedAt": "2026-09-22T08:19:52-03:00",
       "summary": "O Banco Central (BC) colocou em consulta pública proposta de atualização da regulamentação contábil aplicável às instituições financeiras e demais instituições autorizadas a funcionar pela Autarquia. A iniciativa...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21264/noticia"
-    },
-    {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 18/09/2026",
-      "publishedAt": "2026-09-18T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/18092026"
     },
     {
       "category": "Banco Central",
