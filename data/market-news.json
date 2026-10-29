@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-10-29T17:10:58.551Z",
+  "updatedAt": "2026-10-29T23:41:39.465Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Inscrições para três vagas do Programa de Estágio de Pós-Graduação em Pesquisa (PEPP) são prorrogadas até 13 de novembro",
+      "publishedAt": "2026-10-29T16:32:39-03:00",
+      "summary": "O Banco Central (BC) ampliou até 13 de novembro o prazo de inscrições para três vagas no Programa de Estágio de Pós-Graduação em Pesquisa (PEPP), do Departamento de Estudos e Pesquisas (Depep). As vagas contempladas por...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21307/noticia"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-09-08T11:03:02-03:00",
       "summary": "O Banco Central (BC) publicou, em 19/8, a Instrução Normativa BCB 769, que divulga a versão 2.10.0 do Manual de Padrões para Iniciação do Pix (MPI). O documento, que integra o Regulamento do Pix, detalha as...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21252/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Banco Central recebe inscrições para três vagas no Programa de Estágio de Pós-Graduação em Pesquisa (PEPP) até 18 de setembro",
-      "publishedAt": "2026-08-24T12:19:33-03:00",
-      "summary": "​O Banco Central (BC) está oferecendo três vagas no Programa de Estágio de Pós-Graduação em Pesquisa (PEPP), do Departamento de Estudos e Pesquisas (Depep). Com duração inicial de seis meses e possibilidade de...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21237/noticia"
     }
   ]
 }
