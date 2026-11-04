@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-11-03T18:09:36.496Z",
+  "updatedAt": "2026-11-04T00:15:42.936Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Consulta propõe mais transparência e priorização do interesse do cliente na distribuição de produtos de captação",
+      "publishedAt": "2026-11-03T15:59:43-03:00",
+      "summary": "​O Banco Central do Brasil (BC) colocou em consulta pública, em 23 de outubro, proposta de resolução conjunta estabelecendo critérios para a distribuição de produtos de captação financeira a serem observados pelas...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21308/noticia"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-09-10T18:31:39-03:00",
       "summary": "O Banco Central (BC) aprovou um novo padrão para a divulgação de informações pelas instituições reguladas por meio do Relatório de Riscos e Oportunidades Sociais, Ambientais e Climáticas (Relatório GRSAC). A iniciativa...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21257/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Ajustes pontuais organizam regras operacionais do Pix Automático",
-      "publishedAt": "2026-09-08T11:03:02-03:00",
-      "summary": "O Banco Central (BC) publicou, em 19/8, a Instrução Normativa BCB 769, que divulga a versão 2.10.0 do Manual de Padrões para Iniciação do Pix (MPI). O documento, que integra o Regulamento do Pix, detalha as...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21252/noticia"
     }
   ]
 }
