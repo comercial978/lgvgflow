@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-11-06T23:51:52.851Z",
+  "updatedAt": "2026-11-09T21:11:03.799Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 06/11/2026",
+      "publishedAt": "2026-11-06T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/06112026"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -49,14 +57,6 @@
       "publishedAt": "2026-10-16T00:00:00-03:00",
       "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
       "url": "https://www.bcb.gov.br/publicacoes/focus/16102026"
-    },
-    {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 09/10/2026",
-      "publishedAt": "2026-10-09T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/09102026"
     },
     {
       "category": "Banco Central",
