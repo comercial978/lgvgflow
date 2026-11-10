@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-11-09T21:11:03.799Z",
+  "updatedAt": "2026-11-10T18:21:12.342Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Novas regras reforçam segurança e ampliam uso do Open Finance por clientes pessoas jurídicas",
+      "publishedAt": "2026-11-10T10:54:49-03:00",
+      "summary": "O Conselho Monetário Nacional (CMN) e o Banco Central (BC) aprovaram, no último dia 22/10, novas regras para os contratos de parceria no Open Finance e mudanças voltadas a facilitar o compartilhamento de dados por...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21313/noticia"
+    },
     {
       "category": "Expectativas de mercado",
       "source": "Relatório Focus - Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-09-29T08:47:21-03:00",
       "summary": "O Banco Central do Brasil (BC) e o Banco Central Europeu (BCE) deram um passo importante na evolução dos pagamentos instantâneos ao iniciar a fase de avaliação da viabilidade de interligação entre o Pix e o TARGET...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21276/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Banco Central propõe atualização de regras contábeis para reforçar convergência aos padrões internacionais",
-      "publishedAt": "2026-09-22T08:19:52-03:00",
-      "summary": "O Banco Central (BC) colocou em consulta pública proposta de atualização da regulamentação contábil aplicável às instituições financeiras e demais instituições autorizadas a funcionar pela Autarquia. A iniciativa...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21264/noticia"
     }
   ]
 }
