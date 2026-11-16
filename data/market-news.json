@@ -1,7 +1,23 @@
 {
-  "updatedAt": "2026-11-14T00:31:58.033Z",
+  "updatedAt": "2026-11-16T20:43:56.475Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Pix celebra 6 anos como motor de inclusão e eficiência financeira em todo o Brasil",
+      "publishedAt": "2026-11-16T07:46:11-03:00",
+      "summary": "Ao completar seis anos de funcionamento nesta segunda-feira (16/11), o Pix​ consolida sua posição como uma Infraestrutura Pública Digital (IPD) indispensável para a economia, o comércio de varejo e a cidadania...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21320/noticia"
+    },
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 13/11/2026",
+      "publishedAt": "2026-11-13T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/13112026"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -59,14 +75,6 @@
       "url": "https://www.bcb.gov.br/publicacoes/focus/23102026"
     },
     {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 16/10/2026",
-      "publishedAt": "2026-10-16T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/16102026"
-    },
-    {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
       "title": "BC passa a divulgar mensalmente indicadores de reajustes salariais negociados",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-10-05T08:30:44-03:00",
       "summary": "O Banco Central aprovou uma nova rodada de atualizações no Regulamento do Pix com o objetivo de aperfeiçoar funcionalidades, fortalecer mecanismos de segurança e ajustar procedimentos operacionais à evolução do...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21278/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Pix e TIPS: parceria entre Brasil e Europa abre caminho para pagamentos globais instantâneos",
-      "publishedAt": "2026-09-29T08:47:21-03:00",
-      "summary": "O Banco Central do Brasil (BC) e o Banco Central Europeu (BCE) deram um passo importante na evolução dos pagamentos instantâneos ao iniciar a fase de avaliação da viabilidade de interligação entre o Pix e o TARGET...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21276/noticia"
     }
   ]
 }
