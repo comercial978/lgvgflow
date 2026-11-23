@@ -15,6 +15,8 @@ export const siteConfig = {
   supportPhoneNumber: '+553430739343',
   supportPhoneDisplay: '+55 (34) 3073-9343',
   whatsappNumber: '5534988977879',
+  leadFormEndpoint: 'https://api.web3forms.com/submit',
+  leadFormAccessKey: '71a531dc-7019-45c3-81f1-18b081eaa3f4',
   formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfdH3nec0sdMpS15OdDpwI27jw399riITLsoplia8DA0DghBg/viewform',
   checkoutUrl: 'https://chk.eduzz.com/D0RAN6E29Y',
   indicatorUrl: '/download/LGVGFLOWATUAL.psf',

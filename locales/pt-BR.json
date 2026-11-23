@@ -891,6 +891,27 @@
     "text": "Desenvolvido para operar de forma integrada às principais tecnologias do mercado financeiro brasileiro.",
     "disclaimer": "O LGVG Flow é um indicador independente e compatível com a plataforma Profit. As marcas B3, Nelogica, Profit e Genial pertencem aos seus respectivos proprietários e são mencionadas exclusivamente para indicar compatibilidade, sem caracterizar parceria, endosso ou afiliação oficial."
   },
+  "leadCallback": {
+    "trigger": "Ligamos para você",
+    "kicker": "Atendimento sem custo de chamada",
+    "title": "Prefere conversar por telefone?",
+    "body": "Deixe seu nome e telefone. Nossa equipe liga para você em horário comercial para explicar o LGVG Flow e tirar suas dúvidas.",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Como podemos chamar você?",
+    "phoneLabel": "Telefone",
+    "phonePlaceholder": "+55 (34) 99999-9999",
+    "helper": "Inclua o DDD ou o código do país.",
+    "consent": "Autorizo a UAI SOFTWARE LTDA a usar estes dados para entrar em contato comigo. Consulte a",
+    "privacy": "Política de Privacidade",
+    "submit": "Quero receber uma ligação",
+    "sending": "Enviando contato...",
+    "successTitle": "Contato recebido",
+    "successText": "Obrigado. Nossa equipe ligará para você em horário comercial.",
+    "error": "Não foi possível enviar agora.",
+    "whatsapp": "Falar no WhatsApp",
+    "trust": "Seus dados serão usados somente para este atendimento.",
+    "close": "Fechar formulário de ligação"
+  },
   "footer": {
     "rights": "Todos os direitos reservados",
     "tagline": "Opere com estrutura. Opere com profissionalismo.",
@@ -932,11 +953,12 @@
     "metaTitle": "Política de Privacidade | LGVG Flow",
     "metaDescription": "Entenda como o LGVG Flow trata dados e preferências de navegação.",
     "title": "Política de Privacidade",
-    "updated": "Última atualização: 21 de julho de 2026",
+    "updated": "Última atualização: 21 de novembro de 2026",
     "sections": [
-      { "title": "Dados coletados", "text": "O site pode registrar preferências de idioma no navegador. Formulários externos seguem as políticas dos respectivos fornecedores." },
-      { "title": "Finalidade", "text": "As informações são utilizadas para responder contatos, fornecer materiais solicitados e melhorar a experiência do site." },
-      { "title": "Compartilhamento", "text": "Não comercializamos dados pessoais. Links para WhatsApp, Google Forms, Eduzz, Instagram e YouTube estão sujeitos às políticas dessas plataformas." },
+      { "title": "Dados coletados", "text": "O site pode registrar preferências de idioma no navegador. No formulário de retorno telefônico, coletamos nome, telefone, consentimento, página de origem, idioma e data e hora do envio." },
+      { "title": "Finalidade", "text": "As informações são utilizadas para realizar o contato solicitado, responder dúvidas, fornecer materiais solicitados e melhorar a experiência do site." },
+      { "title": "Operadores e compartilhamento", "text": "Não comercializamos dados pessoais. Os dados do formulário de ligação são encaminhados ao e-mail da UAI SOFTWARE LTDA por meio do Web3Forms. Links para WhatsApp, Google Forms, Eduzz, Instagram e YouTube seguem as políticas dos respectivos fornecedores." },
+      { "title": "Consentimento e conservação", "text": "O envio do formulário depende de autorização expressa. Mantemos os dados somente pelo período necessário ao atendimento e ao cumprimento de obrigações legais aplicáveis." },
       { "title": "Seus direitos", "text": "Você pode solicitar informações, correção ou exclusão de dados enviados diretamente à UAI SOFTWARE LTDA." }
     ],
     "back": "Voltar ao site"

@@ -9,6 +9,11 @@ type AnalyticsEvent =
   | 'clique_whatsapp'
   | 'clique_teste_gratis'
   | 'clique_conhecer_indicador'
+  | 'lead_callback_open'
+  | 'lead_callback_close'
+  | 'lead_callback_submit'
+  | 'lead_callback_success'
+  | 'lead_callback_error'
 
 declare global {
   interface Window {

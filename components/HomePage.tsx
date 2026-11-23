@@ -465,9 +465,11 @@ export function HomePage({ dictionary, locale }: Props) {
       </main>
 
       <Footer locale={locale} dictionary={dictionary} />
-      <a className="whatsapp-float" href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label={dictionary.cta.whatsapp} title={dictionary.cta.whatsapp} data-ga-event="clique_whatsapp" data-ga-file-name="not_applicable">
-        <MessageCircle aria-hidden="true" size={23} />
-      </a>
+      <aside aria-label={dictionary.cta.whatsapp}>
+        <a className="whatsapp-float" href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label={dictionary.cta.whatsapp} title={dictionary.cta.whatsapp} data-ga-event="clique_whatsapp" data-ga-file-name="not_applicable">
+          <MessageCircle aria-hidden="true" size={23} />
+        </a>
+      </aside>
     </>
   )
 }

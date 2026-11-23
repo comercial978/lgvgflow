@@ -535,6 +535,27 @@
     "text": "Designed to work with key technologies in the Brazilian financial market.",
     "disclaimer": "LGVG Flow is an independent indicator compatible with the Profit platform. B3, Nelogica, Profit and Genial are the property of their respective owners and are mentioned solely to indicate compatibility, without implying partnership, endorsement or official affiliation."
   },
+  "leadCallback": {
+    "trigger": "We call you",
+    "kicker": "No call charges for you",
+    "title": "Would you rather talk by phone?",
+    "body": "Leave your name and phone number. Our team will call you during business hours to explain LGVG Flow and answer your questions.",
+    "nameLabel": "Name",
+    "namePlaceholder": "What should we call you?",
+    "phoneLabel": "Phone number",
+    "phonePlaceholder": "+55 (34) 99999-9999",
+    "helper": "Include your area code or country code.",
+    "consent": "I authorize UAI SOFTWARE LTDA to use this information to contact me. Read the",
+    "privacy": "Privacy Policy",
+    "submit": "Request a call",
+    "sending": "Sending contact...",
+    "successTitle": "Contact received",
+    "successText": "Thank you. Our team will call you during business hours.",
+    "error": "We could not send your request right now.",
+    "whatsapp": "Talk on WhatsApp",
+    "trust": "Your information will only be used for this service request.",
+    "close": "Close callback form"
+  },
   "footer": {
     "rights": "All rights reserved", "tagline": "Trade with structure. Trade professionally.", "socialTitle": "Follow content and updates", "instagram": "Gustavo Guimarães on Instagram", "privacy": "Privacy Policy", "terms": "Terms of Use", "contact": "Contact", "guides": "Guides", "news": "Market News", "manual": "Manual", "developedBy": "Developed by UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brazil", "supportPhone": "Customer Support Phone - IT"
   },
@@ -545,8 +566,8 @@
     "riskTitle": "Risk management", "riskText": "On WIN, the educational example uses a target and stop of up to 250 points for one contract. On WDO, define parameters according to the instrument's own dynamics and financial value. Results are not guaranteed.", "pdf": "Download the complete PDF manual", "indicator": "Download indicator", "back": "Back to website"
   },
   "privacy": {
-    "metaTitle": "Privacy Policy | LGVG Flow", "metaDescription": "Learn how LGVG Flow handles data and browsing preferences.", "title": "Privacy Policy", "updated": "Last updated: July 21, 2026",
-    "sections": [{ "title": "Data collected", "text": "The website may store language preferences in your browser. External forms follow their providers' policies." }, { "title": "Purpose", "text": "Information is used to answer enquiries, provide requested materials and improve the website experience." }, { "title": "Sharing", "text": "We do not sell personal data. WhatsApp, Google Forms, Eduzz, Instagram and YouTube links are subject to those platforms' policies." }, { "title": "Your rights", "text": "You may request access, correction or deletion of data submitted directly to UAI SOFTWARE LTDA." }], "back": "Back to website"
+    "metaTitle": "Privacy Policy | LGVG Flow", "metaDescription": "Learn how LGVG Flow handles data and browsing preferences.", "title": "Privacy Policy", "updated": "Last updated: November 21, 2026",
+    "sections": [{ "title": "Data collected", "text": "The website may store language preferences in your browser. The callback form collects name, phone number, consent, source page, language, and submission date and time." }, { "title": "Purpose", "text": "Information is used to make the requested contact, answer questions, provide requested materials and improve the website experience." }, { "title": "Processors and sharing", "text": "We do not sell personal data. Callback form data is delivered to UAI SOFTWARE LTDA by Web3Forms. WhatsApp, Google Forms, Eduzz, Instagram and YouTube links are subject to their respective providers' policies." }, { "title": "Consent and retention", "text": "Submitting the form requires express authorization. We keep the information only for the time needed to provide the service and meet applicable legal obligations." }, { "title": "Your rights", "text": "You may request access, correction or deletion of data submitted directly to UAI SOFTWARE LTDA." }], "back": "Back to website"
   },
   "terms": {
     "metaTitle": "Terms of Use | LGVG Flow", "metaDescription": "Terms governing the LGVG Flow website and indicator.", "title": "Terms of Use", "updated": "Last updated: July 21, 2026",

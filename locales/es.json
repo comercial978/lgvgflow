@@ -421,6 +421,27 @@
   "ecosystem": {
     "label": "Entorno Profesional", "title": { "prefix": "Ecosistema de ", "highlight": "LGVG Flow", "suffix": "" }, "lead": "LGVG Flow forma parte del ecosistema tecnológico utilizado diariamente por traders profesionales.", "text": "Diseñado para trabajar con tecnologías clave del mercado financiero brasileño.", "disclaimer": "LGVG Flow es un indicador independiente compatible con la plataforma Profit. B3, Nelogica, Profit y Genial pertenecen a sus respectivos propietarios y se mencionan únicamente para indicar compatibilidad, sin implicar asociación, respaldo o afiliación oficial."
   },
+  "leadCallback": {
+    "trigger": "Te llamamos",
+    "kicker": "Atención sin coste de llamada",
+    "title": "¿Prefieres hablar por teléfono?",
+    "body": "Déjanos tu nombre y teléfono. Nuestro equipo te llamará en horario comercial para explicarte LGVG Flow y responder tus preguntas.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "¿Cómo podemos llamarte?",
+    "phoneLabel": "Teléfono",
+    "phonePlaceholder": "+55 (34) 99999-9999",
+    "helper": "Incluye el código de área o el código del país.",
+    "consent": "Autorizo a UAI SOFTWARE LTDA a utilizar estos datos para ponerse en contacto conmigo. Consulta la",
+    "privacy": "Política de Privacidad",
+    "submit": "Quiero recibir una llamada",
+    "sending": "Enviando contacto...",
+    "successTitle": "Contacto recibido",
+    "successText": "Gracias. Nuestro equipo te llamará en horario comercial.",
+    "error": "No fue posible enviar la solicitud ahora.",
+    "whatsapp": "Hablar por WhatsApp",
+    "trust": "Tus datos se utilizarán únicamente para esta atención.",
+    "close": "Cerrar formulario de llamada"
+  },
   "footer": { "rights": "Todos los derechos reservados", "tagline": "Opera con estructura. Opera profesionalmente.", "socialTitle": "Sigue contenidos y novedades", "instagram": "Gustavo Guimarães en Instagram", "privacy": "Política de Privacidad", "terms": "Términos de Uso", "contact": "Contacto", "guides": "Guías", "news": "Noticias", "manual": "Manual", "developedBy": "Desarrollado por UAI SOFTWARE LTDA", "registration": "CNPJ: 06.152.914/0001-54", "location": "Uberaba – Minas Gerais – Brasil", "supportPhone": "Teléfono de soporte al cliente - TI" },
   "manual": {
     "metaTitle": "Manual de LGVG Flow", "metaDescription": "Guía de instalación y uso de LGVG Flow en Profit Pro y Profit Ultra.", "label": "Guía del usuario", "title": "Manual de LGVG Flow", "intro": "Aprende a importar, configurar e interpretar el indicador con seguridad.",
@@ -429,8 +450,8 @@
     "riskTitle": "Gestión de riesgo", "riskText": "En WIN, el ejemplo educativo utiliza objetivo y stop de hasta 250 puntos para un contrato. En WDO, define parámetros según la dinámica y el valor financiero propios del instrumento. Los resultados no están garantizados.", "pdf": "Descargar manual completo en PDF", "indicator": "Descargar indicador", "back": "Volver al sitio"
   },
   "privacy": {
-    "metaTitle": "Política de Privacidad | LGVG Flow", "metaDescription": "Conoce cómo LGVG Flow gestiona datos y preferencias de navegación.", "title": "Política de Privacidad", "updated": "Última actualización: 21 de julio de 2026",
-    "sections": [{ "title": "Datos recopilados", "text": "El sitio puede guardar preferencias de idioma en el navegador. Los formularios externos siguen las políticas de sus proveedores." }, { "title": "Finalidad", "text": "La información se utiliza para responder consultas, proporcionar materiales solicitados y mejorar la experiencia." }, { "title": "Compartir datos", "text": "No vendemos datos personales. Los enlaces a WhatsApp, Google Forms, Eduzz, Instagram y YouTube se rigen por sus propias políticas." }, { "title": "Tus derechos", "text": "Puedes solicitar acceso, corrección o eliminación de datos enviados directamente a UAI SOFTWARE LTDA." }], "back": "Volver al sitio"
+    "metaTitle": "Política de Privacidad | LGVG Flow", "metaDescription": "Conoce cómo LGVG Flow gestiona datos y preferencias de navegación.", "title": "Política de Privacidad", "updated": "Última actualización: 21 de noviembre de 2026",
+    "sections": [{ "title": "Datos recopilados", "text": "El sitio puede guardar preferencias de idioma en el navegador. El formulario de llamada recopila nombre, teléfono, consentimiento, página de origen, idioma y fecha y hora del envío." }, { "title": "Finalidad", "text": "La información se utiliza para realizar el contacto solicitado, responder preguntas, proporcionar materiales solicitados y mejorar la experiencia." }, { "title": "Operadores y uso compartido", "text": "No vendemos datos personales. Los datos del formulario de llamada se envían a UAI SOFTWARE LTDA mediante Web3Forms. Los enlaces a WhatsApp, Google Forms, Eduzz, Instagram y YouTube se rigen por las políticas de sus respectivos proveedores." }, { "title": "Consentimiento y conservación", "text": "El envío del formulario requiere autorización expresa. Conservamos los datos solo durante el tiempo necesario para prestar el servicio y cumplir las obligaciones legales aplicables." }, { "title": "Tus derechos", "text": "Puedes solicitar acceso, corrección o eliminación de datos enviados directamente a UAI SOFTWARE LTDA." }], "back": "Volver al sitio"
   },
   "terms": {
     "metaTitle": "Términos de Uso | LGVG Flow", "metaDescription": "Condiciones de uso del sitio y del indicador LGVG Flow.", "title": "Términos de Uso", "updated": "Última actualización: 21 de julio de 2026",
