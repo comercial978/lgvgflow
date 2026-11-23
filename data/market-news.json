@@ -1,7 +1,23 @@
 {
-  "updatedAt": "2026-11-21T00:59:04.098Z",
+  "updatedAt": "2026-11-23T22:17:51.843Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Aprender Valor amplia conteúdo e passa a oferecer educação previdenciária nas escolas",
+      "publishedAt": "2026-11-23T10:59:14-03:00",
+      "summary": "O Aprender Valor, programa do Banco Central (BC) voltado à educação financeira nas escolas, acaba de ganhar uma nova frente: a educação previdenciária. Três novos projetos escolares, desenvolvidos em parceria com o...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21327/noticia"
+    },
+    {
+      "category": "Expectativas de mercado",
+      "source": "Relatório Focus - Banco Central do Brasil",
+      "title": "BC - Focus - Relatório de Mercado - 19/11/2026",
+      "publishedAt": "2026-11-19T00:00:00-03:00",
+      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
+      "url": "https://www.bcb.gov.br/publicacoes/focus/19112026"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -67,14 +83,6 @@
       "url": "https://www.bcb.gov.br/detalhenoticia/21307/noticia"
     },
     {
-      "category": "Expectativas de mercado",
-      "source": "Relatório Focus - Banco Central do Brasil",
-      "title": "BC - Focus - Relatório de Mercado - 23/10/2026",
-      "publishedAt": "2026-10-23T00:00:00-03:00",
-      "summary": "O Relatório Focus resume as estatísticas calculadas considerando as expectativas de mercado coletadas até a sexta-feira anterior à sua divulgação. Ele é divulgado toda segunda-feira. O relatório traz a evolução gráfica...",
-      "url": "https://www.bcb.gov.br/publicacoes/focus/23102026"
-    },
-    {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
       "title": "BC passa a divulgar mensalmente indicadores de reajustes salariais negociados",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-10-05T08:30:53-03:00",
       "summary": "Com o objetivo de ampliar a transparência na divulgação de dados de atuação no mercado de câmbio​, o Banco Central (BC) passará a apresentar, na página de Política Cambial do seu site, o histórico de estoque e o...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21279/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "Pix amplia funcionalidades e reforça segurança com nova rodada de aperfeiçoamentos regulatórios",
-      "publishedAt": "2026-10-05T08:30:44-03:00",
-      "summary": "O Banco Central aprovou uma nova rodada de atualizações no Regulamento do Pix com o objetivo de aperfeiçoar funcionalidades, fortalecer mecanismos de segurança e ajustar procedimentos operacionais à evolução do...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21278/noticia"
     }
   ]
 }
