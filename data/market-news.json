@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-11-23T22:17:51.843Z",
+  "updatedAt": "2026-11-24T20:55:13.296Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Bancos centrais de países de língua portuguesa criam rede permanente de cooperação",
+      "publishedAt": "2026-11-24T11:06:14-03:00",
+      "summary": "​Representantes dos bancos centrais dos países de língua portuguesa deram um novo passo para ampliar a cooperação entre as instituições. Em 4 de novembro, em Luanda, foi realizada a primeira Reunião de Governadores da...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21328/noticia"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-10-06T07:34:47-03:00",
       "summary": "Os reajustes salariais negociados por meio das convenções coletivas de trabalho passaram a contar com um novo conjunto de indicadores divulgados mensalmente pelo Banco Central (BC). Construídas a partir das informações...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21280/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "BC moderniza apresentação de dados sobre atuação no mercado de câmbio",
-      "publishedAt": "2026-10-05T08:30:53-03:00",
-      "summary": "Com o objetivo de ampliar a transparência na divulgação de dados de atuação no mercado de câmbio​, o Banco Central (BC) passará a apresentar, na página de Política Cambial do seu site, o histórico de estoque e o...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21279/noticia"
     }
   ]
 }
