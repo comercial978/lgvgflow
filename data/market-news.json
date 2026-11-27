@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-11-26T19:54:55.012Z",
+  "updatedAt": "2026-11-27T02:31:23.257Z",
   "source": "Banco Central do Brasil",
   "items": [
+    {
+      "category": "Banco Central",
+      "source": "Banco Central do Brasil",
+      "title": "Fórum Pix projeta avanços para 2027",
+      "publishedAt": "2026-11-26T17:45:55-03:00",
+      "summary": "O Banco Central do Brasil (BC) promoveu nesta quinta-feira (26/11) a 29ª Reunião Plenária do Fórum Pix. O encontro cumpre o papel de prestar contas à sociedade e ao mercado financeiro, apresentando um balanço das...",
+      "url": "https://www.bcb.gov.br/detalhenoticia/21337/noticia"
+    },
     {
       "category": "Banco Central",
       "source": "Banco Central do Brasil",
@@ -89,14 +97,6 @@
       "publishedAt": "2026-10-29T16:32:39-03:00",
       "summary": "O Banco Central (BC) ampliou até 13 de novembro o prazo de inscrições para três vagas no Programa de Estágio de Pós-Graduação em Pesquisa (PEPP), do Departamento de Estudos e Pesquisas (Depep). As vagas contempladas por...",
       "url": "https://www.bcb.gov.br/detalhenoticia/21307/noticia"
-    },
-    {
-      "category": "Banco Central",
-      "source": "Banco Central do Brasil",
-      "title": "BC passa a divulgar mensalmente indicadores de reajustes salariais negociados",
-      "publishedAt": "2026-10-06T07:34:47-03:00",
-      "summary": "Os reajustes salariais negociados por meio das convenções coletivas de trabalho passaram a contar com um novo conjunto de indicadores divulgados mensalmente pelo Banco Central (BC). Construídas a partir das informações...",
-      "url": "https://www.bcb.gov.br/detalhenoticia/21280/noticia"
     }
   ]
 }
